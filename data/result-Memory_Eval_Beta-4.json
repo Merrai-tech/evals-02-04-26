@@ -1,0 +1,154 @@
+{
+  "result": {
+    "id": 1617,
+    "eval_id": 103,
+    "duration": 1350,
+    "input": {
+      "expected_reply": "Your emergency contact is Maya, and your backup emergency contact is Aisha.",
+      "id": "RQ-005",
+      "must_contain": [
+        "Maya",
+        "Aisha"
+      ],
+      "must_not_contain": [
+        "Omar"
+      ],
+      "question": "Who is my emergency contact now, and who is my backup emergency contact?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        181,
+        182,
+        183,
+        184,
+        245,
+        246,
+        287,
+        288,
+        291,
+        292
+      ]
+    },
+    "output": {
+      "answer": "Your emergency contact is Maya and your backup emergency contact is Aisha.",
+      "retrievedMemories": [
+        {
+          "content": "Aisha is the emergency backup contact for Daniyaal.",
+          "id": "01KN5XNFMY4HF37JN6D5EME1RP",
+          "similarity": 0.44334326386580747,
+          "sourceInput": "s10:117:My emergency backup contact is Aisha."
+        },
+        {
+          "content": "Daniyaal's emergency contact is Maya.",
+          "id": "01KN5XQX2SSCZJP8SKHDDF7XPV",
+          "similarity": 0.4226294167821196,
+          "sourceInput": "s16:181:My emergency contact changed from Omar to Maya."
+        },
+        {
+          "content": "Omar is no longer Daniyaal's emergency contact.",
+          "id": "01KN5XQY1YH3H0KXVZ693E2TNY",
+          "similarity": 0.3733123672506925,
+          "sourceInput": "s16:181:My emergency contact changed from Omar to Maya."
+        },
+        {
+          "content": "Omar is the emergency contact for Daniyaal.",
+          "id": "01KN5XHT1XB9J0PXKVYE3HNHVK",
+          "similarity": 0.3969162212724766,
+          "sourceInput": "s2:19:My emergency contact is Omar."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your emergency contact is Maya, and your backup emergency contact is Aisha.",
+      "id": "RQ-005",
+      "must_contain": [
+        "Maya",
+        "Aisha"
+      ],
+      "must_not_contain": [
+        "Omar"
+      ],
+      "question": "Who is my emergency contact now, and who is my backup emergency contact?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        181,
+        182,
+        183,
+        184,
+        245,
+        246,
+        287,
+        288,
+        291,
+        292
+      ]
+    },
+    "col_order": 4,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-005"
+      },
+      {
+        "label": "Question",
+        "value": "Who is my emergency contact now, and who is my backup emergency contact?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your emergency contact is Maya, and your backup emergency contact is Aisha."
+      },
+      {
+        "label": "Answer",
+        "value": "Your emergency contact is Maya and your backup emergency contact is Aisha."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Aisha is the emergency backup contact for Daniyaal.\",\n    \"id\": \"01KN5XNFMY4HF37JN6D5EME1RP\",\n    \"similarity\": 0.44334326386580747,\n    \"sourceInput\": \"s10:117:My emergency backup contact is Aisha.\"\n  },\n  {\n    \"content\": \"Daniyaal's emergency contact is Maya.\",\n    \"id\": \"01KN5XQX2SSCZJP8SKHDDF7XPV\",\n    \"similarity\": 0.4226294167821196,\n    \"sourceInput\": \"s16:181:My emergency contact changed from Omar to Maya.\"\n  },\n  {\n    \"content\": \"Omar is no longer Daniyaal's emergency contact.\",\n    \"id\": \"01KN5XQY1YH3H0KXVZ693E2TNY\",\n    \"similarity\": 0.3733123672506925,\n    \"sourceInput\": \"s16:181:My emergency contact changed from Omar to Maya.\"\n  },\n  {\n    \"content\": \"Omar is the emergency contact for Daniyaal.\",\n    \"id\": \"01KN5XHT1XB9J0PXKVYE3HNHVK\",\n    \"similarity\": 0.3969162212724766,\n    \"sourceInput\": \"s2:19:My emergency contact is Omar.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 1,
+    "scores": [
+      {
+        "id": 1313,
+        "result_id": 1617,
+        "name": "Retrieval Answer Score",
+        "score": 1,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 1,
+          "containsMatched": [
+            "Maya",
+            "Aisha"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

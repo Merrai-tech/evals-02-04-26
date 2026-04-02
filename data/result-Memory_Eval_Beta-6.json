@@ -1,0 +1,209 @@
+{
+  "result": {
+    "id": 1619,
+    "eval_id": 103,
+    "duration": 1041,
+    "input": {
+      "expected_reply": "You prefer hojicha now, and your usual order is a cortado with oat milk.",
+      "id": "RQ-007",
+      "must_contain": [
+        "hojicha",
+        "cortado",
+        "oat milk"
+      ],
+      "must_not_contain": [
+        "jasmine",
+        "mint",
+        "genmaicha",
+        "espresso",
+        "oat flat white"
+      ],
+      "question": "What tea do I prefer now, and what coffee do I usually order now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        253,
+        254,
+        255,
+        256,
+        277,
+        278,
+        279,
+        280
+      ]
+    },
+    "output": {
+      "answer": "You prefer hojicha tea and usually order a cortado with oat milk.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal's current coffee order is a cortado made with oat milk.",
+          "id": "01KN5XTSHMBFDFDE2T2FC16F48",
+          "similarity": 0.4619675486939172,
+          "sourceInput": "s22:255:My current coffee order is a cortado with oat milk."
+        },
+        {
+          "content": "Daniyaal's current coffee order is a cortado.",
+          "id": "01KN5XRBW6D62K42BE5FP7SQD7",
+          "similarity": 0.4677758648005387,
+          "sourceInput": "s17:193:My current coffee order changed from an oat flat white to a cortado."
+        },
+        {
+          "content": "Daniyaal no longer considers genmaicha to be their favorite tea.",
+          "id": "01KN5XTMWZ6HH94TAYC1GFTFGZ",
+          "similarity": 0.3961649688312555,
+          "sourceInput": "s22:253:My favorite tea changed from genmaicha to hojicha."
+        },
+        {
+          "content": "Daniyaal's favorite tea is hojicha.",
+          "id": "01KN5XTMWRJE27MHMK4BVG862M",
+          "similarity": 0.38714556084198803,
+          "sourceInput": "s22:253:My favorite tea changed from genmaicha to hojicha."
+        },
+        {
+          "content": "Daniyaal's favorite tea is genmaicha.",
+          "id": "01KN5XPEMR89X365GFDGV2SAY7",
+          "similarity": 0.3896028287463579,
+          "sourceInput": "s13:147:My favorite tea changed from mint to genmaicha."
+        },
+        {
+          "content": "Daniyaal no longer considers mint tea to be his favorite tea.",
+          "id": "01KN5XPEN0MCFX1H9FBC8QBKKX",
+          "similarity": 0.3798993751710247,
+          "sourceInput": "s13:147:My favorite tea changed from mint to genmaicha."
+        },
+        {
+          "content": "Daniyaal usually orders an oat flat white.",
+          "id": "01KN5XKS5SK3TWHZ3SKN4QR656",
+          "similarity": 0.4371522918213553,
+          "sourceInput": "s7:75:These days I usually order an oat flat white."
+        },
+        {
+          "content": "Jasmine tea is no longer Daniyaal's favorite tea.",
+          "id": "01KN5XKNQK62NQRD647H9EAHNC",
+          "similarity": 0.3711757622844256,
+          "sourceInput": "s6:71:Mint tea is my favorite tea now, not jasmine."
+        },
+        {
+          "content": "Daniyaal's favorite tea is mint tea.",
+          "id": "01KN5XKNQCXJTE738643DKTK1Q",
+          "similarity": 0.3372967817138328,
+          "sourceInput": "s6:71:Mint tea is my favorite tea now, not jasmine."
+        },
+        {
+          "content": "Daniyaal's favorite cafe in Lisbon is Hello Kristof.",
+          "id": "01KN5XN08JDVFH9PZW8WXETSGV",
+          "similarity": 0.3189898692108679,
+          "sourceInput": "s10:113:My favorite Lisbon cafe is Hello Kristof."
+        },
+        {
+          "content": "Daniyaal no longer drinks espresso every morning.",
+          "id": "01KN5XKQGWDJGVM0XSB0MYXCZC",
+          "similarity": 0.3594141055196922,
+          "sourceInput": "s7:73:I don't drink espresso every morning anymore."
+        },
+        {
+          "content": "Daniyaal's favorite tea is jasmine tea.",
+          "id": "01KN5XHR3BM6SWJ902NPXDJX0M",
+          "similarity": 0.35587418628547685,
+          "sourceInput": "s2:17:My favorite tea is jasmine tea."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You prefer hojicha now, and your usual order is a cortado with oat milk.",
+      "id": "RQ-007",
+      "must_contain": [
+        "hojicha",
+        "cortado",
+        "oat milk"
+      ],
+      "must_not_contain": [
+        "jasmine",
+        "mint",
+        "genmaicha",
+        "espresso",
+        "oat flat white"
+      ],
+      "question": "What tea do I prefer now, and what coffee do I usually order now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        253,
+        254,
+        255,
+        256,
+        277,
+        278,
+        279,
+        280
+      ]
+    },
+    "col_order": 6,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-007"
+      },
+      {
+        "label": "Question",
+        "value": "What tea do I prefer now, and what coffee do I usually order now?"
+      },
+      {
+        "label": "Expected",
+        "value": "You prefer hojicha now, and your usual order is a cortado with oat milk."
+      },
+      {
+        "label": "Answer",
+        "value": "You prefer hojicha tea and usually order a cortado with oat milk."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal's current coffee order is a cortado made with oat milk.\",\n    \"id\": \"01KN5XTSHMBFDFDE2T2FC16F48\",\n    \"similarity\": 0.4619675486939172,\n    \"sourceInput\": \"s22:255:My current coffee order is a cortado with oat milk.\"\n  },\n  {\n    \"content\": \"Daniyaal's current coffee order is a cortado.\",\n    \"id\": \"01KN5XRBW6D62K42BE5FP7SQD7\",\n    \"similarity\": 0.4677758648005387,\n    \"sourceInput\": \"s17:193:My current coffee order changed from an oat flat white to a cortado.\"\n  },\n  {\n    \"content\": \"Daniyaal no longer considers genmaicha to be their favorite tea.\",\n    \"id\": \"01KN5XTMWZ6HH94TAYC1GFTFGZ\",\n    \"similarity\": 0.3961649688312555,\n    \"sourceInput\": \"s22:253:My favorite tea changed from genmaicha to hojicha.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite tea is hojicha.\",\n    \"id\": \"01KN5XTMWRJE27MHMK4BVG862M\",\n    \"similarity\": 0.38714556084198803,\n    \"sourceInput\": \"s22:253:My favorite tea changed from genmaicha to hojicha.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite tea is genmaicha.\",\n    \"id\": \"01KN5XPEMR89X365GFDGV2SAY7\",\n    \"similarity\": 0.3896028287463579,\n    \"sourceInput\": \"s13:147:My favorite tea changed from mint to genmaicha.\"\n  },\n  {\n    \"content\": \"Daniyaal no longer considers mint tea to be his favorite tea.\",\n    \"id\": \"01KN5XPEN0MCFX1H9FBC8QBKKX\",\n    \"similarity\": 0.3798993751710247,\n    \"sourceInput\": \"s13:147:My favorite tea changed from mint to genmaicha.\"\n  },\n  {\n    \"content\": \"Daniyaal usually orders an oat flat white.\",\n    \"id\": \"01KN5XKS5SK3TWHZ3SKN4QR656\",\n    \"similarity\": 0.4371522918213553,\n    \"sourceInput\": \"s7:75:These days I usually order an oat flat white.\"\n  },\n  {\n    \"content\": \"Jasmine tea is no longer Daniyaal's favorite tea.\",\n    \"id\": \"01KN5XKNQK62NQRD647H9EAHNC\",\n    \"similarity\": 0.3711757622844256,\n    \"sourceInput\": \"s6:71:Mint tea is my favorite tea now, not jasmine.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite tea is mint tea.\",\n    \"id\": \"01KN5XKNQCXJTE738643DKTK1Q\",\n    \"similarity\": 0.3372967817138328,\n    \"sourceInput\": \"s6:71:Mint tea is my favorite tea now, not jasmine.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite cafe in Lisbon is Hello Kristof.\",\n    \"id\": \"01KN5XN08JDVFH9PZW8WXETSGV\",\n    \"similarity\": 0.3189898692108679,\n    \"sourceInput\": \"s10:113:My favorite Lisbon cafe is Hello Kristof.\"\n  },\n  {\n    \"content\": \"Daniyaal no longer drinks espresso every morning.\",\n    \"id\": \"01KN5XKQGWDJGVM0XSB0MYXCZC\",\n    \"similarity\": 0.3594141055196922,\n    \"sourceInput\": \"s7:73:I don't drink espresso every morning anymore.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite tea is jasmine tea.\",\n    \"id\": \"01KN5XHR3BM6SWJ902NPXDJX0M\",\n    \"similarity\": 0.35587418628547685,\n    \"sourceInput\": \"s2:17:My favorite tea is jasmine tea.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9423076923076923,
+    "scores": [
+      {
+        "id": 1315,
+        "result_id": 1619,
+        "name": "Retrieval Answer Score",
+        "score": 0.9423076923076923,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.7692307692307692,
+          "containsMatched": [
+            "hojicha",
+            "cortado",
+            "oat milk"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

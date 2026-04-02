@@ -1,0 +1,142 @@
+{
+  "result": {
+    "id": 1632,
+    "eval_id": 103,
+    "duration": 1440,
+    "input": {
+      "expected_reply": "Your current gym is Verdaguer Fitness, and your weekend bike route goes to Montjuic.",
+      "id": "RQ-020",
+      "must_contain": [
+        "Verdaguer Fitness",
+        "Montjuic"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What is my current gym, and where does my weekend bike route go?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        227,
+        228,
+        285,
+        286
+      ]
+    },
+    "output": {
+      "answer": "Your current gym is Verdaguer Fitness, and your weekend bike route goes to Montjuic.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal's weekend bicycle route includes Montjuic.",
+          "id": "01KN5XW2W297TCV79X8EP4A77Y",
+          "similarity": 0.4906587534539336,
+          "sourceInput": "s24:285:My weekend bike route goes to Montjuic."
+        },
+        {
+          "content": "Daniyaal's current gym is Verdaguer Fitness.",
+          "id": "01KN5XSMT7RKQJ2TBRG31Q6JJ1",
+          "similarity": 0.3782172962437993,
+          "sourceInput": "s19:227:My current gym is Verdaguer Fitness."
+        },
+        {
+          "content": "Daniyaal's current running route includes Ciutadella Park.",
+          "id": "01KN5XR6VFTS1RQXDS73084PFE",
+          "similarity": 0.35692567241337314,
+          "sourceInput": "s16:189:My current running route goes through Ciutadella Park."
+        },
+        {
+          "content": "Daniyaal usually goes trail running on Sundays.",
+          "id": "01KN5XJBG8GBS61WSEF8SBDE0P",
+          "similarity": 0.32082654643630626,
+          "sourceInput": "s3:35:I usually trail run on Sundays."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your current gym is Verdaguer Fitness, and your weekend bike route goes to Montjuic.",
+      "id": "RQ-020",
+      "must_contain": [
+        "Verdaguer Fitness",
+        "Montjuic"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What is my current gym, and where does my weekend bike route go?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        227,
+        228,
+        285,
+        286
+      ]
+    },
+    "col_order": 19,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-020"
+      },
+      {
+        "label": "Question",
+        "value": "What is my current gym, and where does my weekend bike route go?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your current gym is Verdaguer Fitness, and your weekend bike route goes to Montjuic."
+      },
+      {
+        "label": "Answer",
+        "value": "Your current gym is Verdaguer Fitness, and your weekend bike route goes to Montjuic."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal's weekend bicycle route includes Montjuic.\",\n    \"id\": \"01KN5XW2W297TCV79X8EP4A77Y\",\n    \"similarity\": 0.4906587534539336,\n    \"sourceInput\": \"s24:285:My weekend bike route goes to Montjuic.\"\n  },\n  {\n    \"content\": \"Daniyaal's current gym is Verdaguer Fitness.\",\n    \"id\": \"01KN5XSMT7RKQJ2TBRG31Q6JJ1\",\n    \"similarity\": 0.3782172962437993,\n    \"sourceInput\": \"s19:227:My current gym is Verdaguer Fitness.\"\n  },\n  {\n    \"content\": \"Daniyaal's current running route includes Ciutadella Park.\",\n    \"id\": \"01KN5XR6VFTS1RQXDS73084PFE\",\n    \"similarity\": 0.35692567241337314,\n    \"sourceInput\": \"s16:189:My current running route goes through Ciutadella Park.\"\n  },\n  {\n    \"content\": \"Daniyaal usually goes trail running on Sundays.\",\n    \"id\": \"01KN5XJBG8GBS61WSEF8SBDE0P\",\n    \"similarity\": 0.32082654643630626,\n    \"sourceInput\": \"s3:35:I usually trail run on Sundays.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 1,
+    "scores": [
+      {
+        "id": 1328,
+        "result_id": 1632,
+        "name": "Retrieval Answer Score",
+        "score": 1,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 1,
+          "containsMatched": [
+            "Verdaguer Fitness",
+            "Montjuic"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

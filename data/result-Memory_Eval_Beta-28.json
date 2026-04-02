@@ -1,0 +1,190 @@
+{
+  "result": {
+    "id": 1641,
+    "eval_id": 103,
+    "duration": 1420,
+    "input": {
+      "expected_reply": "You brought Pixel a blue leash and Miso a red collar from Japan.",
+      "id": "RQ-029",
+      "must_contain": [
+        "Pixel",
+        "blue leash",
+        "Miso",
+        "red collar"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What souvenirs did I bring back from Japan for Pixel and Miso?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        125,
+        126,
+        127,
+        128
+      ]
+    },
+    "output": {
+      "answer": "For Pixel, you brought back a blue leash, and for Miso, you brought back a red collar.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal bought a blue leash for Pixel while in Japan.",
+          "id": "01KN5XNRFDWEGPDQRJHX1Y7D40",
+          "similarity": 0.5298699397416651,
+          "sourceInput": "s11:127:I brought Pixel a blue leash from Japan."
+        },
+        {
+          "content": "Daniyaal brought a red collar for Miso from Japan.",
+          "id": "01KN5XNPV7Q23MSHQEEMM39AVH",
+          "similarity": 0.4577609616847069,
+          "sourceInput": "s11:125:I brought Miso a red collar from Japan."
+        },
+        {
+          "content": "Miso is a tuxedo cat.",
+          "id": "01KN5XM9E3CVJT1YB51BVPAA6H",
+          "similarity": 0.4304524667534706,
+          "sourceInput": "s8:91:Miso is a tuxedo cat."
+        },
+        {
+          "content": "Pixel's favorite toy is an orange ball.",
+          "id": "01KN5XJMASBV6D28KEB1ADJX1P",
+          "similarity": 0.4237572875154503,
+          "sourceInput": "s4:45:Pixel's favorite toy is an orange ball."
+        },
+        {
+          "content": "Miso dislikes vacuum cleaners.",
+          "id": "01KN5XTH7VKHKQDKPFRFC457ZF",
+          "similarity": 0.30185275045089144,
+          "sourceInput": "s21:251:Miso hates vacuum cleaners."
+        },
+        {
+          "content": "Miso likes salmon treats.",
+          "id": "01KN5XJJBVGYK7MMEPCQBZE82S",
+          "similarity": 0.38631454091626083,
+          "sourceInput": "s4:43:Miso likes salmon treats."
+        },
+        {
+          "content": "Miso's favorite sleeping spot is Daniyaal's office chair.",
+          "id": "01KN5XR30N13V88P9B88SYM9A3",
+          "similarity": 0.3131816222245801,
+          "sourceInput": "s16:185:Miso's favorite sleeping spot is my office chair."
+        },
+        {
+          "content": "Pixel loves to eat carrots as treats.",
+          "id": "01KN5XQ0PY2EPZRM0PEQ7HBQKM",
+          "similarity": 0.31185515377212947,
+          "sourceInput": "s13:155:Pixel loves carrots as treats."
+        },
+        {
+          "content": "Daniyaal returned from a trip to Tokyo.",
+          "id": "01KN5XNK4Q7SEW035V5NHMEY0P",
+          "similarity": 0.3005245419725502,
+          "sourceInput": "s11:121:I returned from Tokyo."
+        },
+        {
+          "content": "Daniyaal adopted a cat named Miso.",
+          "id": "01KN5XJEY1RPWEPVP5XGCCVVTQ",
+          "similarity": 0.33612455337558345,
+          "sourceInput": "s4:39:I also adopted a cat named Miso."
+        },
+        {
+          "content": "Daniyaal has a dog named Pixel.",
+          "id": "01KN5XHJ44Q3DX08KF6GKAQNCM",
+          "similarity": 0.3402730826270479,
+          "sourceInput": "s2:13:I have a black corgi named Pixel."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You brought Pixel a blue leash and Miso a red collar from Japan.",
+      "id": "RQ-029",
+      "must_contain": [
+        "Pixel",
+        "blue leash",
+        "Miso",
+        "red collar"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What souvenirs did I bring back from Japan for Pixel and Miso?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        125,
+        126,
+        127,
+        128
+      ]
+    },
+    "col_order": 28,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-029"
+      },
+      {
+        "label": "Question",
+        "value": "What souvenirs did I bring back from Japan for Pixel and Miso?"
+      },
+      {
+        "label": "Expected",
+        "value": "You brought Pixel a blue leash and Miso a red collar from Japan."
+      },
+      {
+        "label": "Answer",
+        "value": "For Pixel, you brought back a blue leash, and for Miso, you brought back a red collar."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal bought a blue leash for Pixel while in Japan.\",\n    \"id\": \"01KN5XNRFDWEGPDQRJHX1Y7D40\",\n    \"similarity\": 0.5298699397416651,\n    \"sourceInput\": \"s11:127:I brought Pixel a blue leash from Japan.\"\n  },\n  {\n    \"content\": \"Daniyaal brought a red collar for Miso from Japan.\",\n    \"id\": \"01KN5XNPV7Q23MSHQEEMM39AVH\",\n    \"similarity\": 0.4577609616847069,\n    \"sourceInput\": \"s11:125:I brought Miso a red collar from Japan.\"\n  },\n  {\n    \"content\": \"Miso is a tuxedo cat.\",\n    \"id\": \"01KN5XM9E3CVJT1YB51BVPAA6H\",\n    \"similarity\": 0.4304524667534706,\n    \"sourceInput\": \"s8:91:Miso is a tuxedo cat.\"\n  },\n  {\n    \"content\": \"Pixel's favorite toy is an orange ball.\",\n    \"id\": \"01KN5XJMASBV6D28KEB1ADJX1P\",\n    \"similarity\": 0.4237572875154503,\n    \"sourceInput\": \"s4:45:Pixel's favorite toy is an orange ball.\"\n  },\n  {\n    \"content\": \"Miso dislikes vacuum cleaners.\",\n    \"id\": \"01KN5XTH7VKHKQDKPFRFC457ZF\",\n    \"similarity\": 0.30185275045089144,\n    \"sourceInput\": \"s21:251:Miso hates vacuum cleaners.\"\n  },\n  {\n    \"content\": \"Miso likes salmon treats.\",\n    \"id\": \"01KN5XJJBVGYK7MMEPCQBZE82S\",\n    \"similarity\": 0.38631454091626083,\n    \"sourceInput\": \"s4:43:Miso likes salmon treats.\"\n  },\n  {\n    \"content\": \"Miso's favorite sleeping spot is Daniyaal's office chair.\",\n    \"id\": \"01KN5XR30N13V88P9B88SYM9A3\",\n    \"similarity\": 0.3131816222245801,\n    \"sourceInput\": \"s16:185:Miso's favorite sleeping spot is my office chair.\"\n  },\n  {\n    \"content\": \"Pixel loves to eat carrots as treats.\",\n    \"id\": \"01KN5XQ0PY2EPZRM0PEQ7HBQKM\",\n    \"similarity\": 0.31185515377212947,\n    \"sourceInput\": \"s13:155:Pixel loves carrots as treats.\"\n  },\n  {\n    \"content\": \"Daniyaal returned from a trip to Tokyo.\",\n    \"id\": \"01KN5XNK4Q7SEW035V5NHMEY0P\",\n    \"similarity\": 0.3005245419725502,\n    \"sourceInput\": \"s11:121:I returned from Tokyo.\"\n  },\n  {\n    \"content\": \"Daniyaal adopted a cat named Miso.\",\n    \"id\": \"01KN5XJEY1RPWEPVP5XGCCVVTQ\",\n    \"similarity\": 0.33612455337558345,\n    \"sourceInput\": \"s4:39:I also adopted a cat named Miso.\"\n  },\n  {\n    \"content\": \"Daniyaal has a dog named Pixel.\",\n    \"id\": \"01KN5XHJ44Q3DX08KF6GKAQNCM\",\n    \"similarity\": 0.3402730826270479,\n    \"sourceInput\": \"s2:13:I have a black corgi named Pixel.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9375,
+    "scores": [
+      {
+        "id": 1337,
+        "result_id": 1641,
+        "name": "Retrieval Answer Score",
+        "score": 0.9375,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.75,
+          "containsMatched": [
+            "Pixel",
+            "blue leash",
+            "Miso",
+            "red collar"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

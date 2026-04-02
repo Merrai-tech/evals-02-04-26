@@ -1,0 +1,161 @@
+{
+  "result": {
+    "id": 1636,
+    "eval_id": 103,
+    "duration": 1148,
+    "input": {
+      "expected_reply": "Right before Camille, your manager was Sofia.",
+      "id": "RQ-024",
+      "must_contain": [
+        "Sofia"
+      ],
+      "must_not_contain": [
+        "Jonas",
+        "Elena",
+        "Priya"
+      ],
+      "question": "Who was my manager right before Camille?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        171,
+        172,
+        269,
+        270
+      ]
+    },
+    "output": {
+      "answer": "Sofia",
+      "retrievedMemories": [
+        {
+          "content": "Camille is the manager of Daniyaal.",
+          "id": "01KN5XVD2JE9JW4KS8CBG4SKA9",
+          "similarity": 0.639753644692067,
+          "sourceInput": "s23:269:My manager is Camille."
+        },
+        {
+          "content": "Sofia is the new manager for Daniyaal.",
+          "id": "01KN5XQKY37T306FCPX7Y70BYJ",
+          "similarity": 0.35408702382185564,
+          "sourceInput": "s15:171:My new manager is Sofia, not Jonas."
+        },
+        {
+          "content": "Elena is the new manager for Daniyaal.",
+          "id": "01KN5XKE2RJ22KHF6ECFNYN1QW",
+          "similarity": 0.3722480360452689,
+          "sourceInput": "s6:67:My manager changed too. Elena is my new manager."
+        },
+        {
+          "content": "Daniyaal's manager is Jonas.",
+          "id": "01KN5XP63QJ1XA1P160ZCSWKNA",
+          "similarity": 0.32279874588271185,
+          "sourceInput": "s12:139:My manager is Jonas."
+        },
+        {
+          "content": "Jonas is no longer the manager for Daniyaal.",
+          "id": "01KN5XQKYAMFKWAFCTSEK67ZJD",
+          "similarity": 0.30351706779603327,
+          "sourceInput": "s15:171:My new manager is Sofia, not Jonas."
+        },
+        {
+          "content": "Elena holds the position of manager for the design systems team.",
+          "id": "01KN5XMPP77M1EPNH1JXC7PW0H",
+          "similarity": 0.33332282965090676,
+          "sourceInput": "s9:103:Elena manages the design systems team."
+        },
+        {
+          "content": "Priya is Daniyaal's manager.",
+          "id": "01KN5XHCZ28V9GEFGMMN8A28JD",
+          "similarity": 0.3523585281623345,
+          "sourceInput": "s1:9:My manager is Priya."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Right before Camille, your manager was Sofia.",
+      "id": "RQ-024",
+      "must_contain": [
+        "Sofia"
+      ],
+      "must_not_contain": [
+        "Jonas",
+        "Elena",
+        "Priya"
+      ],
+      "question": "Who was my manager right before Camille?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        171,
+        172,
+        269,
+        270
+      ]
+    },
+    "col_order": 23,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-024"
+      },
+      {
+        "label": "Question",
+        "value": "Who was my manager right before Camille?"
+      },
+      {
+        "label": "Expected",
+        "value": "Right before Camille, your manager was Sofia."
+      },
+      {
+        "label": "Answer",
+        "value": "Sofia"
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Camille is the manager of Daniyaal.\",\n    \"id\": \"01KN5XVD2JE9JW4KS8CBG4SKA9\",\n    \"similarity\": 0.639753644692067,\n    \"sourceInput\": \"s23:269:My manager is Camille.\"\n  },\n  {\n    \"content\": \"Sofia is the new manager for Daniyaal.\",\n    \"id\": \"01KN5XQKY37T306FCPX7Y70BYJ\",\n    \"similarity\": 0.35408702382185564,\n    \"sourceInput\": \"s15:171:My new manager is Sofia, not Jonas.\"\n  },\n  {\n    \"content\": \"Elena is the new manager for Daniyaal.\",\n    \"id\": \"01KN5XKE2RJ22KHF6ECFNYN1QW\",\n    \"similarity\": 0.3722480360452689,\n    \"sourceInput\": \"s6:67:My manager changed too. Elena is my new manager.\"\n  },\n  {\n    \"content\": \"Daniyaal's manager is Jonas.\",\n    \"id\": \"01KN5XP63QJ1XA1P160ZCSWKNA\",\n    \"similarity\": 0.32279874588271185,\n    \"sourceInput\": \"s12:139:My manager is Jonas.\"\n  },\n  {\n    \"content\": \"Jonas is no longer the manager for Daniyaal.\",\n    \"id\": \"01KN5XQKYAMFKWAFCTSEK67ZJD\",\n    \"similarity\": 0.30351706779603327,\n    \"sourceInput\": \"s15:171:My new manager is Sofia, not Jonas.\"\n  },\n  {\n    \"content\": \"Elena holds the position of manager for the design systems team.\",\n    \"id\": \"01KN5XMPP77M1EPNH1JXC7PW0H\",\n    \"similarity\": 0.33332282965090676,\n    \"sourceInput\": \"s9:103:Elena manages the design systems team.\"\n  },\n  {\n    \"content\": \"Priya is Daniyaal's manager.\",\n    \"id\": \"01KN5XHCZ28V9GEFGMMN8A28JD\",\n    \"similarity\": 0.3523585281623345,\n    \"sourceInput\": \"s1:9:My manager is Priya.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.75,
+    "scores": [
+      {
+        "id": 1332,
+        "result_id": 1636,
+        "name": "Retrieval Answer Score",
+        "score": 0.75,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0,
+          "containsMatched": [
+            "Sofia"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

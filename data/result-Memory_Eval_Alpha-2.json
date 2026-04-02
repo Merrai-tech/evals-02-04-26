@@ -1,0 +1,123 @@
+{
+  "result": {
+    "id": 1605,
+    "eval_id": 102,
+    "duration": 875,
+    "input": {
+      "expected_reply": "Your current manager is Elena.",
+      "id": "RQ-003",
+      "must_contain": [
+        "Elena"
+      ],
+      "must_not_contain": [
+        "Priya"
+      ],
+      "question": "Who is my current manager?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        35,
+        36
+      ]
+    },
+    "output": {
+      "answer": "Your current manager is Elena.",
+      "retrievedMemories": [
+        {
+          "content": "Elena is Daniyaal's new manager.",
+          "id": "01KN5XJ8SR1TM4AT3YSA7QV51A",
+          "similarity": 0.4163189858081511,
+          "sourceInput": "s3:35:My manager changed too. Elena is my new manager."
+        },
+        {
+          "content": "Priya is the manager of Daniyaal.",
+          "id": "01KN5XHDED4Z2SYHT353Q5GNF6",
+          "similarity": 0.3657940409342779,
+          "sourceInput": "s1:9:My manager is Priya."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your current manager is Elena.",
+      "id": "RQ-003",
+      "must_contain": [
+        "Elena"
+      ],
+      "must_not_contain": [
+        "Priya"
+      ],
+      "question": "Who is my current manager?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        35,
+        36
+      ]
+    },
+    "col_order": 2,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-003"
+      },
+      {
+        "label": "Question",
+        "value": "Who is my current manager?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your current manager is Elena."
+      },
+      {
+        "label": "Answer",
+        "value": "Your current manager is Elena."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Elena is Daniyaal's new manager.\",\n    \"id\": \"01KN5XJ8SR1TM4AT3YSA7QV51A\",\n    \"similarity\": 0.4163189858081511,\n    \"sourceInput\": \"s3:35:My manager changed too. Elena is my new manager.\"\n  },\n  {\n    \"content\": \"Priya is the manager of Daniyaal.\",\n    \"id\": \"01KN5XHDED4Z2SYHT353Q5GNF6\",\n    \"similarity\": 0.3657940409342779,\n    \"sourceInput\": \"s1:9:My manager is Priya.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 1,
+    "scores": [
+      {
+        "id": 1301,
+        "result_id": 1605,
+        "name": "Retrieval Answer Score",
+        "score": 1,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 1,
+          "containsMatched": [
+            "Elena"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 102,
+    "run_id": 75,
+    "name": "Memory Eval Alpha",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

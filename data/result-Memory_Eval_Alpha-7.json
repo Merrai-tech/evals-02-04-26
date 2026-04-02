@@ -1,0 +1,172 @@
+{
+  "result": {
+    "id": 1610,
+    "eval_id": 102,
+    "duration": 1284,
+    "input": {
+      "expected_reply": "Aisha lives in Vancouver now.",
+      "id": "RQ-008",
+      "must_contain": [
+        "Aisha",
+        "Vancouver"
+      ],
+      "must_not_contain": [
+        "Toronto"
+      ],
+      "question": "Where does my sister Aisha live now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        21,
+        22,
+        41,
+        42
+      ]
+    },
+    "output": {
+      "answer": "Aisha lives in Vancouver.",
+      "retrievedMemories": [
+        {
+          "content": "Aisha previously lived in Toronto and moved away in May 2026.",
+          "id": "01KN5XJJ1N0DQBAXE20GRY902H",
+          "similarity": 0.6984793291693561,
+          "sourceInput": "s4:41:Aisha moved from Toronto to Vancouver last month."
+        },
+        {
+          "content": "Aisha moved to Vancouver in May 2026.",
+          "id": "01KN5XJJ1EP3VBBJA6MGX81M90",
+          "similarity": 0.5898221221860719,
+          "sourceInput": "s4:41:Aisha moved from Toronto to Vancouver last month."
+        },
+        {
+          "content": "Aisha lives in Toronto.",
+          "id": "01KN5XHV1VC8ESQ3GP0YDEEVQ2",
+          "similarity": 0.7130143736497888,
+          "sourceInput": "s1:21:My sister Aisha lives in Toronto."
+        },
+        {
+          "content": "Daniyaal has a sister named Aisha.",
+          "id": "01KN5XHV1QRENTXKAYCA89A41R",
+          "similarity": 0.5844325825069698,
+          "sourceInput": "s1:21:My sister Aisha lives in Toronto."
+        },
+        {
+          "content": "Omar moved to Dubai.",
+          "id": "01KN5XJX699M575DWNBQN0J7XW",
+          "similarity": 0.3737997708214672,
+          "sourceInput": "s5:51:Omar moved to Dubai, but he's still my emergency contact."
+        },
+        {
+          "content": "Daniyaal moved from Berlin to Lisbon.",
+          "id": "01KN5XJ1VM0H4CR0DHZZJKDFT1",
+          "similarity": 0.362233419031753,
+          "sourceInput": "s3:29:Big update: I moved from Berlin to Lisbon."
+        },
+        {
+          "content": "Daniyaal lives in the Alfama neighborhood.",
+          "id": "01KN5XJ3M1K7XN5MASM6A6B9NN",
+          "similarity": 0.3402025651711993,
+          "sourceInput": "s3:31:My new neighborhood is Alfama."
+        },
+        {
+          "content": "Daniyaal lives in Berlin.",
+          "id": "01KN5XH4KJB8KAWPHZ24HWV5PF",
+          "similarity": 0.3696429077206458,
+          "sourceInput": "s1:1:Hey, I'm Daniyaal. I live in Berlin."
+        },
+        {
+          "content": "Daniyaal lives in the Kreuzberg neighborhood.",
+          "id": "01KN5XH7H0A9YHCK2BXWZPSJQE",
+          "similarity": 0.3304289886579582,
+          "sourceInput": "s1:3:More specifically, I live in the Kreuzberg neighborhood."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Aisha lives in Vancouver now.",
+      "id": "RQ-008",
+      "must_contain": [
+        "Aisha",
+        "Vancouver"
+      ],
+      "must_not_contain": [
+        "Toronto"
+      ],
+      "question": "Where does my sister Aisha live now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        21,
+        22,
+        41,
+        42
+      ]
+    },
+    "col_order": 7,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-008"
+      },
+      {
+        "label": "Question",
+        "value": "Where does my sister Aisha live now?"
+      },
+      {
+        "label": "Expected",
+        "value": "Aisha lives in Vancouver now."
+      },
+      {
+        "label": "Answer",
+        "value": "Aisha lives in Vancouver."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Aisha previously lived in Toronto and moved away in May 2026.\",\n    \"id\": \"01KN5XJJ1N0DQBAXE20GRY902H\",\n    \"similarity\": 0.6984793291693561,\n    \"sourceInput\": \"s4:41:Aisha moved from Toronto to Vancouver last month.\"\n  },\n  {\n    \"content\": \"Aisha moved to Vancouver in May 2026.\",\n    \"id\": \"01KN5XJJ1EP3VBBJA6MGX81M90\",\n    \"similarity\": 0.5898221221860719,\n    \"sourceInput\": \"s4:41:Aisha moved from Toronto to Vancouver last month.\"\n  },\n  {\n    \"content\": \"Aisha lives in Toronto.\",\n    \"id\": \"01KN5XHV1VC8ESQ3GP0YDEEVQ2\",\n    \"similarity\": 0.7130143736497888,\n    \"sourceInput\": \"s1:21:My sister Aisha lives in Toronto.\"\n  },\n  {\n    \"content\": \"Daniyaal has a sister named Aisha.\",\n    \"id\": \"01KN5XHV1QRENTXKAYCA89A41R\",\n    \"similarity\": 0.5844325825069698,\n    \"sourceInput\": \"s1:21:My sister Aisha lives in Toronto.\"\n  },\n  {\n    \"content\": \"Omar moved to Dubai.\",\n    \"id\": \"01KN5XJX699M575DWNBQN0J7XW\",\n    \"similarity\": 0.3737997708214672,\n    \"sourceInput\": \"s5:51:Omar moved to Dubai, but he's still my emergency contact.\"\n  },\n  {\n    \"content\": \"Daniyaal moved from Berlin to Lisbon.\",\n    \"id\": \"01KN5XJ1VM0H4CR0DHZZJKDFT1\",\n    \"similarity\": 0.362233419031753,\n    \"sourceInput\": \"s3:29:Big update: I moved from Berlin to Lisbon.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in the Alfama neighborhood.\",\n    \"id\": \"01KN5XJ3M1K7XN5MASM6A6B9NN\",\n    \"similarity\": 0.3402025651711993,\n    \"sourceInput\": \"s3:31:My new neighborhood is Alfama.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in Berlin.\",\n    \"id\": \"01KN5XH4KJB8KAWPHZ24HWV5PF\",\n    \"similarity\": 0.3696429077206458,\n    \"sourceInput\": \"s1:1:Hey, I'm Daniyaal. I live in Berlin.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in the Kreuzberg neighborhood.\",\n    \"id\": \"01KN5XH7H0A9YHCK2BXWZPSJQE\",\n    \"similarity\": 0.3304289886579582,\n    \"sourceInput\": \"s1:3:More specifically, I live in the Kreuzberg neighborhood.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9166666666666666,
+    "scores": [
+      {
+        "id": 1306,
+        "result_id": 1610,
+        "name": "Retrieval Answer Score",
+        "score": 0.9166666666666666,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.6666666666666665,
+          "containsMatched": [
+            "Aisha",
+            "Vancouver"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 102,
+    "run_id": 75,
+    "name": "Memory Eval Alpha",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

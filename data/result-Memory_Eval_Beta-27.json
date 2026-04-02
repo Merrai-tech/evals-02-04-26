@@ -1,0 +1,127 @@
+{
+  "result": {
+    "id": 1640,
+    "eval_id": 103,
+    "duration": 3349,
+    "input": {
+      "expected_reply": "You are currently reading The Dispossessed.",
+      "id": "RQ-028",
+      "must_contain": [
+        "The Dispossessed"
+      ],
+      "must_not_contain": [
+        "The Left Hand of Darkness"
+      ],
+      "question": "What am I currently reading?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        119,
+        120,
+        237,
+        238
+      ]
+    },
+    "output": {
+      "answer": "You are currently reading The Dispossessed.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal is currently reading the book titled The Dispossessed.",
+          "id": "01KN5XSZJXY2CWM78BCAEV21G8",
+          "similarity": 0.446496767227609,
+          "sourceInput": "s20:237:I'm currently reading The Dispossessed."
+        },
+        {
+          "content": "Daniyaal is currently reading the book titled The Left Hand of Darkness.",
+          "id": "01KN5XNHK5NZC12HXG23DDSP1S",
+          "similarity": 0.46605170509909255,
+          "sourceInput": "s10:119:I'm reading The Left Hand of Darkness."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You are currently reading The Dispossessed.",
+      "id": "RQ-028",
+      "must_contain": [
+        "The Dispossessed"
+      ],
+      "must_not_contain": [
+        "The Left Hand of Darkness"
+      ],
+      "question": "What am I currently reading?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        119,
+        120,
+        237,
+        238
+      ]
+    },
+    "col_order": 27,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-028"
+      },
+      {
+        "label": "Question",
+        "value": "What am I currently reading?"
+      },
+      {
+        "label": "Expected",
+        "value": "You are currently reading The Dispossessed."
+      },
+      {
+        "label": "Answer",
+        "value": "You are currently reading The Dispossessed."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal is currently reading the book titled The Dispossessed.\",\n    \"id\": \"01KN5XSZJXY2CWM78BCAEV21G8\",\n    \"similarity\": 0.446496767227609,\n    \"sourceInput\": \"s20:237:I'm currently reading The Dispossessed.\"\n  },\n  {\n    \"content\": \"Daniyaal is currently reading the book titled The Left Hand of Darkness.\",\n    \"id\": \"01KN5XNHK5NZC12HXG23DDSP1S\",\n    \"similarity\": 0.46605170509909255,\n    \"sourceInput\": \"s10:119:I'm reading The Left Hand of Darkness.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 1,
+    "scores": [
+      {
+        "id": 1336,
+        "result_id": 1640,
+        "name": "Retrieval Answer Score",
+        "score": 1,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 1,
+          "containsMatched": [
+            "The Dispossessed"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

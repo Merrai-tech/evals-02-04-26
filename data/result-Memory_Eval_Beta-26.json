@@ -1,0 +1,133 @@
+{
+  "result": {
+    "id": 1639,
+    "eval_id": 103,
+    "duration": 1255,
+    "input": {
+      "expected_reply": "Your monthly book club now meets on the first Wednesday.",
+      "id": "RQ-027",
+      "must_contain": [
+        "first Wednesday"
+      ],
+      "must_not_contain": [
+        "second Tuesday"
+      ],
+      "question": "When does my monthly book club meet now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        47,
+        48,
+        235,
+        236
+      ]
+    },
+    "output": {
+      "answer": "The monthly book club meets on the first Wednesday.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal's monthly book club meetings have moved from the second Tuesday to the first Wednesday.",
+          "id": "01KN5XSXG32SR1N1DXMA60TF3M",
+          "similarity": 0.5953652375806746,
+          "sourceInput": "s20:235:My monthly book club moved from the second Tuesday to the first Wednesday."
+        },
+        {
+          "content": "Daniyaal belongs to a monthly book club.",
+          "id": "01KN5XJPWNTMZPYJ4FS4KSNJN6",
+          "similarity": 0.5493151263462591,
+          "sourceInput": "s4:47:My monthly book club meets on the second Tuesday."
+        },
+        {
+          "content": "Daniyaal's book club meetings occur on the second Tuesday of every month.",
+          "id": "01KN5XJPWRGTSM13HX4VR7BP4B",
+          "similarity": 0.6011984728374267,
+          "sourceInput": "s4:47:My monthly book club meets on the second Tuesday."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your monthly book club now meets on the first Wednesday.",
+      "id": "RQ-027",
+      "must_contain": [
+        "first Wednesday"
+      ],
+      "must_not_contain": [
+        "second Tuesday"
+      ],
+      "question": "When does my monthly book club meet now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        47,
+        48,
+        235,
+        236
+      ]
+    },
+    "col_order": 26,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-027"
+      },
+      {
+        "label": "Question",
+        "value": "When does my monthly book club meet now?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your monthly book club now meets on the first Wednesday."
+      },
+      {
+        "label": "Answer",
+        "value": "The monthly book club meets on the first Wednesday."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal's monthly book club meetings have moved from the second Tuesday to the first Wednesday.\",\n    \"id\": \"01KN5XSXG32SR1N1DXMA60TF3M\",\n    \"similarity\": 0.5953652375806746,\n    \"sourceInput\": \"s20:235:My monthly book club moved from the second Tuesday to the first Wednesday.\"\n  },\n  {\n    \"content\": \"Daniyaal belongs to a monthly book club.\",\n    \"id\": \"01KN5XJPWNTMZPYJ4FS4KSNJN6\",\n    \"similarity\": 0.5493151263462591,\n    \"sourceInput\": \"s4:47:My monthly book club meets on the second Tuesday.\"\n  },\n  {\n    \"content\": \"Daniyaal's book club meetings occur on the second Tuesday of every month.\",\n    \"id\": \"01KN5XJPWRGTSM13HX4VR7BP4B\",\n    \"similarity\": 0.6011984728374267,\n    \"sourceInput\": \"s4:47:My monthly book club meets on the second Tuesday.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9722222222222222,
+    "scores": [
+      {
+        "id": 1335,
+        "result_id": 1639,
+        "name": "Retrieval Answer Score",
+        "score": 0.9722222222222222,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.888888888888889,
+          "containsMatched": [
+            "first Wednesday"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

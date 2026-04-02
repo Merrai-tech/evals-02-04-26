@@ -1,0 +1,154 @@
+{
+  "result": {
+    "id": 1642,
+    "eval_id": 103,
+    "duration": 1430,
+    "input": {
+      "expected_reply": "You use Raycast for your launcher and Superhuman for email.",
+      "id": "RQ-030",
+      "must_contain": [
+        "Raycast",
+        "Superhuman"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What productivity tools do I use daily for launcher and email?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        143,
+        144,
+        239,
+        240
+      ]
+    },
+    "output": {
+      "answer": "You use Raycast for your launcher tool and Superhuman for your email tool.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal uses the productivity tool Raycast on a daily basis.",
+          "id": "01KN5XP9FZ9MR4682KGAWD658W",
+          "similarity": 0.4621957259935512,
+          "sourceInput": "s12:143:I use Raycast daily for productivity."
+        },
+        {
+          "content": "Daniyaal uses the Superhuman application for managing email.",
+          "id": "01KN5XT1H0EQ0PARAD9RAP6NK9",
+          "similarity": 0.45699276301427205,
+          "sourceInput": "s20:239:I use Superhuman for email."
+        },
+        {
+          "content": "Daniyaal uses Obsidian and Todoist together in his workflow.",
+          "id": "01KN5XRH7W27HG4Z0CHSXKACPG",
+          "similarity": 0.4072955936332603,
+          "sourceInput": "s17:197:I use Obsidian and Todoist together now."
+        },
+        {
+          "content": "Daniyaal uses the software Todoist.",
+          "id": "01KN5XRH7P97YZTG1BKYDJP3Z4",
+          "similarity": 0.4046478206740758,
+          "sourceInput": "s17:197:I use Obsidian and Todoist together now."
+        },
+        {
+          "content": "Daniyaal prefers using Fantastical as a calendar application.",
+          "id": "01KN5XQV2SS3XBRQJT0JYTDK98",
+          "similarity": 0.3367639532635429,
+          "sourceInput": "s15:179:My preferred calendar app is Fantastical."
+        },
+        {
+          "content": "Daniyaal uses the Obsidian application for note-taking purposes.",
+          "id": "01KN5XJ6BD8Q6E0TPSK1DSJ06R",
+          "similarity": 0.3141019510723444,
+          "sourceInput": "s3:29:I use Obsidian for my notes."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You use Raycast for your launcher and Superhuman for email.",
+      "id": "RQ-030",
+      "must_contain": [
+        "Raycast",
+        "Superhuman"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What productivity tools do I use daily for launcher and email?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        143,
+        144,
+        239,
+        240
+      ]
+    },
+    "col_order": 29,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-030"
+      },
+      {
+        "label": "Question",
+        "value": "What productivity tools do I use daily for launcher and email?"
+      },
+      {
+        "label": "Expected",
+        "value": "You use Raycast for your launcher and Superhuman for email."
+      },
+      {
+        "label": "Answer",
+        "value": "You use Raycast for your launcher tool and Superhuman for your email tool."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal uses the productivity tool Raycast on a daily basis.\",\n    \"id\": \"01KN5XP9FZ9MR4682KGAWD658W\",\n    \"similarity\": 0.4621957259935512,\n    \"sourceInput\": \"s12:143:I use Raycast daily for productivity.\"\n  },\n  {\n    \"content\": \"Daniyaal uses the Superhuman application for managing email.\",\n    \"id\": \"01KN5XT1H0EQ0PARAD9RAP6NK9\",\n    \"similarity\": 0.45699276301427205,\n    \"sourceInput\": \"s20:239:I use Superhuman for email.\"\n  },\n  {\n    \"content\": \"Daniyaal uses Obsidian and Todoist together in his workflow.\",\n    \"id\": \"01KN5XRH7W27HG4Z0CHSXKACPG\",\n    \"similarity\": 0.4072955936332603,\n    \"sourceInput\": \"s17:197:I use Obsidian and Todoist together now.\"\n  },\n  {\n    \"content\": \"Daniyaal uses the software Todoist.\",\n    \"id\": \"01KN5XRH7P97YZTG1BKYDJP3Z4\",\n    \"similarity\": 0.4046478206740758,\n    \"sourceInput\": \"s17:197:I use Obsidian and Todoist together now.\"\n  },\n  {\n    \"content\": \"Daniyaal prefers using Fantastical as a calendar application.\",\n    \"id\": \"01KN5XQV2SS3XBRQJT0JYTDK98\",\n    \"similarity\": 0.3367639532635429,\n    \"sourceInput\": \"s15:179:My preferred calendar app is Fantastical.\"\n  },\n  {\n    \"content\": \"Daniyaal uses the Obsidian application for note-taking purposes.\",\n    \"id\": \"01KN5XJ6BD8Q6E0TPSK1DSJ06R\",\n    \"similarity\": 0.3141019510723444,\n    \"sourceInput\": \"s3:29:I use Obsidian for my notes.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.95,
+    "scores": [
+      {
+        "id": 1338,
+        "result_id": 1642,
+        "name": "Retrieval Answer Score",
+        "score": 0.95,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.7999999999999999,
+          "containsMatched": [
+            "Raycast",
+            "Superhuman"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

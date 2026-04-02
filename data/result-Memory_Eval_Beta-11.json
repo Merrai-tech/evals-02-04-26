@@ -1,0 +1,172 @@
+{
+  "result": {
+    "id": 1624,
+    "eval_id": 103,
+    "duration": 1219,
+    "input": {
+      "expected_reply": "You currently use Tana for work notes and Todoist for tasks.",
+      "id": "RQ-012",
+      "must_contain": [
+        "Tana",
+        "Todoist"
+      ],
+      "must_not_contain": [
+        "Obsidian"
+      ],
+      "question": "What tools do I currently use for work notes and tasks?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        257,
+        258,
+        259,
+        260
+      ]
+    },
+    "output": {
+      "answer": "You currently use Tana for notes and Todoist for tasks.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal switched from using Obsidian to Tana for his work notes.",
+          "id": "01KN5XTVE83M15VF0HNKYEEHT2",
+          "similarity": 0.46935053406757066,
+          "sourceInput": "s22:257:I switched from Obsidian to Tana for work notes."
+        },
+        {
+          "content": "Daniyaal uses Obsidian and Todoist together in his workflow.",
+          "id": "01KN5XRH7W27HG4Z0CHSXKACPG",
+          "similarity": 0.5109008051689222,
+          "sourceInput": "s17:197:I use Obsidian and Todoist together now."
+        },
+        {
+          "content": "Daniyaal uses the software Todoist.",
+          "id": "01KN5XRH7P97YZTG1BKYDJP3Z4",
+          "similarity": 0.48305229884819467,
+          "sourceInput": "s17:197:I use Obsidian and Todoist together now."
+        },
+        {
+          "content": "Daniyaal currently uses a Traveler's Notebook as a notebook.",
+          "id": "01KN5XNWVFHZGJ6B8G5X723A50",
+          "similarity": 0.37360131004279884,
+          "sourceInput": "s11:131:My current notebook is a Traveler's Notebook."
+        },
+        {
+          "content": "Daniyaal uses the Superhuman application for managing email.",
+          "id": "01KN5XT1H0EQ0PARAD9RAP6NK9",
+          "similarity": 0.32843359490854107,
+          "sourceInput": "s20:239:I use Superhuman for email."
+        },
+        {
+          "content": "Daniyaal uses the software Obsidian.",
+          "id": "01KN5XRH7F5M8J3VF674DFXK2X",
+          "similarity": 0.33198762751784394,
+          "sourceInput": "s17:197:I use Obsidian and Todoist together now."
+        },
+        {
+          "content": "Daniyaal prefers using Fantastical as a calendar application.",
+          "id": "01KN5XQV2SS3XBRQJT0JYTDK98",
+          "similarity": 0.3502005152772446,
+          "sourceInput": "s15:179:My preferred calendar app is Fantastical."
+        },
+        {
+          "content": "Daniyaal uses the productivity tool Raycast on a daily basis.",
+          "id": "01KN5XP9FZ9MR4682KGAWD658W",
+          "similarity": 0.3518240174585783,
+          "sourceInput": "s12:143:I use Raycast daily for productivity."
+        },
+        {
+          "content": "Daniyaal uses the Obsidian application for note-taking purposes.",
+          "id": "01KN5XJ6BD8Q6E0TPSK1DSJ06R",
+          "similarity": 0.4776185791053207,
+          "sourceInput": "s3:29:I use Obsidian for my notes."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You currently use Tana for work notes and Todoist for tasks.",
+      "id": "RQ-012",
+      "must_contain": [
+        "Tana",
+        "Todoist"
+      ],
+      "must_not_contain": [
+        "Obsidian"
+      ],
+      "question": "What tools do I currently use for work notes and tasks?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        257,
+        258,
+        259,
+        260
+      ]
+    },
+    "col_order": 11,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-012"
+      },
+      {
+        "label": "Question",
+        "value": "What tools do I currently use for work notes and tasks?"
+      },
+      {
+        "label": "Expected",
+        "value": "You currently use Tana for work notes and Todoist for tasks."
+      },
+      {
+        "label": "Answer",
+        "value": "You currently use Tana for notes and Todoist for tasks."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal switched from using Obsidian to Tana for his work notes.\",\n    \"id\": \"01KN5XTVE83M15VF0HNKYEEHT2\",\n    \"similarity\": 0.46935053406757066,\n    \"sourceInput\": \"s22:257:I switched from Obsidian to Tana for work notes.\"\n  },\n  {\n    \"content\": \"Daniyaal uses Obsidian and Todoist together in his workflow.\",\n    \"id\": \"01KN5XRH7W27HG4Z0CHSXKACPG\",\n    \"similarity\": 0.5109008051689222,\n    \"sourceInput\": \"s17:197:I use Obsidian and Todoist together now.\"\n  },\n  {\n    \"content\": \"Daniyaal uses the software Todoist.\",\n    \"id\": \"01KN5XRH7P97YZTG1BKYDJP3Z4\",\n    \"similarity\": 0.48305229884819467,\n    \"sourceInput\": \"s17:197:I use Obsidian and Todoist together now.\"\n  },\n  {\n    \"content\": \"Daniyaal currently uses a Traveler's Notebook as a notebook.\",\n    \"id\": \"01KN5XNWVFHZGJ6B8G5X723A50\",\n    \"similarity\": 0.37360131004279884,\n    \"sourceInput\": \"s11:131:My current notebook is a Traveler's Notebook.\"\n  },\n  {\n    \"content\": \"Daniyaal uses the Superhuman application for managing email.\",\n    \"id\": \"01KN5XT1H0EQ0PARAD9RAP6NK9\",\n    \"similarity\": 0.32843359490854107,\n    \"sourceInput\": \"s20:239:I use Superhuman for email.\"\n  },\n  {\n    \"content\": \"Daniyaal uses the software Obsidian.\",\n    \"id\": \"01KN5XRH7F5M8J3VF674DFXK2X\",\n    \"similarity\": 0.33198762751784394,\n    \"sourceInput\": \"s17:197:I use Obsidian and Todoist together now.\"\n  },\n  {\n    \"content\": \"Daniyaal prefers using Fantastical as a calendar application.\",\n    \"id\": \"01KN5XQV2SS3XBRQJT0JYTDK98\",\n    \"similarity\": 0.3502005152772446,\n    \"sourceInput\": \"s15:179:My preferred calendar app is Fantastical.\"\n  },\n  {\n    \"content\": \"Daniyaal uses the productivity tool Raycast on a daily basis.\",\n    \"id\": \"01KN5XP9FZ9MR4682KGAWD658W\",\n    \"similarity\": 0.3518240174585783,\n    \"sourceInput\": \"s12:143:I use Raycast daily for productivity.\"\n  },\n  {\n    \"content\": \"Daniyaal uses the Obsidian application for note-taking purposes.\",\n    \"id\": \"01KN5XJ6BD8Q6E0TPSK1DSJ06R\",\n    \"similarity\": 0.4776185791053207,\n    \"sourceInput\": \"s3:29:I use Obsidian for my notes.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9868421052631579,
+    "scores": [
+      {
+        "id": 1320,
+        "result_id": 1624,
+        "name": "Retrieval Answer Score",
+        "score": 0.9868421052631579,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.9473684210526316,
+          "containsMatched": [
+            "Tana",
+            "Todoist"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

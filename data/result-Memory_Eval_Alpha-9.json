@@ -1,0 +1,135 @@
+{
+  "result": {
+    "id": 1612,
+    "eval_id": 102,
+    "duration": 1241,
+    "input": {
+      "expected_reply": "Your Tokyo flight is on 2026-09-13 at 18:30 UTC.",
+      "id": "RQ-010",
+      "must_contain": [
+        "2026-09-13",
+        "18:30",
+        "UTC"
+      ],
+      "must_not_contain": [
+        "2026-09-12",
+        "17:00"
+      ],
+      "question": "When is my Tokyo flight?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "output": {
+      "answer": "2026-09-13 at 18:30 UTC",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal has a flight to Tokyo scheduled for 2026-09-13 at 18:30 UTC.",
+          "id": "01KN5XJQ2MKJPR3MQF45A106M7",
+          "similarity": 0.5826188172283963,
+          "sourceInput": "s5:45:Correction: the Tokyo flight is actually on 2026-09-13 at 18:30 UTC, not Sept 12."
+        },
+        {
+          "content": "Daniyaal has a flight to Tokyo on 2026-09-12 at 17:00 UTC.",
+          "id": "01KN5XJM3RK045Y651N089SCRK",
+          "similarity": 0.5834531055772216,
+          "sourceInput": "s4:43:I booked a flight to Tokyo for 2026-09-12 at 17:00 UTC."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your Tokyo flight is on 2026-09-13 at 18:30 UTC.",
+      "id": "RQ-010",
+      "must_contain": [
+        "2026-09-13",
+        "18:30",
+        "UTC"
+      ],
+      "must_not_contain": [
+        "2026-09-12",
+        "17:00"
+      ],
+      "question": "When is my Tokyo flight?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "col_order": 9,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-010"
+      },
+      {
+        "label": "Question",
+        "value": "When is my Tokyo flight?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your Tokyo flight is on 2026-09-13 at 18:30 UTC."
+      },
+      {
+        "label": "Answer",
+        "value": "2026-09-13 at 18:30 UTC"
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal has a flight to Tokyo scheduled for 2026-09-13 at 18:30 UTC.\",\n    \"id\": \"01KN5XJQ2MKJPR3MQF45A106M7\",\n    \"similarity\": 0.5826188172283963,\n    \"sourceInput\": \"s5:45:Correction: the Tokyo flight is actually on 2026-09-13 at 18:30 UTC, not Sept 12.\"\n  },\n  {\n    \"content\": \"Daniyaal has a flight to Tokyo on 2026-09-12 at 17:00 UTC.\",\n    \"id\": \"01KN5XJM3RK045Y651N089SCRK\",\n    \"similarity\": 0.5834531055772216,\n    \"sourceInput\": \"s4:43:I booked a flight to Tokyo for 2026-09-12 at 17:00 UTC.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.8653846153846154,
+    "scores": [
+      {
+        "id": 1308,
+        "result_id": 1612,
+        "name": "Retrieval Answer Score",
+        "score": 0.8653846153846154,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.46153846153846156,
+          "containsMatched": [
+            "2026-09-13",
+            "18:30",
+            "UTC"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 102,
+    "run_id": 75,
+    "name": "Memory Eval Alpha",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

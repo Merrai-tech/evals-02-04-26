@@ -1,0 +1,143 @@
+{
+  "result": {
+    "id": 1623,
+    "eval_id": 103,
+    "duration": 1082,
+    "input": {
+      "expected_reply": "You are learning Spanish now.",
+      "id": "RQ-011",
+      "must_contain": [
+        "Spanish"
+      ],
+      "must_not_contain": [
+        "Portuguese"
+      ],
+      "question": "What language am I learning now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        57,
+        58,
+        165,
+        166,
+        263,
+        264
+      ]
+    },
+    "output": {
+      "answer": "You are learning Spanish.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal is currently learning the Spanish language.",
+          "id": "01KN5XQDQG83J2T9TXV28QJWKN",
+          "similarity": 0.44326411033179014,
+          "sourceInput": "s14:165:I paused Portuguese and now I'm learning Spanish."
+        },
+        {
+          "content": "Daniyaal has paused learning the Portuguese language.",
+          "id": "01KN5XQCN4PY31FA5SVSCTCN9G",
+          "similarity": 0.41724125566645054,
+          "sourceInput": "s14:165:I paused Portuguese and now I'm learning Spanish."
+        },
+        {
+          "content": "Daniyaal is currently in the process of learning the Portuguese language.",
+          "id": "01KN5XK0482VXK5Z85RC5CMPS6",
+          "similarity": 0.4492386088678808,
+          "sourceInput": "s5:57:I'm learning Portuguese."
+        },
+        {
+          "content": "Daniyaal speaks English.",
+          "id": "01KN5XJ2KK0AQD6ZD9B79EEAFB",
+          "similarity": 0.3062503568087934,
+          "sourceInput": "s3:25:I speak Urdu and English."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You are learning Spanish now.",
+      "id": "RQ-011",
+      "must_contain": [
+        "Spanish"
+      ],
+      "must_not_contain": [
+        "Portuguese"
+      ],
+      "question": "What language am I learning now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        57,
+        58,
+        165,
+        166,
+        263,
+        264
+      ]
+    },
+    "col_order": 10,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-011"
+      },
+      {
+        "label": "Question",
+        "value": "What language am I learning now?"
+      },
+      {
+        "label": "Expected",
+        "value": "You are learning Spanish now."
+      },
+      {
+        "label": "Answer",
+        "value": "You are learning Spanish."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal is currently learning the Spanish language.\",\n    \"id\": \"01KN5XQDQG83J2T9TXV28QJWKN\",\n    \"similarity\": 0.44326411033179014,\n    \"sourceInput\": \"s14:165:I paused Portuguese and now I'm learning Spanish.\"\n  },\n  {\n    \"content\": \"Daniyaal has paused learning the Portuguese language.\",\n    \"id\": \"01KN5XQCN4PY31FA5SVSCTCN9G\",\n    \"similarity\": 0.41724125566645054,\n    \"sourceInput\": \"s14:165:I paused Portuguese and now I'm learning Spanish.\"\n  },\n  {\n    \"content\": \"Daniyaal is currently in the process of learning the Portuguese language.\",\n    \"id\": \"01KN5XK0482VXK5Z85RC5CMPS6\",\n    \"similarity\": 0.4492386088678808,\n    \"sourceInput\": \"s5:57:I'm learning Portuguese.\"\n  },\n  {\n    \"content\": \"Daniyaal speaks English.\",\n    \"id\": \"01KN5XJ2KK0AQD6ZD9B79EEAFB\",\n    \"similarity\": 0.3062503568087934,\n    \"sourceInput\": \"s3:25:I speak Urdu and English.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9166666666666666,
+    "scores": [
+      {
+        "id": 1319,
+        "result_id": 1623,
+        "name": "Retrieval Answer Score",
+        "score": 0.9166666666666666,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.6666666666666665,
+          "containsMatched": [
+            "Spanish"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

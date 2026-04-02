@@ -1,0 +1,117 @@
+{
+  "result": {
+    "id": 1622,
+    "eval_id": 103,
+    "duration": 1395,
+    "input": {
+      "expected_reply": "You are allergic to peanuts.",
+      "id": "RQ-010",
+      "must_contain": [
+        "peanuts"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What allergy do I have?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        15,
+        16
+      ]
+    },
+    "output": {
+      "answer": "You have an allergy to peanuts.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal has a medical allergy to peanuts.",
+          "id": "01KN5XHMY6VKRQHSN6EK9M6EHE",
+          "similarity": 0.41030180894224777,
+          "sourceInput": "s2:15:I'm allergic to peanuts."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You are allergic to peanuts.",
+      "id": "RQ-010",
+      "must_contain": [
+        "peanuts"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What allergy do I have?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        15,
+        16
+      ]
+    },
+    "col_order": 9,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-010"
+      },
+      {
+        "label": "Question",
+        "value": "What allergy do I have?"
+      },
+      {
+        "label": "Expected",
+        "value": "You are allergic to peanuts."
+      },
+      {
+        "label": "Answer",
+        "value": "You have an allergy to peanuts."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal has a medical allergy to peanuts.\",\n    \"id\": \"01KN5XHMY6VKRQHSN6EK9M6EHE\",\n    \"similarity\": 0.41030180894224777,\n    \"sourceInput\": \"s2:15:I'm allergic to peanuts.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.8863636363636364,
+    "scores": [
+      {
+        "id": 1318,
+        "result_id": 1622,
+        "name": "Retrieval Answer Score",
+        "score": 0.8863636363636364,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.5454545454545454,
+          "containsMatched": [
+            "peanuts"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

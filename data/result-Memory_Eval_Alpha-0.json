@@ -1,0 +1,129 @@
+{
+  "result": {
+    "id": 1603,
+    "eval_id": 102,
+    "duration": 69503,
+    "input": {
+      "expected_reply": "You live in Lisbon.",
+      "id": "RQ-001",
+      "must_contain": [
+        "Lisbon"
+      ],
+      "must_not_contain": [
+        "Berlin"
+      ],
+      "question": "Where do I live now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        29,
+        30
+      ]
+    },
+    "output": {
+      "answer": "You live in Lisbon.",
+      "retrievedMemories": [
+        {
+          "content": "Omar moved to Dubai.",
+          "id": "01KN5XJX699M575DWNBQN0J7XW",
+          "similarity": 0.31469303517418523,
+          "sourceInput": "s5:51:Omar moved to Dubai, but he's still my emergency contact."
+        },
+        {
+          "content": "Aisha previously lived in Toronto and moved away in May 2026.",
+          "id": "01KN5XJJ1N0DQBAXE20GRY902H",
+          "similarity": 0.3432129635543495,
+          "sourceInput": "s4:41:Aisha moved from Toronto to Vancouver last month."
+        },
+        {
+          "content": "Daniyaal moved from Berlin to Lisbon.",
+          "id": "01KN5XJ1VM0H4CR0DHZZJKDFT1",
+          "similarity": 0.3056293816847693,
+          "sourceInput": "s3:29:Big update: I moved from Berlin to Lisbon."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You live in Lisbon.",
+      "id": "RQ-001",
+      "must_contain": [
+        "Lisbon"
+      ],
+      "must_not_contain": [
+        "Berlin"
+      ],
+      "question": "Where do I live now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        29,
+        30
+      ]
+    },
+    "col_order": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-001"
+      },
+      {
+        "label": "Question",
+        "value": "Where do I live now?"
+      },
+      {
+        "label": "Expected",
+        "value": "You live in Lisbon."
+      },
+      {
+        "label": "Answer",
+        "value": "You live in Lisbon."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Omar moved to Dubai.\",\n    \"id\": \"01KN5XJX699M575DWNBQN0J7XW\",\n    \"similarity\": 0.31469303517418523,\n    \"sourceInput\": \"s5:51:Omar moved to Dubai, but he's still my emergency contact.\"\n  },\n  {\n    \"content\": \"Aisha previously lived in Toronto and moved away in May 2026.\",\n    \"id\": \"01KN5XJJ1N0DQBAXE20GRY902H\",\n    \"similarity\": 0.3432129635543495,\n    \"sourceInput\": \"s4:41:Aisha moved from Toronto to Vancouver last month.\"\n  },\n  {\n    \"content\": \"Daniyaal moved from Berlin to Lisbon.\",\n    \"id\": \"01KN5XJ1VM0H4CR0DHZZJKDFT1\",\n    \"similarity\": 0.3056293816847693,\n    \"sourceInput\": \"s3:29:Big update: I moved from Berlin to Lisbon.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 1,
+    "scores": [
+      {
+        "id": 1299,
+        "result_id": 1603,
+        "name": "Retrieval Answer Score",
+        "score": 1,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 1,
+          "containsMatched": [
+            "Lisbon"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 102,
+    "run_id": 75,
+    "name": "Memory Eval Alpha",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

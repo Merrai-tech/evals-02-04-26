@@ -1,0 +1,133 @@
+{
+  "result": {
+    "id": 1606,
+    "eval_id": 102,
+    "duration": 1107,
+    "input": {
+      "expected_reply": "Your partner is Maya, and she is doing her medical residency in Porto.",
+      "id": "RQ-004",
+      "must_contain": [
+        "Maya",
+        "Porto",
+        "medical residency"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "Who is my partner, and where is she doing her medical residency?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        11,
+        12,
+        49,
+        50
+      ]
+    },
+    "output": {
+      "answer": "Your partner is Maya, and she is doing her medical residency in Porto.",
+      "retrievedMemories": [
+        {
+          "content": "Maya started a medical residency in Porto.",
+          "id": "01KN5XJV2VXCYK10FHFS0HYNFY",
+          "similarity": 0.49161342147447173,
+          "sourceInput": "s5:49:Maya started a medical residency in Porto."
+        },
+        {
+          "content": "Maya is Daniyaal's partner.",
+          "id": "01KN5XHFEDERW7HG58P5ATC5BD",
+          "similarity": 0.3386523706041822,
+          "sourceInput": "s1:11:My partner is Maya."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your partner is Maya, and she is doing her medical residency in Porto.",
+      "id": "RQ-004",
+      "must_contain": [
+        "Maya",
+        "Porto",
+        "medical residency"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "Who is my partner, and where is she doing her medical residency?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        11,
+        12,
+        49,
+        50
+      ]
+    },
+    "col_order": 3,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-004"
+      },
+      {
+        "label": "Question",
+        "value": "Who is my partner, and where is she doing her medical residency?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your partner is Maya, and she is doing her medical residency in Porto."
+      },
+      {
+        "label": "Answer",
+        "value": "Your partner is Maya, and she is doing her medical residency in Porto."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Maya started a medical residency in Porto.\",\n    \"id\": \"01KN5XJV2VXCYK10FHFS0HYNFY\",\n    \"similarity\": 0.49161342147447173,\n    \"sourceInput\": \"s5:49:Maya started a medical residency in Porto.\"\n  },\n  {\n    \"content\": \"Maya is Daniyaal's partner.\",\n    \"id\": \"01KN5XHFEDERW7HG58P5ATC5BD\",\n    \"similarity\": 0.3386523706041822,\n    \"sourceInput\": \"s1:11:My partner is Maya.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 1,
+    "scores": [
+      {
+        "id": 1302,
+        "result_id": 1606,
+        "name": "Retrieval Answer Score",
+        "score": 1,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 1,
+          "containsMatched": [
+            "Maya",
+            "Porto",
+            "medical residency"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 102,
+    "run_id": 75,
+    "name": "Memory Eval Alpha",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

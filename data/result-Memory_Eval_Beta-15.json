@@ -1,0 +1,176 @@
+{
+  "result": {
+    "id": 1628,
+    "eval_id": 103,
+    "duration": 1298,
+    "input": {
+      "expected_reply": "Your Tokyo flight was on 2026-09-13 at 18:30 UTC, and you switched to Trunk Hotel.",
+      "id": "RQ-016",
+      "must_contain": [
+        "2026-09-13",
+        "18:30",
+        "UTC",
+        "Trunk Hotel"
+      ],
+      "must_not_contain": [
+        "2026-09-12",
+        "17:00",
+        "Hoshinoya Tokyo"
+      ],
+      "question": "When was my Tokyo flight, and which hotel did I switch to?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        97,
+        98,
+        99,
+        100
+      ]
+    },
+    "output": {
+      "answer": "The Tokyo flight was on 2026-09-13 at 18:30 UTC, and the hotel was Trunk Hotel.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal switched his hotel reservation in Tokyo to the Trunk Hotel.",
+          "id": "01KN5XMJAF8CK68QVR9XD3XVQW",
+          "similarity": 0.5662360006618967,
+          "sourceInput": "s9:99:The Tokyo hotel switched to Trunk Hotel."
+        },
+        {
+          "content": "Daniyaal is staying at the Hoshinoya Tokyo hotel.",
+          "id": "01KN5XM5WPRMCNRJ04Y4VWC96D",
+          "similarity": 0.47475929163566033,
+          "sourceInput": "s8:87:I'm staying at Hoshinoya Tokyo."
+        },
+        {
+          "content": "Daniyaal stays at the Ace Hotel London Shoreditch when visiting London.",
+          "id": "01KN5XW13BCPAGHC1PMRSVRK4V",
+          "similarity": 0.34992000669082923,
+          "sourceInput": "s24:283:For London trips I still stay at Ace Hotel London Shoreditch."
+        },
+        {
+          "content": "Daniyaal has a flight to Tokyo on September 13, 2026, at 18:30 UTC.",
+          "id": "01KN5XMG9GMQZDQMG6WAV54NRG",
+          "similarity": 0.40314787951981956,
+          "sourceInput": "s9:97:Correction: the Tokyo flight is actually on 2026-09-13 at 18:30 UTC, not Sept 12."
+        },
+        {
+          "content": "Daniyaal switched his accommodation to Ace Hotel London Shoreditch.",
+          "id": "01KN5XSDE1NES434YMRPZD8K2Z",
+          "similarity": 0.38255876273298894,
+          "sourceInput": "s19:219:The hotel changed to Ace Hotel London Shoreditch."
+        },
+        {
+          "content": "Daniyaal has a flight booked to Tokyo.",
+          "id": "01KN5XM3V5X1AZZARFWS3F5M57",
+          "similarity": 0.40164526142440615,
+          "sourceInput": "s8:85:I booked a flight to Tokyo for 2026-09-12 at 17:00 UTC."
+        },
+        {
+          "content": "Daniyaal prefers to fly with the airline ANA for flights to Japan.",
+          "id": "01KN5XSF4TATQHQRPA0SJ6Z0AE",
+          "similarity": 0.3478668494711623,
+          "sourceInput": "s19:221:For Japan flights I prefer ANA."
+        },
+        {
+          "content": "Daniyaal returned from a trip to Tokyo.",
+          "id": "01KN5XNK4Q7SEW035V5NHMEY0P",
+          "similarity": 0.3254210224429931,
+          "sourceInput": "s11:121:I returned from Tokyo."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your Tokyo flight was on 2026-09-13 at 18:30 UTC, and you switched to Trunk Hotel.",
+      "id": "RQ-016",
+      "must_contain": [
+        "2026-09-13",
+        "18:30",
+        "UTC",
+        "Trunk Hotel"
+      ],
+      "must_not_contain": [
+        "2026-09-12",
+        "17:00",
+        "Hoshinoya Tokyo"
+      ],
+      "question": "When was my Tokyo flight, and which hotel did I switch to?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        97,
+        98,
+        99,
+        100
+      ]
+    },
+    "col_order": 15,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-016"
+      },
+      {
+        "label": "Question",
+        "value": "When was my Tokyo flight, and which hotel did I switch to?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your Tokyo flight was on 2026-09-13 at 18:30 UTC, and you switched to Trunk Hotel."
+      },
+      {
+        "label": "Answer",
+        "value": "The Tokyo flight was on 2026-09-13 at 18:30 UTC, and the hotel was Trunk Hotel."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal switched his hotel reservation in Tokyo to the Trunk Hotel.\",\n    \"id\": \"01KN5XMJAF8CK68QVR9XD3XVQW\",\n    \"similarity\": 0.5662360006618967,\n    \"sourceInput\": \"s9:99:The Tokyo hotel switched to Trunk Hotel.\"\n  },\n  {\n    \"content\": \"Daniyaal is staying at the Hoshinoya Tokyo hotel.\",\n    \"id\": \"01KN5XM5WPRMCNRJ04Y4VWC96D\",\n    \"similarity\": 0.47475929163566033,\n    \"sourceInput\": \"s8:87:I'm staying at Hoshinoya Tokyo.\"\n  },\n  {\n    \"content\": \"Daniyaal stays at the Ace Hotel London Shoreditch when visiting London.\",\n    \"id\": \"01KN5XW13BCPAGHC1PMRSVRK4V\",\n    \"similarity\": 0.34992000669082923,\n    \"sourceInput\": \"s24:283:For London trips I still stay at Ace Hotel London Shoreditch.\"\n  },\n  {\n    \"content\": \"Daniyaal has a flight to Tokyo on September 13, 2026, at 18:30 UTC.\",\n    \"id\": \"01KN5XMG9GMQZDQMG6WAV54NRG\",\n    \"similarity\": 0.40314787951981956,\n    \"sourceInput\": \"s9:97:Correction: the Tokyo flight is actually on 2026-09-13 at 18:30 UTC, not Sept 12.\"\n  },\n  {\n    \"content\": \"Daniyaal switched his accommodation to Ace Hotel London Shoreditch.\",\n    \"id\": \"01KN5XSDE1NES434YMRPZD8K2Z\",\n    \"similarity\": 0.38255876273298894,\n    \"sourceInput\": \"s19:219:The hotel changed to Ace Hotel London Shoreditch.\"\n  },\n  {\n    \"content\": \"Daniyaal has a flight booked to Tokyo.\",\n    \"id\": \"01KN5XM3V5X1AZZARFWS3F5M57\",\n    \"similarity\": 0.40164526142440615,\n    \"sourceInput\": \"s8:85:I booked a flight to Tokyo for 2026-09-12 at 17:00 UTC.\"\n  },\n  {\n    \"content\": \"Daniyaal prefers to fly with the airline ANA for flights to Japan.\",\n    \"id\": \"01KN5XSF4TATQHQRPA0SJ6Z0AE\",\n    \"similarity\": 0.3478668494711623,\n    \"sourceInput\": \"s19:221:For Japan flights I prefer ANA.\"\n  },\n  {\n    \"content\": \"Daniyaal returned from a trip to Tokyo.\",\n    \"id\": \"01KN5XNK4Q7SEW035V5NHMEY0P\",\n    \"similarity\": 0.3254210224429931,\n    \"sourceInput\": \"s11:121:I returned from Tokyo.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9464285714285714,
+    "scores": [
+      {
+        "id": 1324,
+        "result_id": 1628,
+        "name": "Retrieval Answer Score",
+        "score": 0.9464285714285714,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.7857142857142856,
+          "containsMatched": [
+            "2026-09-13",
+            "18:30",
+            "UTC",
+            "Trunk Hotel"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

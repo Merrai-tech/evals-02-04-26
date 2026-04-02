@@ -1,0 +1,194 @@
+{
+  "result": {
+    "id": 1618,
+    "eval_id": 103,
+    "duration": 1325,
+    "input": {
+      "expected_reply": "Aisha lives in Montreal now.",
+      "id": "RQ-006",
+      "must_contain": [
+        "Aisha",
+        "Montreal"
+      ],
+      "must_not_contain": [
+        "Toronto",
+        "Vancouver",
+        "Calgary"
+      ],
+      "question": "Where does my sister Aisha live now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        241,
+        242,
+        293,
+        294
+      ]
+    },
+    "output": {
+      "answer": "Aisha lives in Montreal.",
+      "retrievedMemories": [
+        {
+          "content": "Aisha moved her residence from Calgary to Montreal.",
+          "id": "01KN5XT4G7G7EXZXCTCZE11TWX",
+          "similarity": 0.6273155146524784,
+          "sourceInput": "s21:241:Aisha moved from Calgary to Montreal."
+        },
+        {
+          "content": "Aisha moved from Vancouver to Calgary.",
+          "id": "01KN5XPVDTR4WDGTQF9T0XS5NZ",
+          "similarity": 0.5768108252373019,
+          "sourceInput": "s13:151:Aisha moved from Vancouver to Calgary."
+        },
+        {
+          "content": "Aisha moved from Toronto to Vancouver.",
+          "id": "01KN5XM01BWCVQZ0KM6JJ2JG1Y",
+          "similarity": 0.6062091618118545,
+          "sourceInput": "s7:81:Aisha moved from Toronto to Vancouver."
+        },
+        {
+          "content": "Daniyaal's sister Aisha lives in Toronto.",
+          "id": "01KN5XHX6KT73Y5XC7A4G68TV5",
+          "similarity": 0.6520091087623617,
+          "sourceInput": "s2:21:My sister Aisha lives in Toronto."
+        },
+        {
+          "content": "Aisha is the emergency backup contact for Daniyaal.",
+          "id": "01KN5XNFMY4HF37JN6D5EME1RP",
+          "similarity": 0.5374098961207672,
+          "sourceInput": "s10:117:My emergency backup contact is Aisha."
+        },
+        {
+          "content": "Daniyaal switched his accommodation to Ace Hotel London Shoreditch.",
+          "id": "01KN5XSDE1NES434YMRPZD8K2Z",
+          "similarity": 0.34710508835865417,
+          "sourceInput": "s19:219:The hotel changed to Ace Hotel London Shoreditch."
+        },
+        {
+          "content": "Omar is no longer Daniyaal's emergency contact.",
+          "id": "01KN5XQY1YH3H0KXVZ693E2TNY",
+          "similarity": 0.3008300795073813,
+          "sourceInput": "s16:181:My emergency contact changed from Omar to Maya."
+        },
+        {
+          "content": "Daniyaal lived in Lisbon before moving to Barcelona.",
+          "id": "01KN5XQ2YAW4QKNXWA2Q34QT58",
+          "similarity": 0.33146586026436387,
+          "sourceInput": "s14:157:I moved from Lisbon to Barcelona."
+        },
+        {
+          "content": "Daniyaal lives in the Gracia neighborhood.",
+          "id": "01KN5XQ5JF1K37KEQ9D16MGEAQ",
+          "similarity": 0.3002536876329631,
+          "sourceInput": "s14:159:My neighborhood is Gracia."
+        },
+        {
+          "content": "Daniyaal lives in a new neighborhood called Alfama.",
+          "id": "01KN5XJTM3AJSV6WQSPCFR8W87",
+          "similarity": 0.37588810789208116,
+          "sourceInput": "s5:51:My new neighborhood is Alfama."
+        },
+        {
+          "content": "Daniyaal moved from Berlin to Lisbon.",
+          "id": "01KN5XJRJA1347B4JP58NAAXKS",
+          "similarity": 0.3622188047937176,
+          "sourceInput": "s5:49:Big update: I moved from Berlin to Lisbon."
+        },
+        {
+          "content": "Omar relocated to Dubai.",
+          "id": "01KN5XKX5GRNC3YXASGZ3ZSNFR",
+          "similarity": 0.39368353993572536,
+          "sourceInput": "s7:79:Omar moved to Dubai, but he's still my emergency contact."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Aisha lives in Montreal now.",
+      "id": "RQ-006",
+      "must_contain": [
+        "Aisha",
+        "Montreal"
+      ],
+      "must_not_contain": [
+        "Toronto",
+        "Vancouver",
+        "Calgary"
+      ],
+      "question": "Where does my sister Aisha live now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        241,
+        242,
+        293,
+        294
+      ]
+    },
+    "col_order": 5,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-006"
+      },
+      {
+        "label": "Question",
+        "value": "Where does my sister Aisha live now?"
+      },
+      {
+        "label": "Expected",
+        "value": "Aisha lives in Montreal now."
+      },
+      {
+        "label": "Answer",
+        "value": "Aisha lives in Montreal."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Aisha moved her residence from Calgary to Montreal.\",\n    \"id\": \"01KN5XT4G7G7EXZXCTCZE11TWX\",\n    \"similarity\": 0.6273155146524784,\n    \"sourceInput\": \"s21:241:Aisha moved from Calgary to Montreal.\"\n  },\n  {\n    \"content\": \"Aisha moved from Vancouver to Calgary.\",\n    \"id\": \"01KN5XPVDTR4WDGTQF9T0XS5NZ\",\n    \"similarity\": 0.5768108252373019,\n    \"sourceInput\": \"s13:151:Aisha moved from Vancouver to Calgary.\"\n  },\n  {\n    \"content\": \"Aisha moved from Toronto to Vancouver.\",\n    \"id\": \"01KN5XM01BWCVQZ0KM6JJ2JG1Y\",\n    \"similarity\": 0.6062091618118545,\n    \"sourceInput\": \"s7:81:Aisha moved from Toronto to Vancouver.\"\n  },\n  {\n    \"content\": \"Daniyaal's sister Aisha lives in Toronto.\",\n    \"id\": \"01KN5XHX6KT73Y5XC7A4G68TV5\",\n    \"similarity\": 0.6520091087623617,\n    \"sourceInput\": \"s2:21:My sister Aisha lives in Toronto.\"\n  },\n  {\n    \"content\": \"Aisha is the emergency backup contact for Daniyaal.\",\n    \"id\": \"01KN5XNFMY4HF37JN6D5EME1RP\",\n    \"similarity\": 0.5374098961207672,\n    \"sourceInput\": \"s10:117:My emergency backup contact is Aisha.\"\n  },\n  {\n    \"content\": \"Daniyaal switched his accommodation to Ace Hotel London Shoreditch.\",\n    \"id\": \"01KN5XSDE1NES434YMRPZD8K2Z\",\n    \"similarity\": 0.34710508835865417,\n    \"sourceInput\": \"s19:219:The hotel changed to Ace Hotel London Shoreditch.\"\n  },\n  {\n    \"content\": \"Omar is no longer Daniyaal's emergency contact.\",\n    \"id\": \"01KN5XQY1YH3H0KXVZ693E2TNY\",\n    \"similarity\": 0.3008300795073813,\n    \"sourceInput\": \"s16:181:My emergency contact changed from Omar to Maya.\"\n  },\n  {\n    \"content\": \"Daniyaal lived in Lisbon before moving to Barcelona.\",\n    \"id\": \"01KN5XQ2YAW4QKNXWA2Q34QT58\",\n    \"similarity\": 0.33146586026436387,\n    \"sourceInput\": \"s14:157:I moved from Lisbon to Barcelona.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in the Gracia neighborhood.\",\n    \"id\": \"01KN5XQ5JF1K37KEQ9D16MGEAQ\",\n    \"similarity\": 0.3002536876329631,\n    \"sourceInput\": \"s14:159:My neighborhood is Gracia.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in a new neighborhood called Alfama.\",\n    \"id\": \"01KN5XJTM3AJSV6WQSPCFR8W87\",\n    \"similarity\": 0.37588810789208116,\n    \"sourceInput\": \"s5:51:My new neighborhood is Alfama.\"\n  },\n  {\n    \"content\": \"Daniyaal moved from Berlin to Lisbon.\",\n    \"id\": \"01KN5XJRJA1347B4JP58NAAXKS\",\n    \"similarity\": 0.3622188047937176,\n    \"sourceInput\": \"s5:49:Big update: I moved from Berlin to Lisbon.\"\n  },\n  {\n    \"content\": \"Omar relocated to Dubai.\",\n    \"id\": \"01KN5XKX5GRNC3YXASGZ3ZSNFR\",\n    \"similarity\": 0.39368353993572536,\n    \"sourceInput\": \"s7:79:Omar moved to Dubai, but he's still my emergency contact.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9166666666666666,
+    "scores": [
+      {
+        "id": 1314,
+        "result_id": 1618,
+        "name": "Retrieval Answer Score",
+        "score": 0.9166666666666666,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.6666666666666665,
+          "containsMatched": [
+            "Aisha",
+            "Montreal"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

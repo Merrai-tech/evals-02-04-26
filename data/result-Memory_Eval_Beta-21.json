@@ -1,0 +1,168 @@
+{
+  "result": {
+    "id": 1634,
+    "eval_id": 103,
+    "duration": 1102,
+    "input": {
+      "expected_reply": "Your current team focuses on scheduling and planning.",
+      "id": "RQ-022",
+      "must_contain": [
+        "scheduling",
+        "planning"
+      ],
+      "must_not_contain": [
+        "AI collaboration tools"
+      ],
+      "question": "What is my current team's focus at Notion?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        275,
+        276
+      ]
+    },
+    "output": {
+      "answer": "The current team focus is scheduling and planning.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal's team focus is on scheduling and planning.",
+          "id": "01KN5XVM8CNXTCF91RTDPKXQ1Q",
+          "similarity": 0.38867473515486806,
+          "sourceInput": "s23:275:My team focus is scheduling and planning."
+        },
+        {
+          "content": "Daniyaal joined the company Notion.",
+          "id": "01KN5XV80EAVV5AM2D14XC1324",
+          "similarity": 0.4285534560913161,
+          "sourceInput": "s23:265:I left Linear and joined Notion."
+        },
+        {
+          "content": "Daniyaal works from the Notion office in Barcelona on Mondays.",
+          "id": "01KN5XVH6ZYTT79PQ8H3YMW4ZK",
+          "similarity": 0.3840039035426893,
+          "sourceInput": "s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays."
+        },
+        {
+          "content": "Daniyaal works from the Notion office in Barcelona on Wednesdays.",
+          "id": "01KN5XVJE0NW65PN6E0PRQZ2FV",
+          "similarity": 0.37489165341810005,
+          "sourceInput": "s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays."
+        },
+        {
+          "content": "Daniyaal switched from using Obsidian to Tana for his work notes.",
+          "id": "01KN5XTVE83M15VF0HNKYEEHT2",
+          "similarity": 0.34010689860579113,
+          "sourceInput": "s22:257:I switched from Obsidian to Tana for work notes."
+        },
+        {
+          "content": "Daniyaal's team focuses on developing AI collaboration tools.",
+          "id": "01KN5XQNNH25K279315JK3RV5H",
+          "similarity": 0.3237892323991096,
+          "sourceInput": "s15:173:My team focuses on AI collaboration tools."
+        },
+        {
+          "content": "Daniyaal uses Obsidian and Todoist together in his workflow.",
+          "id": "01KN5XRH7W27HG4Z0CHSXKACPG",
+          "similarity": 0.37656650292417315,
+          "sourceInput": "s17:197:I use Obsidian and Todoist together now."
+        },
+        {
+          "content": "Daniyaal uses the software Todoist.",
+          "id": "01KN5XRH7P97YZTG1BKYDJP3Z4",
+          "similarity": 0.32351544746869265,
+          "sourceInput": "s17:197:I use Obsidian and Todoist together now."
+        },
+        {
+          "content": "Daniyaal uses the Obsidian application for note-taking purposes.",
+          "id": "01KN5XJ6BD8Q6E0TPSK1DSJ06R",
+          "similarity": 0.319324438611834,
+          "sourceInput": "s3:29:I use Obsidian for my notes."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your current team focuses on scheduling and planning.",
+      "id": "RQ-022",
+      "must_contain": [
+        "scheduling",
+        "planning"
+      ],
+      "must_not_contain": [
+        "AI collaboration tools"
+      ],
+      "question": "What is my current team's focus at Notion?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        275,
+        276
+      ]
+    },
+    "col_order": 21,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-022"
+      },
+      {
+        "label": "Question",
+        "value": "What is my current team's focus at Notion?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your current team focuses on scheduling and planning."
+      },
+      {
+        "label": "Answer",
+        "value": "The current team focus is scheduling and planning."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal's team focus is on scheduling and planning.\",\n    \"id\": \"01KN5XVM8CNXTCF91RTDPKXQ1Q\",\n    \"similarity\": 0.38867473515486806,\n    \"sourceInput\": \"s23:275:My team focus is scheduling and planning.\"\n  },\n  {\n    \"content\": \"Daniyaal joined the company Notion.\",\n    \"id\": \"01KN5XV80EAVV5AM2D14XC1324\",\n    \"similarity\": 0.4285534560913161,\n    \"sourceInput\": \"s23:265:I left Linear and joined Notion.\"\n  },\n  {\n    \"content\": \"Daniyaal works from the Notion office in Barcelona on Mondays.\",\n    \"id\": \"01KN5XVH6ZYTT79PQ8H3YMW4ZK\",\n    \"similarity\": 0.3840039035426893,\n    \"sourceInput\": \"s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays.\"\n  },\n  {\n    \"content\": \"Daniyaal works from the Notion office in Barcelona on Wednesdays.\",\n    \"id\": \"01KN5XVJE0NW65PN6E0PRQZ2FV\",\n    \"similarity\": 0.37489165341810005,\n    \"sourceInput\": \"s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays.\"\n  },\n  {\n    \"content\": \"Daniyaal switched from using Obsidian to Tana for his work notes.\",\n    \"id\": \"01KN5XTVE83M15VF0HNKYEEHT2\",\n    \"similarity\": 0.34010689860579113,\n    \"sourceInput\": \"s22:257:I switched from Obsidian to Tana for work notes.\"\n  },\n  {\n    \"content\": \"Daniyaal's team focuses on developing AI collaboration tools.\",\n    \"id\": \"01KN5XQNNH25K279315JK3RV5H\",\n    \"similarity\": 0.3237892323991096,\n    \"sourceInput\": \"s15:173:My team focuses on AI collaboration tools.\"\n  },\n  {\n    \"content\": \"Daniyaal uses Obsidian and Todoist together in his workflow.\",\n    \"id\": \"01KN5XRH7W27HG4Z0CHSXKACPG\",\n    \"similarity\": 0.37656650292417315,\n    \"sourceInput\": \"s17:197:I use Obsidian and Todoist together now.\"\n  },\n  {\n    \"content\": \"Daniyaal uses the software Todoist.\",\n    \"id\": \"01KN5XRH7P97YZTG1BKYDJP3Z4\",\n    \"similarity\": 0.32351544746869265,\n    \"sourceInput\": \"s17:197:I use Obsidian and Todoist together now.\"\n  },\n  {\n    \"content\": \"Daniyaal uses the Obsidian application for note-taking purposes.\",\n    \"id\": \"01KN5XJ6BD8Q6E0TPSK1DSJ06R\",\n    \"similarity\": 0.319324438611834,\n    \"sourceInput\": \"s3:29:I use Obsidian for my notes.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.90625,
+    "scores": [
+      {
+        "id": 1330,
+        "result_id": 1634,
+        "name": "Retrieval Answer Score",
+        "score": 0.90625,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.625,
+          "containsMatched": [
+            "scheduling",
+            "planning"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

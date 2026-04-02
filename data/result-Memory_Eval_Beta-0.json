@@ -1,0 +1,148 @@
+{
+  "result": {
+    "id": 1613,
+    "eval_id": 103,
+    "duration": 395532,
+    "input": {
+      "expected_reply": "You currently live in Barcelona, and your neighborhood is Gracia.",
+      "id": "RQ-001",
+      "must_contain": [
+        "Barcelona",
+        "Gracia"
+      ],
+      "must_not_contain": [
+        "Berlin",
+        "Lisbon",
+        "Kreuzberg",
+        "Alfama",
+        "Principe Real"
+      ],
+      "question": "Where do I live now, and what neighborhood am I in?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        157,
+        158,
+        159,
+        160,
+        299,
+        300
+      ]
+    },
+    "output": {
+      "answer": "You live in Barcelona, in the neighborhood of Gracia.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal lives in the Gracia neighborhood.",
+          "id": "01KN5XQ5JF1K37KEQ9D16MGEAQ",
+          "similarity": 0.33450669939180555,
+          "sourceInput": "s14:159:My neighborhood is Gracia."
+        },
+        {
+          "content": "Daniyaal lives in a new neighborhood called Alfama.",
+          "id": "01KN5XJTM3AJSV6WQSPCFR8W87",
+          "similarity": 0.380685667962694,
+          "sourceInput": "s5:51:My new neighborhood is Alfama."
+        },
+        {
+          "content": "Daniyaal lives in the Kreuzberg neighborhood.",
+          "id": "01KN5XH7857EZMNY8E688R7B8W",
+          "similarity": 0.34833108490047815,
+          "sourceInput": "s1:3:More specifically, I live in the Kreuzberg neighborhood."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You currently live in Barcelona, and your neighborhood is Gracia.",
+      "id": "RQ-001",
+      "must_contain": [
+        "Barcelona",
+        "Gracia"
+      ],
+      "must_not_contain": [
+        "Berlin",
+        "Lisbon",
+        "Kreuzberg",
+        "Alfama",
+        "Principe Real"
+      ],
+      "question": "Where do I live now, and what neighborhood am I in?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        157,
+        158,
+        159,
+        160,
+        299,
+        300
+      ]
+    },
+    "col_order": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-001"
+      },
+      {
+        "label": "Question",
+        "value": "Where do I live now, and what neighborhood am I in?"
+      },
+      {
+        "label": "Expected",
+        "value": "You currently live in Barcelona, and your neighborhood is Gracia."
+      },
+      {
+        "label": "Answer",
+        "value": "You live in Barcelona, in the neighborhood of Gracia."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal lives in the Gracia neighborhood.\",\n    \"id\": \"01KN5XQ5JF1K37KEQ9D16MGEAQ\",\n    \"similarity\": 0.33450669939180555,\n    \"sourceInput\": \"s14:159:My neighborhood is Gracia.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in a new neighborhood called Alfama.\",\n    \"id\": \"01KN5XJTM3AJSV6WQSPCFR8W87\",\n    \"similarity\": 0.380685667962694,\n    \"sourceInput\": \"s5:51:My new neighborhood is Alfama.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in the Kreuzberg neighborhood.\",\n    \"id\": \"01KN5XH7857EZMNY8E688R7B8W\",\n    \"similarity\": 0.34833108490047815,\n    \"sourceInput\": \"s1:3:More specifically, I live in the Kreuzberg neighborhood.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9166666666666666,
+    "scores": [
+      {
+        "id": 1309,
+        "result_id": 1613,
+        "name": "Retrieval Answer Score",
+        "score": 0.9166666666666666,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.6666666666666665,
+          "containsMatched": [
+            "Barcelona",
+            "Gracia"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

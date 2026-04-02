@@ -1,0 +1,2476 @@
+{
+  "history": [
+    {
+      "score": 0.7926802798414051,
+      "date": "2026-04-02 00:25:36"
+    },
+    {
+      "score": 0.9166666666666666,
+      "date": "2026-04-02 00:25:47"
+    },
+    {
+      "score": 0.861634101593854,
+      "date": "2026-04-02 00:42:40"
+    },
+    {
+      "score": 0.8356127097303567,
+      "date": "2026-04-02 00:51:18"
+    },
+    {
+      "score": 0.7805605918221669,
+      "date": "2026-04-02 00:59:16"
+    },
+    {
+      "score": 0.8404016400266402,
+      "date": "2026-04-02 01:06:15"
+    },
+    {
+      "score": 0.8192204806687565,
+      "date": "2026-04-02 01:24:23"
+    },
+    {
+      "score": 0.8815865093768906,
+      "date": "2026-04-02 01:31:15"
+    },
+    {
+      "score": 0.8463021859461488,
+      "date": "2026-04-02 01:38:52"
+    },
+    {
+      "score": 0.8691054959533222,
+      "date": "2026-04-02 01:45:54"
+    },
+    {
+      "score": 0,
+      "date": "2026-04-02 02:15:30"
+    },
+    {
+      "score": 0,
+      "date": "2026-04-02 02:15:40"
+    },
+    {
+      "score": 0,
+      "date": "2026-04-02 02:16:21"
+    },
+    {
+      "score": 0.8941480799901853,
+      "date": "2026-04-02 02:18:48"
+    },
+    {
+      "score": 0.9336668886668887,
+      "date": "2026-04-02 03:35:30"
+    }
+  ],
+  "evaluation": {
+    "id": 102,
+    "run_id": 75,
+    "name": "Memory Eval Alpha",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null,
+    "results": [
+      {
+        "id": 1603,
+        "eval_id": 102,
+        "duration": 69503,
+        "input": {
+          "expected_reply": "You live in Lisbon.",
+          "id": "RQ-001",
+          "must_contain": [
+            "Lisbon"
+          ],
+          "must_not_contain": [
+            "Berlin"
+          ],
+          "question": "Where do I live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            29,
+            30
+          ]
+        },
+        "output": {
+          "answer": "You live in Lisbon.",
+          "retrievedMemories": [
+            {
+              "content": "Omar moved to Dubai.",
+              "id": "01KN5XJX699M575DWNBQN0J7XW",
+              "similarity": 0.31469303517418523,
+              "sourceInput": "s5:51:Omar moved to Dubai, but he's still my emergency contact."
+            },
+            {
+              "content": "Aisha previously lived in Toronto and moved away in May 2026.",
+              "id": "01KN5XJJ1N0DQBAXE20GRY902H",
+              "similarity": 0.3432129635543495,
+              "sourceInput": "s4:41:Aisha moved from Toronto to Vancouver last month."
+            },
+            {
+              "content": "Daniyaal moved from Berlin to Lisbon.",
+              "id": "01KN5XJ1VM0H4CR0DHZZJKDFT1",
+              "similarity": 0.3056293816847693,
+              "sourceInput": "s3:29:Big update: I moved from Berlin to Lisbon."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "You live in Lisbon.",
+          "id": "RQ-001",
+          "must_contain": [
+            "Lisbon"
+          ],
+          "must_not_contain": [
+            "Berlin"
+          ],
+          "question": "Where do I live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            29,
+            30
+          ]
+        },
+        "col_order": 0,
+        "created_at": "2026-04-02 03:35:30",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-001"
+          },
+          {
+            "label": "Question",
+            "value": "Where do I live now?"
+          },
+          {
+            "label": "Expected",
+            "value": "You live in Lisbon."
+          },
+          {
+            "label": "Answer",
+            "value": "You live in Lisbon."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Omar moved to Dubai.\",\n    \"id\": \"01KN5XJX699M575DWNBQN0J7XW\",\n    \"similarity\": 0.31469303517418523,\n    \"sourceInput\": \"s5:51:Omar moved to Dubai, but he's still my emergency contact.\"\n  },\n  {\n    \"content\": \"Aisha previously lived in Toronto and moved away in May 2026.\",\n    \"id\": \"01KN5XJJ1N0DQBAXE20GRY902H\",\n    \"similarity\": 0.3432129635543495,\n    \"sourceInput\": \"s4:41:Aisha moved from Toronto to Vancouver last month.\"\n  },\n  {\n    \"content\": \"Daniyaal moved from Berlin to Lisbon.\",\n    \"id\": \"01KN5XJ1VM0H4CR0DHZZJKDFT1\",\n    \"similarity\": 0.3056293816847693,\n    \"sourceInput\": \"s3:29:Big update: I moved from Berlin to Lisbon.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1299,
+            "result_id": 1603,
+            "name": "Retrieval Answer Score",
+            "score": 1,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 1,
+              "containsMatched": [
+                "Lisbon"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 03:35:30"
+          }
+        ]
+      },
+      {
+        "id": 1604,
+        "eval_id": 102,
+        "duration": 1143,
+        "input": {
+          "expected_reply": "You work at Figma, and your current project is Canvas.",
+          "id": "RQ-002",
+          "must_contain": [
+            "Figma",
+            "Canvas"
+          ],
+          "must_not_contain": [
+            "Stripe",
+            "Northstar"
+          ],
+          "question": "Which company do I work for now, and what project am I on?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            33,
+            34,
+            37,
+            38
+          ]
+        },
+        "output": {
+          "answer": "You work for Figma on the Canvas project.",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal is currently employed at Figma.",
+              "id": "01KN5XJ717Z149EC0374ZEYGKV",
+              "similarity": 0.33307889727644024,
+              "sourceInput": "s3:33:I left Stripe and now work at Figma."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "You work at Figma, and your current project is Canvas.",
+          "id": "RQ-002",
+          "must_contain": [
+            "Figma",
+            "Canvas"
+          ],
+          "must_not_contain": [
+            "Stripe",
+            "Northstar"
+          ],
+          "question": "Which company do I work for now, and what project am I on?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            33,
+            34,
+            37,
+            38
+          ]
+        },
+        "col_order": 1,
+        "created_at": "2026-04-02 03:35:30",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-002"
+          },
+          {
+            "label": "Question",
+            "value": "Which company do I work for now, and what project am I on?"
+          },
+          {
+            "label": "Expected",
+            "value": "You work at Figma, and your current project is Canvas."
+          },
+          {
+            "label": "Answer",
+            "value": "You work for Figma on the Canvas project."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal is currently employed at Figma.\",\n    \"id\": \"01KN5XJ717Z149EC0374ZEYGKV\",\n    \"similarity\": 0.33307889727644024,\n    \"sourceInput\": \"s3:33:I left Stripe and now work at Figma.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1300,
+            "result_id": 1604,
+            "name": "Retrieval Answer Score",
+            "score": 0.8333333333333334,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 0.33333333333333326,
+              "containsMatched": [
+                "Figma",
+                "Canvas"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 03:35:30"
+          }
+        ]
+      },
+      {
+        "id": 1605,
+        "eval_id": 102,
+        "duration": 875,
+        "input": {
+          "expected_reply": "Your current manager is Elena.",
+          "id": "RQ-003",
+          "must_contain": [
+            "Elena"
+          ],
+          "must_not_contain": [
+            "Priya"
+          ],
+          "question": "Who is my current manager?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            35,
+            36
+          ]
+        },
+        "output": {
+          "answer": "Your current manager is Elena.",
+          "retrievedMemories": [
+            {
+              "content": "Elena is Daniyaal's new manager.",
+              "id": "01KN5XJ8SR1TM4AT3YSA7QV51A",
+              "similarity": 0.4163189858081511,
+              "sourceInput": "s3:35:My manager changed too. Elena is my new manager."
+            },
+            {
+              "content": "Priya is the manager of Daniyaal.",
+              "id": "01KN5XHDED4Z2SYHT353Q5GNF6",
+              "similarity": 0.3657940409342779,
+              "sourceInput": "s1:9:My manager is Priya."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Your current manager is Elena.",
+          "id": "RQ-003",
+          "must_contain": [
+            "Elena"
+          ],
+          "must_not_contain": [
+            "Priya"
+          ],
+          "question": "Who is my current manager?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            35,
+            36
+          ]
+        },
+        "col_order": 2,
+        "created_at": "2026-04-02 03:35:30",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-003"
+          },
+          {
+            "label": "Question",
+            "value": "Who is my current manager?"
+          },
+          {
+            "label": "Expected",
+            "value": "Your current manager is Elena."
+          },
+          {
+            "label": "Answer",
+            "value": "Your current manager is Elena."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Elena is Daniyaal's new manager.\",\n    \"id\": \"01KN5XJ8SR1TM4AT3YSA7QV51A\",\n    \"similarity\": 0.4163189858081511,\n    \"sourceInput\": \"s3:35:My manager changed too. Elena is my new manager.\"\n  },\n  {\n    \"content\": \"Priya is the manager of Daniyaal.\",\n    \"id\": \"01KN5XHDED4Z2SYHT353Q5GNF6\",\n    \"similarity\": 0.3657940409342779,\n    \"sourceInput\": \"s1:9:My manager is Priya.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1301,
+            "result_id": 1605,
+            "name": "Retrieval Answer Score",
+            "score": 1,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 1,
+              "containsMatched": [
+                "Elena"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 03:35:30"
+          }
+        ]
+      },
+      {
+        "id": 1606,
+        "eval_id": 102,
+        "duration": 1107,
+        "input": {
+          "expected_reply": "Your partner is Maya, and she is doing her medical residency in Porto.",
+          "id": "RQ-004",
+          "must_contain": [
+            "Maya",
+            "Porto",
+            "medical residency"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "Who is my partner, and where is she doing her medical residency?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            11,
+            12,
+            49,
+            50
+          ]
+        },
+        "output": {
+          "answer": "Your partner is Maya, and she is doing her medical residency in Porto.",
+          "retrievedMemories": [
+            {
+              "content": "Maya started a medical residency in Porto.",
+              "id": "01KN5XJV2VXCYK10FHFS0HYNFY",
+              "similarity": 0.49161342147447173,
+              "sourceInput": "s5:49:Maya started a medical residency in Porto."
+            },
+            {
+              "content": "Maya is Daniyaal's partner.",
+              "id": "01KN5XHFEDERW7HG58P5ATC5BD",
+              "similarity": 0.3386523706041822,
+              "sourceInput": "s1:11:My partner is Maya."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Your partner is Maya, and she is doing her medical residency in Porto.",
+          "id": "RQ-004",
+          "must_contain": [
+            "Maya",
+            "Porto",
+            "medical residency"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "Who is my partner, and where is she doing her medical residency?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            11,
+            12,
+            49,
+            50
+          ]
+        },
+        "col_order": 3,
+        "created_at": "2026-04-02 03:35:30",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-004"
+          },
+          {
+            "label": "Question",
+            "value": "Who is my partner, and where is she doing her medical residency?"
+          },
+          {
+            "label": "Expected",
+            "value": "Your partner is Maya, and she is doing her medical residency in Porto."
+          },
+          {
+            "label": "Answer",
+            "value": "Your partner is Maya, and she is doing her medical residency in Porto."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Maya started a medical residency in Porto.\",\n    \"id\": \"01KN5XJV2VXCYK10FHFS0HYNFY\",\n    \"similarity\": 0.49161342147447173,\n    \"sourceInput\": \"s5:49:Maya started a medical residency in Porto.\"\n  },\n  {\n    \"content\": \"Maya is Daniyaal's partner.\",\n    \"id\": \"01KN5XHFEDERW7HG58P5ATC5BD\",\n    \"similarity\": 0.3386523706041822,\n    \"sourceInput\": \"s1:11:My partner is Maya.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1302,
+            "result_id": 1606,
+            "name": "Retrieval Answer Score",
+            "score": 1,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 1,
+              "containsMatched": [
+                "Maya",
+                "Porto",
+                "medical residency"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 03:35:30"
+          }
+        ]
+      },
+      {
+        "id": 1607,
+        "eval_id": 102,
+        "duration": 963,
+        "input": {
+          "expected_reply": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi.",
+          "id": "RQ-005",
+          "must_contain": [
+            "Pixel",
+            "black",
+            "Pembroke",
+            "Welsh",
+            "Corgi"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "What is the name, breed, and color of my dog?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            13,
+            14,
+            25,
+            26
+          ]
+        },
+        "output": {
+          "answer": "Pixel is a black Pembroke Welsh Corgi.",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal has a black Corgi named Pixel.",
+              "id": "01KN5XHHT1N636VFFJCFBRMFGZ",
+              "similarity": 0.37608813661420004,
+              "sourceInput": "s1:13:I have a black corgi named Pixel."
+            },
+            {
+              "content": "Pixel is a Pembroke Welsh Corgi.",
+              "id": "01KN5XHYKT8894F6GZ1Q4WJRR5",
+              "similarity": 0.3281797107886657,
+              "sourceInput": "s2:25:Small update: Pixel is a Pembroke Welsh Corgi."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi.",
+          "id": "RQ-005",
+          "must_contain": [
+            "Pixel",
+            "black",
+            "Pembroke",
+            "Welsh",
+            "Corgi"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "What is the name, breed, and color of my dog?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            13,
+            14,
+            25,
+            26
+          ]
+        },
+        "col_order": 4,
+        "created_at": "2026-04-02 03:35:30",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-005"
+          },
+          {
+            "label": "Question",
+            "value": "What is the name, breed, and color of my dog?"
+          },
+          {
+            "label": "Expected",
+            "value": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi."
+          },
+          {
+            "label": "Answer",
+            "value": "Pixel is a black Pembroke Welsh Corgi."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal has a black Corgi named Pixel.\",\n    \"id\": \"01KN5XHHT1N636VFFJCFBRMFGZ\",\n    \"similarity\": 0.37608813661420004,\n    \"sourceInput\": \"s1:13:I have a black corgi named Pixel.\"\n  },\n  {\n    \"content\": \"Pixel is a Pembroke Welsh Corgi.\",\n    \"id\": \"01KN5XHYKT8894F6GZ1Q4WJRR5\",\n    \"similarity\": 0.3281797107886657,\n    \"sourceInput\": \"s2:25:Small update: Pixel is a Pembroke Welsh Corgi.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1303,
+            "result_id": 1607,
+            "name": "Retrieval Answer Score",
+            "score": 0.9444444444444444,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 0.7777777777777778,
+              "containsMatched": [
+                "Pixel",
+                "black",
+                "Pembroke",
+                "Welsh",
+                "Corgi"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 03:35:30"
+          }
+        ]
+      },
+      {
+        "id": 1608,
+        "eval_id": 102,
+        "duration": 1022,
+        "input": {
+          "expected_reply": "You are allergic to peanuts.",
+          "id": "RQ-006",
+          "must_contain": [
+            "peanuts"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "What allergy do I have?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            15,
+            16
+          ]
+        },
+        "output": {
+          "answer": "You have an allergy to peanuts.",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal has an allergy to peanuts.",
+              "id": "01KN5XHKTD7JN2ZH9F125AVPT7",
+              "similarity": 0.4215459623906612,
+              "sourceInput": "s1:15:I'm allergic to peanuts."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "You are allergic to peanuts.",
+          "id": "RQ-006",
+          "must_contain": [
+            "peanuts"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "What allergy do I have?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            15,
+            16
+          ]
+        },
+        "col_order": 5,
+        "created_at": "2026-04-02 03:35:30",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-006"
+          },
+          {
+            "label": "Question",
+            "value": "What allergy do I have?"
+          },
+          {
+            "label": "Expected",
+            "value": "You are allergic to peanuts."
+          },
+          {
+            "label": "Answer",
+            "value": "You have an allergy to peanuts."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal has an allergy to peanuts.\",\n    \"id\": \"01KN5XHKTD7JN2ZH9F125AVPT7\",\n    \"similarity\": 0.4215459623906612,\n    \"sourceInput\": \"s1:15:I'm allergic to peanuts.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1304,
+            "result_id": 1608,
+            "name": "Retrieval Answer Score",
+            "score": 0.8863636363636364,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 0.5454545454545454,
+              "containsMatched": [
+                "peanuts"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 03:35:30"
+          }
+        ]
+      },
+      {
+        "id": 1609,
+        "eval_id": 102,
+        "duration": 1110,
+        "input": {
+          "expected_reply": "You prefer mint tea now, and you usually order an oat flat white.",
+          "id": "RQ-007",
+          "must_contain": [
+            "mint tea",
+            "oat flat white"
+          ],
+          "must_not_contain": [
+            "jasmine",
+            "espresso"
+          ],
+          "question": "What tea do I prefer now, and what coffee do I usually order now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            17,
+            18,
+            39,
+            40,
+            47,
+            48
+          ]
+        },
+        "output": {
+          "answer": "You prefer Mint tea and your coffee order is an oat flat white.",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal usually orders an oat flat white.",
+              "id": "01KN5XJSBTPCHH8GR3BQP8PNSY",
+              "similarity": 0.4370130063122264,
+              "sourceInput": "s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white."
+            },
+            {
+              "content": "Mint tea is Daniyaal's favorite type of tea.",
+              "id": "01KN5XJFSJDETF6TFXERMQVH7V",
+              "similarity": 0.37596105847924166,
+              "sourceInput": "s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now."
+            },
+            {
+              "content": "Daniyaal no longer drinks espresso every morning.",
+              "id": "01KN5XJSBK6VQ0SFN3G6SJP52J",
+              "similarity": 0.3594141055196922,
+              "sourceInput": "s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white."
+            },
+            {
+              "content": "Daniyaal no longer enjoys jasmine tea.",
+              "id": "01KN5XJFSB9G9FW94M0VNHSDMR",
+              "similarity": 0.3234455702779093,
+              "sourceInput": "s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now."
+            },
+            {
+              "content": "Daniyaal drinks espresso every morning.",
+              "id": "01KN5XHWTV3BF7GQJ8Y7F3GJ90",
+              "similarity": 0.37354117423503386,
+              "sourceInput": "s1:23:I drink espresso every morning."
+            },
+            {
+              "content": "Daniyaal's favorite tea is jasmine tea.",
+              "id": "01KN5XHPPGAN9X8Z4JZ58AW50X",
+              "similarity": 0.35587418628547685,
+              "sourceInput": "s1:17:My favorite tea is jasmine tea."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "You prefer mint tea now, and you usually order an oat flat white.",
+          "id": "RQ-007",
+          "must_contain": [
+            "mint tea",
+            "oat flat white"
+          ],
+          "must_not_contain": [
+            "jasmine",
+            "espresso"
+          ],
+          "question": "What tea do I prefer now, and what coffee do I usually order now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            17,
+            18,
+            39,
+            40,
+            47,
+            48
+          ]
+        },
+        "col_order": 6,
+        "created_at": "2026-04-02 03:35:30",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-007"
+          },
+          {
+            "label": "Question",
+            "value": "What tea do I prefer now, and what coffee do I usually order now?"
+          },
+          {
+            "label": "Expected",
+            "value": "You prefer mint tea now, and you usually order an oat flat white."
+          },
+          {
+            "label": "Answer",
+            "value": "You prefer Mint tea and your coffee order is an oat flat white."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal usually orders an oat flat white.\",\n    \"id\": \"01KN5XJSBTPCHH8GR3BQP8PNSY\",\n    \"similarity\": 0.4370130063122264,\n    \"sourceInput\": \"s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white.\"\n  },\n  {\n    \"content\": \"Mint tea is Daniyaal's favorite type of tea.\",\n    \"id\": \"01KN5XJFSJDETF6TFXERMQVH7V\",\n    \"similarity\": 0.37596105847924166,\n    \"sourceInput\": \"s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now.\"\n  },\n  {\n    \"content\": \"Daniyaal no longer drinks espresso every morning.\",\n    \"id\": \"01KN5XJSBK6VQ0SFN3G6SJP52J\",\n    \"similarity\": 0.3594141055196922,\n    \"sourceInput\": \"s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white.\"\n  },\n  {\n    \"content\": \"Daniyaal no longer enjoys jasmine tea.\",\n    \"id\": \"01KN5XJFSB9G9FW94M0VNHSDMR\",\n    \"similarity\": 0.3234455702779093,\n    \"sourceInput\": \"s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now.\"\n  },\n  {\n    \"content\": \"Daniyaal drinks espresso every morning.\",\n    \"id\": \"01KN5XHWTV3BF7GQJ8Y7F3GJ90\",\n    \"similarity\": 0.37354117423503386,\n    \"sourceInput\": \"s1:23:I drink espresso every morning.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite tea is jasmine tea.\",\n    \"id\": \"01KN5XHPPGAN9X8Z4JZ58AW50X\",\n    \"similarity\": 0.35587418628547685,\n    \"sourceInput\": \"s1:17:My favorite tea is jasmine tea.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1305,
+            "result_id": 1609,
+            "name": "Retrieval Answer Score",
+            "score": 0.9500000000000001,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 0.8,
+              "containsMatched": [
+                "mint tea",
+                "oat flat white"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 03:35:30"
+          }
+        ]
+      },
+      {
+        "id": 1610,
+        "eval_id": 102,
+        "duration": 1284,
+        "input": {
+          "expected_reply": "Aisha lives in Vancouver now.",
+          "id": "RQ-008",
+          "must_contain": [
+            "Aisha",
+            "Vancouver"
+          ],
+          "must_not_contain": [
+            "Toronto"
+          ],
+          "question": "Where does my sister Aisha live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            21,
+            22,
+            41,
+            42
+          ]
+        },
+        "output": {
+          "answer": "Aisha lives in Vancouver.",
+          "retrievedMemories": [
+            {
+              "content": "Aisha previously lived in Toronto and moved away in May 2026.",
+              "id": "01KN5XJJ1N0DQBAXE20GRY902H",
+              "similarity": 0.6984793291693561,
+              "sourceInput": "s4:41:Aisha moved from Toronto to Vancouver last month."
+            },
+            {
+              "content": "Aisha moved to Vancouver in May 2026.",
+              "id": "01KN5XJJ1EP3VBBJA6MGX81M90",
+              "similarity": 0.5898221221860719,
+              "sourceInput": "s4:41:Aisha moved from Toronto to Vancouver last month."
+            },
+            {
+              "content": "Aisha lives in Toronto.",
+              "id": "01KN5XHV1VC8ESQ3GP0YDEEVQ2",
+              "similarity": 0.7130143736497888,
+              "sourceInput": "s1:21:My sister Aisha lives in Toronto."
+            },
+            {
+              "content": "Daniyaal has a sister named Aisha.",
+              "id": "01KN5XHV1QRENTXKAYCA89A41R",
+              "similarity": 0.5844325825069698,
+              "sourceInput": "s1:21:My sister Aisha lives in Toronto."
+            },
+            {
+              "content": "Omar moved to Dubai.",
+              "id": "01KN5XJX699M575DWNBQN0J7XW",
+              "similarity": 0.3737997708214672,
+              "sourceInput": "s5:51:Omar moved to Dubai, but he's still my emergency contact."
+            },
+            {
+              "content": "Daniyaal moved from Berlin to Lisbon.",
+              "id": "01KN5XJ1VM0H4CR0DHZZJKDFT1",
+              "similarity": 0.362233419031753,
+              "sourceInput": "s3:29:Big update: I moved from Berlin to Lisbon."
+            },
+            {
+              "content": "Daniyaal lives in the Alfama neighborhood.",
+              "id": "01KN5XJ3M1K7XN5MASM6A6B9NN",
+              "similarity": 0.3402025651711993,
+              "sourceInput": "s3:31:My new neighborhood is Alfama."
+            },
+            {
+              "content": "Daniyaal lives in Berlin.",
+              "id": "01KN5XH4KJB8KAWPHZ24HWV5PF",
+              "similarity": 0.3696429077206458,
+              "sourceInput": "s1:1:Hey, I'm Daniyaal. I live in Berlin."
+            },
+            {
+              "content": "Daniyaal lives in the Kreuzberg neighborhood.",
+              "id": "01KN5XH7H0A9YHCK2BXWZPSJQE",
+              "similarity": 0.3304289886579582,
+              "sourceInput": "s1:3:More specifically, I live in the Kreuzberg neighborhood."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Aisha lives in Vancouver now.",
+          "id": "RQ-008",
+          "must_contain": [
+            "Aisha",
+            "Vancouver"
+          ],
+          "must_not_contain": [
+            "Toronto"
+          ],
+          "question": "Where does my sister Aisha live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            21,
+            22,
+            41,
+            42
+          ]
+        },
+        "col_order": 7,
+        "created_at": "2026-04-02 03:35:30",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-008"
+          },
+          {
+            "label": "Question",
+            "value": "Where does my sister Aisha live now?"
+          },
+          {
+            "label": "Expected",
+            "value": "Aisha lives in Vancouver now."
+          },
+          {
+            "label": "Answer",
+            "value": "Aisha lives in Vancouver."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Aisha previously lived in Toronto and moved away in May 2026.\",\n    \"id\": \"01KN5XJJ1N0DQBAXE20GRY902H\",\n    \"similarity\": 0.6984793291693561,\n    \"sourceInput\": \"s4:41:Aisha moved from Toronto to Vancouver last month.\"\n  },\n  {\n    \"content\": \"Aisha moved to Vancouver in May 2026.\",\n    \"id\": \"01KN5XJJ1EP3VBBJA6MGX81M90\",\n    \"similarity\": 0.5898221221860719,\n    \"sourceInput\": \"s4:41:Aisha moved from Toronto to Vancouver last month.\"\n  },\n  {\n    \"content\": \"Aisha lives in Toronto.\",\n    \"id\": \"01KN5XHV1VC8ESQ3GP0YDEEVQ2\",\n    \"similarity\": 0.7130143736497888,\n    \"sourceInput\": \"s1:21:My sister Aisha lives in Toronto.\"\n  },\n  {\n    \"content\": \"Daniyaal has a sister named Aisha.\",\n    \"id\": \"01KN5XHV1QRENTXKAYCA89A41R\",\n    \"similarity\": 0.5844325825069698,\n    \"sourceInput\": \"s1:21:My sister Aisha lives in Toronto.\"\n  },\n  {\n    \"content\": \"Omar moved to Dubai.\",\n    \"id\": \"01KN5XJX699M575DWNBQN0J7XW\",\n    \"similarity\": 0.3737997708214672,\n    \"sourceInput\": \"s5:51:Omar moved to Dubai, but he's still my emergency contact.\"\n  },\n  {\n    \"content\": \"Daniyaal moved from Berlin to Lisbon.\",\n    \"id\": \"01KN5XJ1VM0H4CR0DHZZJKDFT1\",\n    \"similarity\": 0.362233419031753,\n    \"sourceInput\": \"s3:29:Big update: I moved from Berlin to Lisbon.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in the Alfama neighborhood.\",\n    \"id\": \"01KN5XJ3M1K7XN5MASM6A6B9NN\",\n    \"similarity\": 0.3402025651711993,\n    \"sourceInput\": \"s3:31:My new neighborhood is Alfama.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in Berlin.\",\n    \"id\": \"01KN5XH4KJB8KAWPHZ24HWV5PF\",\n    \"similarity\": 0.3696429077206458,\n    \"sourceInput\": \"s1:1:Hey, I'm Daniyaal. I live in Berlin.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in the Kreuzberg neighborhood.\",\n    \"id\": \"01KN5XH7H0A9YHCK2BXWZPSJQE\",\n    \"similarity\": 0.3304289886579582,\n    \"sourceInput\": \"s1:3:More specifically, I live in the Kreuzberg neighborhood.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1306,
+            "result_id": 1610,
+            "name": "Retrieval Answer Score",
+            "score": 0.9166666666666666,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 0.6666666666666665,
+              "containsMatched": [
+                "Aisha",
+                "Vancouver"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 03:35:30"
+          }
+        ]
+      },
+      {
+        "id": 1611,
+        "eval_id": 102,
+        "duration": 1018,
+        "input": {
+          "expected_reply": "Your emergency contact is Omar, and he lives in Dubai now.",
+          "id": "RQ-009",
+          "must_contain": [
+            "Omar",
+            "Dubai"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "Who is my emergency contact, and where does he live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            19,
+            20,
+            51,
+            52
+          ]
+        },
+        "output": {
+          "answer": "The emergency contact is Omar, and he lives in Dubai.",
+          "retrievedMemories": [
+            {
+              "content": "Omar is the emergency contact for Daniyaal.",
+              "id": "01KN5XHRMWTN2TQE4CZMCYNCRY",
+              "similarity": 0.41683450204498196,
+              "sourceInput": "s1:19:My emergency contact is Omar."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Your emergency contact is Omar, and he lives in Dubai now.",
+          "id": "RQ-009",
+          "must_contain": [
+            "Omar",
+            "Dubai"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "Who is my emergency contact, and where does he live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            19,
+            20,
+            51,
+            52
+          ]
+        },
+        "col_order": 8,
+        "created_at": "2026-04-02 03:35:30",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-009"
+          },
+          {
+            "label": "Question",
+            "value": "Who is my emergency contact, and where does he live now?"
+          },
+          {
+            "label": "Expected",
+            "value": "Your emergency contact is Omar, and he lives in Dubai now."
+          },
+          {
+            "label": "Answer",
+            "value": "The emergency contact is Omar, and he lives in Dubai."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Omar is the emergency contact for Daniyaal.\",\n    \"id\": \"01KN5XHRMWTN2TQE4CZMCYNCRY\",\n    \"similarity\": 0.41683450204498196,\n    \"sourceInput\": \"s1:19:My emergency contact is Omar.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1307,
+            "result_id": 1611,
+            "name": "Retrieval Answer Score",
+            "score": 0.9404761904761905,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 0.761904761904762,
+              "containsMatched": [
+                "Omar",
+                "Dubai"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 03:35:30"
+          }
+        ]
+      },
+      {
+        "id": 1612,
+        "eval_id": 102,
+        "duration": 1241,
+        "input": {
+          "expected_reply": "Your Tokyo flight is on 2026-09-13 at 18:30 UTC.",
+          "id": "RQ-010",
+          "must_contain": [
+            "2026-09-13",
+            "18:30",
+            "UTC"
+          ],
+          "must_not_contain": [
+            "2026-09-12",
+            "17:00"
+          ],
+          "question": "When is my Tokyo flight?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            43,
+            44,
+            45,
+            46
+          ]
+        },
+        "output": {
+          "answer": "2026-09-13 at 18:30 UTC",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal has a flight to Tokyo scheduled for 2026-09-13 at 18:30 UTC.",
+              "id": "01KN5XJQ2MKJPR3MQF45A106M7",
+              "similarity": 0.5826188172283963,
+              "sourceInput": "s5:45:Correction: the Tokyo flight is actually on 2026-09-13 at 18:30 UTC, not Sept 12."
+            },
+            {
+              "content": "Daniyaal has a flight to Tokyo on 2026-09-12 at 17:00 UTC.",
+              "id": "01KN5XJM3RK045Y651N089SCRK",
+              "similarity": 0.5834531055772216,
+              "sourceInput": "s4:43:I booked a flight to Tokyo for 2026-09-12 at 17:00 UTC."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Your Tokyo flight is on 2026-09-13 at 18:30 UTC.",
+          "id": "RQ-010",
+          "must_contain": [
+            "2026-09-13",
+            "18:30",
+            "UTC"
+          ],
+          "must_not_contain": [
+            "2026-09-12",
+            "17:00"
+          ],
+          "question": "When is my Tokyo flight?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            43,
+            44,
+            45,
+            46
+          ]
+        },
+        "col_order": 9,
+        "created_at": "2026-04-02 03:35:30",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-010"
+          },
+          {
+            "label": "Question",
+            "value": "When is my Tokyo flight?"
+          },
+          {
+            "label": "Expected",
+            "value": "Your Tokyo flight is on 2026-09-13 at 18:30 UTC."
+          },
+          {
+            "label": "Answer",
+            "value": "2026-09-13 at 18:30 UTC"
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal has a flight to Tokyo scheduled for 2026-09-13 at 18:30 UTC.\",\n    \"id\": \"01KN5XJQ2MKJPR3MQF45A106M7\",\n    \"similarity\": 0.5826188172283963,\n    \"sourceInput\": \"s5:45:Correction: the Tokyo flight is actually on 2026-09-13 at 18:30 UTC, not Sept 12.\"\n  },\n  {\n    \"content\": \"Daniyaal has a flight to Tokyo on 2026-09-12 at 17:00 UTC.\",\n    \"id\": \"01KN5XJM3RK045Y651N089SCRK\",\n    \"similarity\": 0.5834531055772216,\n    \"sourceInput\": \"s4:43:I booked a flight to Tokyo for 2026-09-12 at 17:00 UTC.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1308,
+            "result_id": 1612,
+            "name": "Retrieval Answer Score",
+            "score": 0.8653846153846154,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 0.46153846153846156,
+              "containsMatched": [
+                "2026-09-13",
+                "18:30",
+                "UTC"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 03:35:30"
+          }
+        ]
+      }
+    ]
+  },
+  "prevEvaluation": {
+    "id": 94,
+    "run_id": 57,
+    "name": "Memory Eval Alpha",
+    "duration": 0,
+    "created_at": "2026-04-02 02:18:48",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null,
+    "results": [
+      {
+        "id": 1516,
+        "eval_id": 94,
+        "duration": 132086,
+        "input": {
+          "expected_reply": "You live in Lisbon.",
+          "id": "RQ-001",
+          "must_contain": [
+            "Lisbon"
+          ],
+          "must_not_contain": [
+            "Berlin"
+          ],
+          "question": "Where do I live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            29,
+            30
+          ]
+        },
+        "output": {
+          "answer": "You live in the Alfama neighborhood in Lisbon.",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal moved to a new neighborhood named Alfama.",
+              "id": "mem_01KN5ZTXAXKW35ADQ81APZBGE4",
+              "similarity": 0.3744451262128775,
+              "sourceInput": "s3:31:My new neighborhood is Alfama."
+            },
+            {
+              "content": "Omar moved to Dubai.",
+              "id": "mem_01KN5ZWS4C3KDCM44PXBJNXQXA",
+              "similarity": 0.31469303517418523,
+              "sourceInput": "s5:51:Omar moved to Dubai, but he's still my emergency contact."
+            },
+            {
+              "content": "Daniyaal moved from Berlin to Lisbon.",
+              "id": "mem_01KN5ZTR6D4GS8M49ZEKFP3ATN",
+              "similarity": 0.3055905338256517,
+              "sourceInput": "s3:29:Big update: I moved from Berlin to Lisbon."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "You live in Lisbon.",
+          "id": "RQ-001",
+          "must_contain": [
+            "Lisbon"
+          ],
+          "must_not_contain": [
+            "Berlin"
+          ],
+          "question": "Where do I live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            29,
+            30
+          ]
+        },
+        "col_order": 0,
+        "created_at": "2026-04-02 02:18:48",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-001"
+          },
+          {
+            "label": "Question",
+            "value": "Where do I live now?"
+          },
+          {
+            "label": "Expected",
+            "value": "You live in Lisbon."
+          },
+          {
+            "label": "Answer",
+            "value": "You live in the Alfama neighborhood in Lisbon."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal moved to a new neighborhood named Alfama.\",\n    \"id\": \"mem_01KN5ZTXAXKW35ADQ81APZBGE4\",\n    \"similarity\": 0.3744451262128775,\n    \"sourceInput\": \"s3:31:My new neighborhood is Alfama.\"\n  },\n  {\n    \"content\": \"Omar moved to Dubai.\",\n    \"id\": \"mem_01KN5ZWS4C3KDCM44PXBJNXQXA\",\n    \"similarity\": 0.31469303517418523,\n    \"sourceInput\": \"s5:51:Omar moved to Dubai, but he's still my emergency contact.\"\n  },\n  {\n    \"content\": \"Daniyaal moved from Berlin to Lisbon.\",\n    \"id\": \"mem_01KN5ZTR6D4GS8M49ZEKFP3ATN\",\n    \"similarity\": 0.3055905338256517,\n    \"sourceInput\": \"s3:29:Big update: I moved from Berlin to Lisbon.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1279,
+            "result_id": 1516,
+            "name": "Retrieval Answer Score",
+            "score": 0.9318181818181818,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 0.7272727272727273,
+              "containsMatched": [
+                "Lisbon"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 02:21:01"
+          }
+        ]
+      },
+      {
+        "id": 1549,
+        "eval_id": 94,
+        "duration": 1516,
+        "input": {
+          "expected_reply": "You work at Figma, and your current project is Canvas.",
+          "id": "RQ-002",
+          "must_contain": [
+            "Figma",
+            "Canvas"
+          ],
+          "must_not_contain": [
+            "Stripe",
+            "Northstar"
+          ],
+          "question": "Which company do I work for now, and what project am I on?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            33,
+            34,
+            37,
+            38
+          ]
+        },
+        "output": {
+          "answer": "You currently work for Figma. I do not have information regarding which project you are on.",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal is currently employed at Figma.",
+              "id": "mem_01KN5ZV40D5F9F335CTKA5XKNA",
+              "similarity": 0.33307889727644024,
+              "sourceInput": "s3:33:I left Stripe and now work at Figma."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "You work at Figma, and your current project is Canvas.",
+          "id": "RQ-002",
+          "must_contain": [
+            "Figma",
+            "Canvas"
+          ],
+          "must_not_contain": [
+            "Stripe",
+            "Northstar"
+          ],
+          "question": "Which company do I work for now, and what project am I on?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            33,
+            34,
+            37,
+            38
+          ]
+        },
+        "col_order": 1,
+        "created_at": "2026-04-02 02:21:01",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-002"
+          },
+          {
+            "label": "Question",
+            "value": "Which company do I work for now, and what project am I on?"
+          },
+          {
+            "label": "Expected",
+            "value": "You work at Figma, and your current project is Canvas."
+          },
+          {
+            "label": "Answer",
+            "value": "You currently work for Figma. I do not have information regarding which project you are on."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal is currently employed at Figma.\",\n    \"id\": \"mem_01KN5ZV40D5F9F335CTKA5XKNA\",\n    \"similarity\": 0.33307889727644024,\n    \"sourceInput\": \"s3:33:I left Stripe and now work at Figma.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1280,
+            "result_id": 1549,
+            "name": "Retrieval Answer Score",
+            "score": 0.585,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 0.75,
+              "answerSimilarity": 0.24,
+              "containsMatched": [
+                "Figma"
+              ],
+              "containsMissed": [
+                "Canvas"
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 02:21:02"
+          }
+        ]
+      },
+      {
+        "id": 1550,
+        "eval_id": 94,
+        "duration": 1119,
+        "input": {
+          "expected_reply": "Your current manager is Elena.",
+          "id": "RQ-003",
+          "must_contain": [
+            "Elena"
+          ],
+          "must_not_contain": [
+            "Priya"
+          ],
+          "question": "Who is my current manager?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            35,
+            36
+          ]
+        },
+        "output": {
+          "answer": "Your current manager is Elena.",
+          "retrievedMemories": [
+            {
+              "content": "Elena is the new manager for Daniyaal.",
+              "id": "mem_01KN5ZV8DNVXKFYGW8BFWGZNK3",
+              "similarity": 0.3942447398156482,
+              "sourceInput": "s3:35:My manager changed too. Elena is my new manager."
+            },
+            {
+              "content": "Priya is Daniyaal's manager.",
+              "id": "mem_01KN5ZSKJE0C4P0S3SYA4430CJ",
+              "similarity": 0.3669035626877697,
+              "sourceInput": "s1:9:My manager is Priya."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Your current manager is Elena.",
+          "id": "RQ-003",
+          "must_contain": [
+            "Elena"
+          ],
+          "must_not_contain": [
+            "Priya"
+          ],
+          "question": "Who is my current manager?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            35,
+            36
+          ]
+        },
+        "col_order": 2,
+        "created_at": "2026-04-02 02:21:02",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-003"
+          },
+          {
+            "label": "Question",
+            "value": "Who is my current manager?"
+          },
+          {
+            "label": "Expected",
+            "value": "Your current manager is Elena."
+          },
+          {
+            "label": "Answer",
+            "value": "Your current manager is Elena."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Elena is the new manager for Daniyaal.\",\n    \"id\": \"mem_01KN5ZV8DNVXKFYGW8BFWGZNK3\",\n    \"similarity\": 0.3942447398156482,\n    \"sourceInput\": \"s3:35:My manager changed too. Elena is my new manager.\"\n  },\n  {\n    \"content\": \"Priya is Daniyaal's manager.\",\n    \"id\": \"mem_01KN5ZSKJE0C4P0S3SYA4430CJ\",\n    \"similarity\": 0.3669035626877697,\n    \"sourceInput\": \"s1:9:My manager is Priya.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1281,
+            "result_id": 1550,
+            "name": "Retrieval Answer Score",
+            "score": 1,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 1,
+              "containsMatched": [
+                "Elena"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 02:21:03"
+          }
+        ]
+      },
+      {
+        "id": 1551,
+        "eval_id": 94,
+        "duration": 2167,
+        "input": {
+          "expected_reply": "Your partner is Maya, and she is doing her medical residency in Porto.",
+          "id": "RQ-004",
+          "must_contain": [
+            "Maya",
+            "Porto",
+            "medical residency"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "Who is my partner, and where is she doing her medical residency?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            11,
+            12,
+            49,
+            50
+          ]
+        },
+        "output": {
+          "answer": "Your partner is Maya, and she is doing her medical residency in Porto.",
+          "retrievedMemories": [
+            {
+              "content": "Maya began a medical residency in Porto.",
+              "id": "mem_01KN5ZWECC7KHNAC0DWXTCBZJM",
+              "similarity": 0.49685997991367503,
+              "sourceInput": "s5:49:Maya started a medical residency in Porto."
+            },
+            {
+              "content": "Daniyaal's partner is named Maya.",
+              "id": "mem_01KN5ZSQ38V1ZC4WB19WGT6T0N",
+              "similarity": 0.3164555355428489,
+              "sourceInput": "s1:11:My partner is Maya."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Your partner is Maya, and she is doing her medical residency in Porto.",
+          "id": "RQ-004",
+          "must_contain": [
+            "Maya",
+            "Porto",
+            "medical residency"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "Who is my partner, and where is she doing her medical residency?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            11,
+            12,
+            49,
+            50
+          ]
+        },
+        "col_order": 3,
+        "created_at": "2026-04-02 02:21:03",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-004"
+          },
+          {
+            "label": "Question",
+            "value": "Who is my partner, and where is she doing her medical residency?"
+          },
+          {
+            "label": "Expected",
+            "value": "Your partner is Maya, and she is doing her medical residency in Porto."
+          },
+          {
+            "label": "Answer",
+            "value": "Your partner is Maya, and she is doing her medical residency in Porto."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Maya began a medical residency in Porto.\",\n    \"id\": \"mem_01KN5ZWECC7KHNAC0DWXTCBZJM\",\n    \"similarity\": 0.49685997991367503,\n    \"sourceInput\": \"s5:49:Maya started a medical residency in Porto.\"\n  },\n  {\n    \"content\": \"Daniyaal's partner is named Maya.\",\n    \"id\": \"mem_01KN5ZSQ38V1ZC4WB19WGT6T0N\",\n    \"similarity\": 0.3164555355428489,\n    \"sourceInput\": \"s1:11:My partner is Maya.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1282,
+            "result_id": 1551,
+            "name": "Retrieval Answer Score",
+            "score": 1,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 1,
+              "containsMatched": [
+                "Maya",
+                "Porto",
+                "medical residency"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 02:21:05"
+          }
+        ]
+      },
+      {
+        "id": 1552,
+        "eval_id": 94,
+        "duration": 891,
+        "input": {
+          "expected_reply": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi.",
+          "id": "RQ-005",
+          "must_contain": [
+            "Pixel",
+            "black",
+            "Pembroke",
+            "Welsh",
+            "Corgi"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "What is the name, breed, and color of my dog?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            13,
+            14,
+            25,
+            26
+          ]
+        },
+        "output": {
+          "answer": "Your dog is a black Pembroke Welsh Corgi named Pixel.",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal has a black Corgi named Pixel.",
+              "id": "mem_01KN5ZSTRSEM2G55RTFZVHSF4C",
+              "similarity": 0.37608813661420004,
+              "sourceInput": "s1:13:I have a black corgi named Pixel."
+            },
+            {
+              "content": "Pixel is a Pembroke Welsh Corgi.",
+              "id": "mem_01KN5ZTG8CCXZQJZDVQ8MC0W8Z",
+              "similarity": 0.3281797107886657,
+              "sourceInput": "s2:25:Small update: Pixel is a Pembroke Welsh Corgi."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi.",
+          "id": "RQ-005",
+          "must_contain": [
+            "Pixel",
+            "black",
+            "Pembroke",
+            "Welsh",
+            "Corgi"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "What is the name, breed, and color of my dog?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            13,
+            14,
+            25,
+            26
+          ]
+        },
+        "col_order": 4,
+        "created_at": "2026-04-02 02:21:05",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-005"
+          },
+          {
+            "label": "Question",
+            "value": "What is the name, breed, and color of my dog?"
+          },
+          {
+            "label": "Expected",
+            "value": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi."
+          },
+          {
+            "label": "Answer",
+            "value": "Your dog is a black Pembroke Welsh Corgi named Pixel."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal has a black Corgi named Pixel.\",\n    \"id\": \"mem_01KN5ZSTRSEM2G55RTFZVHSF4C\",\n    \"similarity\": 0.37608813661420004,\n    \"sourceInput\": \"s1:13:I have a black corgi named Pixel.\"\n  },\n  {\n    \"content\": \"Pixel is a Pembroke Welsh Corgi.\",\n    \"id\": \"mem_01KN5ZTG8CCXZQJZDVQ8MC0W8Z\",\n    \"similarity\": 0.3281797107886657,\n    \"sourceInput\": \"s2:25:Small update: Pixel is a Pembroke Welsh Corgi.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1283,
+            "result_id": 1552,
+            "name": "Retrieval Answer Score",
+            "score": 0.9166666666666666,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 0.6666666666666666,
+              "containsMatched": [
+                "Pixel",
+                "black",
+                "Pembroke",
+                "Welsh",
+                "Corgi"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 02:21:06"
+          }
+        ]
+      },
+      {
+        "id": 1553,
+        "eval_id": 94,
+        "duration": 938,
+        "input": {
+          "expected_reply": "You are allergic to peanuts.",
+          "id": "RQ-006",
+          "must_contain": [
+            "peanuts"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "What allergy do I have?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            15,
+            16
+          ]
+        },
+        "output": {
+          "answer": "You are allergic to peanuts.",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal is allergic to peanuts.",
+              "id": "mem_01KN5ZSY730H2MV2WJC02860RW",
+              "similarity": 0.4025417562688921,
+              "sourceInput": "s1:15:I'm allergic to peanuts."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "You are allergic to peanuts.",
+          "id": "RQ-006",
+          "must_contain": [
+            "peanuts"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "What allergy do I have?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            15,
+            16
+          ]
+        },
+        "col_order": 5,
+        "created_at": "2026-04-02 02:21:06",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-006"
+          },
+          {
+            "label": "Question",
+            "value": "What allergy do I have?"
+          },
+          {
+            "label": "Expected",
+            "value": "You are allergic to peanuts."
+          },
+          {
+            "label": "Answer",
+            "value": "You are allergic to peanuts."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal is allergic to peanuts.\",\n    \"id\": \"mem_01KN5ZSY730H2MV2WJC02860RW\",\n    \"similarity\": 0.4025417562688921,\n    \"sourceInput\": \"s1:15:I'm allergic to peanuts.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1284,
+            "result_id": 1553,
+            "name": "Retrieval Answer Score",
+            "score": 1,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 1,
+              "containsMatched": [
+                "peanuts"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 02:21:07"
+          }
+        ]
+      },
+      {
+        "id": 1554,
+        "eval_id": 94,
+        "duration": 1017,
+        "input": {
+          "expected_reply": "You prefer mint tea now, and you usually order an oat flat white.",
+          "id": "RQ-007",
+          "must_contain": [
+            "mint tea",
+            "oat flat white"
+          ],
+          "must_not_contain": [
+            "jasmine",
+            "espresso"
+          ],
+          "question": "What tea do I prefer now, and what coffee do I usually order now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            17,
+            18,
+            39,
+            40,
+            47,
+            48
+          ]
+        },
+        "output": {
+          "answer": "You now prefer mint tea and usually order an oat flat white.",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal usually orders an oat flat white.",
+              "id": "mem_01KN5ZW8XKE4F31YJTZGAJD21H",
+              "similarity": 0.437045233904088,
+              "sourceInput": "s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white."
+            },
+            {
+              "content": "Mint tea is Daniyaal's favorite type of tea.",
+              "id": "mem_01KN5ZVJCY6C3RKV2G65QY18Q7",
+              "similarity": 0.37596353719781983,
+              "sourceInput": "s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now."
+            },
+            {
+              "content": "Daniyaal drinks espresso every morning.",
+              "id": "mem_01KN5ZTCM93A71Y1ZYTZ2XETDB",
+              "similarity": 0.37350309072749854,
+              "sourceInput": "s1:23:I drink espresso every morning."
+            },
+            {
+              "content": "Daniyaal's favorite type of tea is jasmine tea.",
+              "id": "mem_01KN5ZT1F0N57WWJS7M1NJB87C",
+              "similarity": 0.3607828794362764,
+              "sourceInput": "s1:17:My favorite tea is jasmine tea."
+            },
+            {
+              "content": "Daniyaal no longer drinks espresso every morning.",
+              "id": "mem_01KN5ZW8XKMF1YVM09HWECMVH7",
+              "similarity": 0.359484328701589,
+              "sourceInput": "s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white."
+            },
+            {
+              "content": "Daniyaal no longer enjoys jasmine tea.",
+              "id": "mem_01KN5ZVJCY1R25W6X804WK8XCG",
+              "similarity": 0.3234936680646492,
+              "sourceInput": "s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "You prefer mint tea now, and you usually order an oat flat white.",
+          "id": "RQ-007",
+          "must_contain": [
+            "mint tea",
+            "oat flat white"
+          ],
+          "must_not_contain": [
+            "jasmine",
+            "espresso"
+          ],
+          "question": "What tea do I prefer now, and what coffee do I usually order now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            17,
+            18,
+            39,
+            40,
+            47,
+            48
+          ]
+        },
+        "col_order": 6,
+        "created_at": "2026-04-02 02:21:07",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-007"
+          },
+          {
+            "label": "Question",
+            "value": "What tea do I prefer now, and what coffee do I usually order now?"
+          },
+          {
+            "label": "Expected",
+            "value": "You prefer mint tea now, and you usually order an oat flat white."
+          },
+          {
+            "label": "Answer",
+            "value": "You now prefer mint tea and usually order an oat flat white."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal usually orders an oat flat white.\",\n    \"id\": \"mem_01KN5ZW8XKE4F31YJTZGAJD21H\",\n    \"similarity\": 0.437045233904088,\n    \"sourceInput\": \"s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white.\"\n  },\n  {\n    \"content\": \"Mint tea is Daniyaal's favorite type of tea.\",\n    \"id\": \"mem_01KN5ZVJCY6C3RKV2G65QY18Q7\",\n    \"similarity\": 0.37596353719781983,\n    \"sourceInput\": \"s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now.\"\n  },\n  {\n    \"content\": \"Daniyaal drinks espresso every morning.\",\n    \"id\": \"mem_01KN5ZTCM93A71Y1ZYTZ2XETDB\",\n    \"similarity\": 0.37350309072749854,\n    \"sourceInput\": \"s1:23:I drink espresso every morning.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite type of tea is jasmine tea.\",\n    \"id\": \"mem_01KN5ZT1F0N57WWJS7M1NJB87C\",\n    \"similarity\": 0.3607828794362764,\n    \"sourceInput\": \"s1:17:My favorite tea is jasmine tea.\"\n  },\n  {\n    \"content\": \"Daniyaal no longer drinks espresso every morning.\",\n    \"id\": \"mem_01KN5ZW8XKMF1YVM09HWECMVH7\",\n    \"similarity\": 0.359484328701589,\n    \"sourceInput\": \"s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white.\"\n  },\n  {\n    \"content\": \"Daniyaal no longer enjoys jasmine tea.\",\n    \"id\": \"mem_01KN5ZVJCY1R25W6X804WK8XCG\",\n    \"similarity\": 0.3234936680646492,\n    \"sourceInput\": \"s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1285,
+            "result_id": 1554,
+            "name": "Retrieval Answer Score",
+            "score": 1,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 1,
+              "containsMatched": [
+                "mint tea",
+                "oat flat white"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 02:21:08"
+          }
+        ]
+      },
+      {
+        "id": 1555,
+        "eval_id": 94,
+        "duration": 1139,
+        "input": {
+          "expected_reply": "Aisha lives in Vancouver now.",
+          "id": "RQ-008",
+          "must_contain": [
+            "Aisha",
+            "Vancouver"
+          ],
+          "must_not_contain": [
+            "Toronto"
+          ],
+          "question": "Where does my sister Aisha live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            21,
+            22,
+            41,
+            42
+          ]
+        },
+        "output": {
+          "answer": "Aisha now lives in Vancouver.",
+          "retrievedMemories": [
+            {
+              "content": "Aisha lives in Toronto.",
+              "id": "mem_01KN5ZT92NWA8EW6G6ZWPQWYHQ",
+              "similarity": 0.7130143736497888,
+              "sourceInput": "s1:21:My sister Aisha lives in Toronto."
+            },
+            {
+              "content": "Daniyaal has a sister named Aisha.",
+              "id": "mem_01KN5ZT92NYD81A9C7DY6X36Y9",
+              "similarity": 0.5844325825069698,
+              "sourceInput": "s1:21:My sister Aisha lives in Toronto."
+            },
+            {
+              "content": "Aisha moved from Toronto to Vancouver in March 2026.",
+              "id": "mem_01KN5ZVPYDR7SZM75D2KW4GB6X",
+              "similarity": 0.5836213026092966,
+              "sourceInput": "s4:41:Aisha moved from Toronto to Vancouver last month."
+            },
+            {
+              "content": "Daniyaal moved to a new neighborhood named Alfama.",
+              "id": "mem_01KN5ZTXAXKW35ADQ81APZBGE4",
+              "similarity": 0.39266053932289724,
+              "sourceInput": "s3:31:My new neighborhood is Alfama."
+            },
+            {
+              "content": "Omar moved to Dubai.",
+              "id": "mem_01KN5ZWS4C3KDCM44PXBJNXQXA",
+              "similarity": 0.3737997708214672,
+              "sourceInput": "s5:51:Omar moved to Dubai, but he's still my emergency contact."
+            },
+            {
+              "content": "Daniyaal lives in Berlin.",
+              "id": "mem_01KN5ZS174W5MGVMSDBPQH820P",
+              "similarity": 0.3696429077206458,
+              "sourceInput": "s1:1:Hey, I'm Daniyaal. I live in Berlin."
+            },
+            {
+              "content": "Daniyaal moved from Berlin to Lisbon.",
+              "id": "mem_01KN5ZTR6D4GS8M49ZEKFP3ATN",
+              "similarity": 0.3622188047937176,
+              "sourceInput": "s3:29:Big update: I moved from Berlin to Lisbon."
+            },
+            {
+              "content": "Daniyaal lives in the Kreuzberg neighborhood.",
+              "id": "mem_01KN5ZS65SKGC6H41HQWRY01Q0",
+              "similarity": 0.3304289886579582,
+              "sourceInput": "s1:3:More specifically, I live in the Kreuzberg neighborhood."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Aisha lives in Vancouver now.",
+          "id": "RQ-008",
+          "must_contain": [
+            "Aisha",
+            "Vancouver"
+          ],
+          "must_not_contain": [
+            "Toronto"
+          ],
+          "question": "Where does my sister Aisha live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            21,
+            22,
+            41,
+            42
+          ]
+        },
+        "col_order": 7,
+        "created_at": "2026-04-02 02:21:08",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-008"
+          },
+          {
+            "label": "Question",
+            "value": "Where does my sister Aisha live now?"
+          },
+          {
+            "label": "Expected",
+            "value": "Aisha lives in Vancouver now."
+          },
+          {
+            "label": "Answer",
+            "value": "Aisha now lives in Vancouver."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Aisha lives in Toronto.\",\n    \"id\": \"mem_01KN5ZT92NWA8EW6G6ZWPQWYHQ\",\n    \"similarity\": 0.7130143736497888,\n    \"sourceInput\": \"s1:21:My sister Aisha lives in Toronto.\"\n  },\n  {\n    \"content\": \"Daniyaal has a sister named Aisha.\",\n    \"id\": \"mem_01KN5ZT92NYD81A9C7DY6X36Y9\",\n    \"similarity\": 0.5844325825069698,\n    \"sourceInput\": \"s1:21:My sister Aisha lives in Toronto.\"\n  },\n  {\n    \"content\": \"Aisha moved from Toronto to Vancouver in March 2026.\",\n    \"id\": \"mem_01KN5ZVPYDR7SZM75D2KW4GB6X\",\n    \"similarity\": 0.5836213026092966,\n    \"sourceInput\": \"s4:41:Aisha moved from Toronto to Vancouver last month.\"\n  },\n  {\n    \"content\": \"Daniyaal moved to a new neighborhood named Alfama.\",\n    \"id\": \"mem_01KN5ZTXAXKW35ADQ81APZBGE4\",\n    \"similarity\": 0.39266053932289724,\n    \"sourceInput\": \"s3:31:My new neighborhood is Alfama.\"\n  },\n  {\n    \"content\": \"Omar moved to Dubai.\",\n    \"id\": \"mem_01KN5ZWS4C3KDCM44PXBJNXQXA\",\n    \"similarity\": 0.3737997708214672,\n    \"sourceInput\": \"s5:51:Omar moved to Dubai, but he's still my emergency contact.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in Berlin.\",\n    \"id\": \"mem_01KN5ZS174W5MGVMSDBPQH820P\",\n    \"similarity\": 0.3696429077206458,\n    \"sourceInput\": \"s1:1:Hey, I'm Daniyaal. I live in Berlin.\"\n  },\n  {\n    \"content\": \"Daniyaal moved from Berlin to Lisbon.\",\n    \"id\": \"mem_01KN5ZTR6D4GS8M49ZEKFP3ATN\",\n    \"similarity\": 0.3622188047937176,\n    \"sourceInput\": \"s3:29:Big update: I moved from Berlin to Lisbon.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in the Kreuzberg neighborhood.\",\n    \"id\": \"mem_01KN5ZS65SKGC6H41HQWRY01Q0\",\n    \"similarity\": 0.3304289886579582,\n    \"sourceInput\": \"s1:3:More specifically, I live in the Kreuzberg neighborhood.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1286,
+            "result_id": 1555,
+            "name": "Retrieval Answer Score",
+            "score": 0.9,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 0.6,
+              "containsMatched": [
+                "Aisha",
+                "Vancouver"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 02:21:09"
+          }
+        ]
+      },
+      {
+        "id": 1556,
+        "eval_id": 94,
+        "duration": 1020,
+        "input": {
+          "expected_reply": "Your emergency contact is Omar, and he lives in Dubai now.",
+          "id": "RQ-009",
+          "must_contain": [
+            "Omar",
+            "Dubai"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "Who is my emergency contact, and where does he live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            19,
+            20,
+            51,
+            52
+          ]
+        },
+        "output": {
+          "answer": "Your emergency contact is Omar. I do not have information regarding where he currently lives.",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal's emergency contact is Omar.",
+              "id": "mem_01KN5ZT534K1JK7WB3WX244ZZ1",
+              "similarity": 0.45542232829197726,
+              "sourceInput": "s1:19:My emergency contact is Omar."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Your emergency contact is Omar, and he lives in Dubai now.",
+          "id": "RQ-009",
+          "must_contain": [
+            "Omar",
+            "Dubai"
+          ],
+          "must_not_contain": [
+
+          ],
+          "question": "Who is my emergency contact, and where does he live now?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            19,
+            20,
+            51,
+            52
+          ]
+        },
+        "col_order": 8,
+        "created_at": "2026-04-02 02:21:09",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-009"
+          },
+          {
+            "label": "Question",
+            "value": "Who is my emergency contact, and where does he live now?"
+          },
+          {
+            "label": "Expected",
+            "value": "Your emergency contact is Omar, and he lives in Dubai now."
+          },
+          {
+            "label": "Answer",
+            "value": "Your emergency contact is Omar. I do not have information regarding where he currently lives."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal's emergency contact is Omar.\",\n    \"id\": \"mem_01KN5ZT534K1JK7WB3WX244ZZ1\",\n    \"similarity\": 0.45542232829197726,\n    \"sourceInput\": \"s1:19:My emergency contact is Omar.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1287,
+            "result_id": 1556,
+            "name": "Retrieval Answer Score",
+            "score": 0.6211538461538461,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 0.75,
+              "answerSimilarity": 0.3846153846153846,
+              "containsMatched": [
+                "Omar"
+              ],
+              "containsMissed": [
+                "Dubai"
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 02:21:10"
+          }
+        ]
+      },
+      {
+        "id": 1557,
+        "eval_id": 94,
+        "duration": 1379,
+        "input": {
+          "expected_reply": "Your Tokyo flight is on 2026-09-13 at 18:30 UTC.",
+          "id": "RQ-010",
+          "must_contain": [
+            "2026-09-13",
+            "18:30",
+            "UTC"
+          ],
+          "must_not_contain": [
+            "2026-09-12",
+            "17:00"
+          ],
+          "question": "When is my Tokyo flight?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            43,
+            44,
+            45,
+            46
+          ]
+        },
+        "output": {
+          "answer": "Your flight to Tokyo is on 2026-09-13 at 18:30 UTC.",
+          "retrievedMemories": [
+            {
+              "content": "Daniyaal has a flight to Tokyo on 2026-09-12 at 17:00 UTC.",
+              "id": "mem_01KN5ZVTQW3CHD3D6VC8NRBE3Y",
+              "similarity": 0.5834531055772216,
+              "sourceInput": "s4:43:I booked a flight to Tokyo for 2026-09-12 at 17:00 UTC."
+            },
+            {
+              "content": "Daniyaal has a flight to Tokyo on 2026-09-13 at 18:30 UTC.",
+              "id": "mem_01KN5ZW31375S8PS9YS2Z57Q2G",
+              "similarity": 0.5810560263551321,
+              "sourceInput": "s5:45:Correction: the Tokyo flight is actually on 2026-09-13 at 18:30 UTC, not Sept 12."
+            }
+          ]
+        },
+        "expected": {
+          "expected_reply": "Your Tokyo flight is on 2026-09-13 at 18:30 UTC.",
+          "id": "RQ-010",
+          "must_contain": [
+            "2026-09-13",
+            "18:30",
+            "UTC"
+          ],
+          "must_not_contain": [
+            "2026-09-12",
+            "17:00"
+          ],
+          "question": "When is my Tokyo flight?",
+          "scoring": {
+            "methodology": "retrieval_answer"
+          },
+          "supporting_turn_ids": [
+            43,
+            44,
+            45,
+            46
+          ]
+        },
+        "col_order": 9,
+        "created_at": "2026-04-02 02:21:10",
+        "status": "success",
+        "rendered_columns": [
+          {
+            "label": "Case",
+            "value": "RQ-010"
+          },
+          {
+            "label": "Question",
+            "value": "When is my Tokyo flight?"
+          },
+          {
+            "label": "Expected",
+            "value": "Your Tokyo flight is on 2026-09-13 at 18:30 UTC."
+          },
+          {
+            "label": "Answer",
+            "value": "Your flight to Tokyo is on 2026-09-13 at 18:30 UTC."
+          },
+          {
+            "label": "Retrieved",
+            "value": "[\n  {\n    \"content\": \"Daniyaal has a flight to Tokyo on 2026-09-12 at 17:00 UTC.\",\n    \"id\": \"mem_01KN5ZVTQW3CHD3D6VC8NRBE3Y\",\n    \"similarity\": 0.5834531055772216,\n    \"sourceInput\": \"s4:43:I booked a flight to Tokyo for 2026-09-12 at 17:00 UTC.\"\n  },\n  {\n    \"content\": \"Daniyaal has a flight to Tokyo on 2026-09-13 at 18:30 UTC.\",\n    \"id\": \"mem_01KN5ZW31375S8PS9YS2Z57Q2G\",\n    \"similarity\": 0.5810560263551321,\n    \"sourceInput\": \"s5:45:Correction: the Tokyo flight is actually on 2026-09-13 at 18:30 UTC, not Sept 12.\"\n  }\n]"
+          }
+        ],
+        "trial_index": null,
+        "scores": [
+          {
+            "id": 1288,
+            "result_id": 1557,
+            "name": "Retrieval Answer Score",
+            "score": 0.9868421052631579,
+            "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+            "metadata": {
+              "answerCorrectness": 1,
+              "answerSimilarity": 0.9473684210526316,
+              "containsMatched": [
+                "2026-09-13",
+                "18:30",
+                "UTC"
+              ],
+              "containsMissed": [
+
+              ],
+              "staleHits": [
+
+              ]
+            },
+            "created_at": "2026-04-02 02:21:12"
+          }
+        ]
+      }
+    ]
+  }
+}

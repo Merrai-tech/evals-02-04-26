@@ -1,0 +1,164 @@
+{
+  "result": {
+    "id": 1614,
+    "eval_id": 103,
+    "duration": 1244,
+    "input": {
+      "expected_reply": "You work at Notion, and your current project is Calendar.",
+      "id": "RQ-002",
+      "must_contain": [
+        "Notion",
+        "Calendar"
+      ],
+      "must_not_contain": [
+        "Linear",
+        "Figma",
+        "Stripe",
+        "Atlas",
+        "Orbit",
+        "Canvas",
+        "Northstar"
+      ],
+      "question": "Which company do I work for now, and what project am I on?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        265,
+        266,
+        271,
+        272,
+        295,
+        296
+      ]
+    },
+    "output": {
+      "answer": "You currently work for Notion on the Calendar project.",
+      "retrievedMemories": [
+        {
+          "content": "Maya works in a cardiology role.",
+          "id": "01KN5XT79RYQ45Y5CW42CKBGN5",
+          "similarity": 0.30410435955752657,
+          "sourceInput": "s21:243:Maya moved from Madrid to Zurich for a cardiology role."
+        },
+        {
+          "content": "Omar started working at the company Emirates in Dubai.",
+          "id": "01KN5XPYXKCTE167YVCXAT53CH",
+          "similarity": 0.314290783648562,
+          "sourceInput": "s13:153:Omar started working at Emirates in Dubai."
+        },
+        {
+          "content": "Daniyaal holds the job title of staff product designer.",
+          "id": "01KN5XS443TDX4XF69NB302DS7",
+          "similarity": 0.3098431009318956,
+          "sourceInput": "s18:211:My title is still staff product designer."
+        },
+        {
+          "content": "Elena holds the position of manager for the design systems team.",
+          "id": "01KN5XMPP77M1EPNH1JXC7PW0H",
+          "similarity": 0.3670048469631937,
+          "sourceInput": "s9:103:Elena manages the design systems team."
+        },
+        {
+          "content": "Daniyaal is currently employed at Figma.",
+          "id": "01KN5XK5W34E5S5GKW1Q86MVYB",
+          "similarity": 0.33307889727644024,
+          "sourceInput": "s6:61:I left Stripe and now work at Figma."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You work at Notion, and your current project is Calendar.",
+      "id": "RQ-002",
+      "must_contain": [
+        "Notion",
+        "Calendar"
+      ],
+      "must_not_contain": [
+        "Linear",
+        "Figma",
+        "Stripe",
+        "Atlas",
+        "Orbit",
+        "Canvas",
+        "Northstar"
+      ],
+      "question": "Which company do I work for now, and what project am I on?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        265,
+        266,
+        271,
+        272,
+        295,
+        296
+      ]
+    },
+    "col_order": 1,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-002"
+      },
+      {
+        "label": "Question",
+        "value": "Which company do I work for now, and what project am I on?"
+      },
+      {
+        "label": "Expected",
+        "value": "You work at Notion, and your current project is Calendar."
+      },
+      {
+        "label": "Answer",
+        "value": "You currently work for Notion on the Calendar project."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Maya works in a cardiology role.\",\n    \"id\": \"01KN5XT79RYQ45Y5CW42CKBGN5\",\n    \"similarity\": 0.30410435955752657,\n    \"sourceInput\": \"s21:243:Maya moved from Madrid to Zurich for a cardiology role.\"\n  },\n  {\n    \"content\": \"Omar started working at the company Emirates in Dubai.\",\n    \"id\": \"01KN5XPYXKCTE167YVCXAT53CH\",\n    \"similarity\": 0.314290783648562,\n    \"sourceInput\": \"s13:153:Omar started working at Emirates in Dubai.\"\n  },\n  {\n    \"content\": \"Daniyaal holds the job title of staff product designer.\",\n    \"id\": \"01KN5XS443TDX4XF69NB302DS7\",\n    \"similarity\": 0.3098431009318956,\n    \"sourceInput\": \"s18:211:My title is still staff product designer.\"\n  },\n  {\n    \"content\": \"Elena holds the position of manager for the design systems team.\",\n    \"id\": \"01KN5XMPP77M1EPNH1JXC7PW0H\",\n    \"similarity\": 0.3670048469631937,\n    \"sourceInput\": \"s9:103:Elena manages the design systems team.\"\n  },\n  {\n    \"content\": \"Daniyaal is currently employed at Figma.\",\n    \"id\": \"01KN5XK5W34E5S5GKW1Q86MVYB\",\n    \"similarity\": 0.33307889727644024,\n    \"sourceInput\": \"s6:61:I left Stripe and now work at Figma.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.8289473684210527,
+    "scores": [
+      {
+        "id": 1310,
+        "result_id": 1614,
+        "name": "Retrieval Answer Score",
+        "score": 0.8289473684210527,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.3157894736842105,
+          "containsMatched": [
+            "Notion",
+            "Calendar"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

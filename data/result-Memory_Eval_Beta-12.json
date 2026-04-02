@@ -1,0 +1,121 @@
+{
+  "result": {
+    "id": 1625,
+    "eval_id": 103,
+    "duration": 1395,
+    "input": {
+      "expected_reply": "Your favorite artist is Nujabes.",
+      "id": "RQ-013",
+      "must_contain": [
+        "Nujabes"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "Who is my favorite artist?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        33,
+        34,
+        191,
+        192
+      ]
+    },
+    "output": {
+      "answer": "Your favorite artist is Nujabes.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal's favorite musical artist is Nujabes.",
+          "id": "01KN5XJ9TCAKNBY5K9JFY1FEQ9",
+          "similarity": 0.41352630336628526,
+          "sourceInput": "s3:33:My favorite artist is Nujabes."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your favorite artist is Nujabes.",
+      "id": "RQ-013",
+      "must_contain": [
+        "Nujabes"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "Who is my favorite artist?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        33,
+        34,
+        191,
+        192
+      ]
+    },
+    "col_order": 12,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-013"
+      },
+      {
+        "label": "Question",
+        "value": "Who is my favorite artist?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your favorite artist is Nujabes."
+      },
+      {
+        "label": "Answer",
+        "value": "Your favorite artist is Nujabes."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal's favorite musical artist is Nujabes.\",\n    \"id\": \"01KN5XJ9TCAKNBY5K9JFY1FEQ9\",\n    \"similarity\": 0.41352630336628526,\n    \"sourceInput\": \"s3:33:My favorite artist is Nujabes.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 1,
+    "scores": [
+      {
+        "id": 1321,
+        "result_id": 1625,
+        "name": "Retrieval Answer Score",
+        "score": 1,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 1,
+          "containsMatched": [
+            "Nujabes"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "evals": [
+    {
+      "name": "Memory Eval Alpha",
+      "score": 0.9336668886668887,
+      "prevScore": 0,
+      "evalStatus": "success",
+      "variantName": null,
+      "variantGroup": null,
+      "hasScores": true
+    },
+    {
+      "name": "Memory Eval Beta",
+      "score": 0.9192911106924265,
+      "prevScore": 0,
+      "evalStatus": "success",
+      "variantName": null,
+      "variantGroup": null,
+      "hasScores": true
+    }
+  ],
+  "score": 0.9264789996796576,
+  "prevScore": 0,
+  "evalStatus": "success"
+}

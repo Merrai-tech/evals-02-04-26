@@ -1,0 +1,143 @@
+{
+  "result": {
+    "id": 1626,
+    "eval_id": 103,
+    "duration": 1122,
+    "input": {
+      "expected_reply": "Your current airline seat preference is window.",
+      "id": "RQ-014",
+      "must_contain": [
+        "window"
+      ],
+      "must_not_contain": [
+        "aisle"
+      ],
+      "question": "What is my current airline seat preference?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        129,
+        130,
+        203,
+        204,
+        281,
+        282
+      ]
+    },
+    "output": {
+      "answer": "window",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal's favorite airline seat choice is the window seat.",
+          "id": "01KN5XRV2KBB9H6A8AKFTPKZ60",
+          "similarity": 0.5408619226172585,
+          "sourceInput": "s17:203:My favorite airline seat is window now."
+        },
+        {
+          "content": "Daniyaal prefers to fly with the airline ANA for flights to Japan.",
+          "id": "01KN5XSF4TATQHQRPA0SJ6Z0AE",
+          "similarity": 0.3581458559012147,
+          "sourceInput": "s19:221:For Japan flights I prefer ANA."
+        },
+        {
+          "content": "Daniyaal prefers window seats instead of aisle seats for long flights.",
+          "id": "01KN5XNV4F9BDASF5YMAX540J0",
+          "similarity": 0.4813108641226447,
+          "sourceInput": "s11:129:For long flights I prefer window seats now instead of aisle."
+        },
+        {
+          "content": "Daniyaal prefers aisle seats when flying.",
+          "id": "01KN5XJ4MTARNPWRJNMKM7P2WS",
+          "similarity": 0.4810651344186667,
+          "sourceInput": "s3:27:I always prefer aisle seats on flights."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your current airline seat preference is window.",
+      "id": "RQ-014",
+      "must_contain": [
+        "window"
+      ],
+      "must_not_contain": [
+        "aisle"
+      ],
+      "question": "What is my current airline seat preference?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        129,
+        130,
+        203,
+        204,
+        281,
+        282
+      ]
+    },
+    "col_order": 13,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-014"
+      },
+      {
+        "label": "Question",
+        "value": "What is my current airline seat preference?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your current airline seat preference is window."
+      },
+      {
+        "label": "Answer",
+        "value": "window"
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal's favorite airline seat choice is the window seat.\",\n    \"id\": \"01KN5XRV2KBB9H6A8AKFTPKZ60\",\n    \"similarity\": 0.5408619226172585,\n    \"sourceInput\": \"s17:203:My favorite airline seat is window now.\"\n  },\n  {\n    \"content\": \"Daniyaal prefers to fly with the airline ANA for flights to Japan.\",\n    \"id\": \"01KN5XSF4TATQHQRPA0SJ6Z0AE\",\n    \"similarity\": 0.3581458559012147,\n    \"sourceInput\": \"s19:221:For Japan flights I prefer ANA.\"\n  },\n  {\n    \"content\": \"Daniyaal prefers window seats instead of aisle seats for long flights.\",\n    \"id\": \"01KN5XNV4F9BDASF5YMAX540J0\",\n    \"similarity\": 0.4813108641226447,\n    \"sourceInput\": \"s11:129:For long flights I prefer window seats now instead of aisle.\"\n  },\n  {\n    \"content\": \"Daniyaal prefers aisle seats when flying.\",\n    \"id\": \"01KN5XJ4MTARNPWRJNMKM7P2WS\",\n    \"similarity\": 0.4810651344186667,\n    \"sourceInput\": \"s3:27:I always prefer aisle seats on flights.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.75,
+    "scores": [
+      {
+        "id": 1322,
+        "result_id": 1626,
+        "name": "Retrieval Answer Score",
+        "score": 0.75,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0,
+          "containsMatched": [
+            "window"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

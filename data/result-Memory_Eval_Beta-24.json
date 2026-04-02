@@ -1,0 +1,179 @@
+{
+  "result": {
+    "id": 1637,
+    "eval_id": 103,
+    "duration": 936,
+    "input": {
+      "expected_reply": "When you first moved to Lisbon, you moved to Alfama.",
+      "id": "RQ-025",
+      "must_contain": [
+        "Alfama"
+      ],
+      "must_not_contain": [
+        "Principe Real",
+        "Gracia",
+        "Kreuzberg"
+      ],
+      "question": "What neighborhood did I first move to when I relocated to Lisbon?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    "output": {
+      "answer": "Alfama",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal moved from Berlin to Lisbon.",
+          "id": "01KN5XJRJA1347B4JP58NAAXKS",
+          "similarity": 0.5499951347523907,
+          "sourceInput": "s5:49:Big update: I moved from Berlin to Lisbon."
+        },
+        {
+          "content": "Daniyaal lived in Lisbon before moving to Barcelona.",
+          "id": "01KN5XQ2YAW4QKNXWA2Q34QT58",
+          "similarity": 0.5053614228670117,
+          "sourceInput": "s14:157:I moved from Lisbon to Barcelona."
+        },
+        {
+          "content": "Daniyaal lives in a new neighborhood called Alfama.",
+          "id": "01KN5XJTM3AJSV6WQSPCFR8W87",
+          "similarity": 0.4476855464971057,
+          "sourceInput": "s5:51:My new neighborhood is Alfama."
+        },
+        {
+          "content": "Maya relocated from Porto to Madrid.",
+          "id": "01KN5XPBBQSZB45P6T9Z5XWEF0",
+          "similarity": 0.40719650080950087,
+          "sourceInput": "s13:145:Maya moved from Porto to Madrid for a cardiology fellowship."
+        },
+        {
+          "content": "Daniyaal's favorite cafe in Lisbon is Hello Kristof.",
+          "id": "01KN5XN08JDVFH9PZW8WXETSGV",
+          "similarity": 0.40822566695670603,
+          "sourceInput": "s10:113:My favorite Lisbon cafe is Hello Kristof."
+        },
+        {
+          "content": "Daniyaal moved their residence from Alfama to Principe Real.",
+          "id": "01KN5XMX1DQQRCWV2DCM8GGZ32",
+          "similarity": 0.45196170695007587,
+          "sourceInput": "s10:109:I moved from Alfama to Principe Real."
+        },
+        {
+          "content": "Daniyaal's favorite bakery in Lisbon is Gleba.",
+          "id": "01KN5XK25NGMVYQM5WFYTSPK2E",
+          "similarity": 0.3714325857328311,
+          "sourceInput": "s5:59:My favorite bakery in Lisbon is Gleba."
+        },
+        {
+          "content": "Daniyaal works from Second Home Lisboa every Wednesday.",
+          "id": "01KN5XN4552WYGQGECK45BY15X",
+          "similarity": 0.35707585228038874,
+          "sourceInput": "s10:115:I no longer work from Heden Lisboa. I use Second Home Lisboa on Wednesdays now."
+        },
+        {
+          "content": "Maya began a medical residency program in Porto.",
+          "id": "01KN5XKV3GABAQE606QVGDA4FD",
+          "similarity": 0.3131594095743573,
+          "sourceInput": "s7:77:Maya started a medical residency in Porto."
+        },
+        {
+          "content": "Daniyaal works from Heden Lisboa on Wednesdays.",
+          "id": "01KN5XJYAKHE35T68QPSXE8KQN",
+          "similarity": 0.3218680822574038,
+          "sourceInput": "s5:55:I work from Heden Lisboa on Wednesdays."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "When you first moved to Lisbon, you moved to Alfama.",
+      "id": "RQ-025",
+      "must_contain": [
+        "Alfama"
+      ],
+      "must_not_contain": [
+        "Principe Real",
+        "Gracia",
+        "Kreuzberg"
+      ],
+      "question": "What neighborhood did I first move to when I relocated to Lisbon?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    "col_order": 24,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-025"
+      },
+      {
+        "label": "Question",
+        "value": "What neighborhood did I first move to when I relocated to Lisbon?"
+      },
+      {
+        "label": "Expected",
+        "value": "When you first moved to Lisbon, you moved to Alfama."
+      },
+      {
+        "label": "Answer",
+        "value": "Alfama"
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal moved from Berlin to Lisbon.\",\n    \"id\": \"01KN5XJRJA1347B4JP58NAAXKS\",\n    \"similarity\": 0.5499951347523907,\n    \"sourceInput\": \"s5:49:Big update: I moved from Berlin to Lisbon.\"\n  },\n  {\n    \"content\": \"Daniyaal lived in Lisbon before moving to Barcelona.\",\n    \"id\": \"01KN5XQ2YAW4QKNXWA2Q34QT58\",\n    \"similarity\": 0.5053614228670117,\n    \"sourceInput\": \"s14:157:I moved from Lisbon to Barcelona.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in a new neighborhood called Alfama.\",\n    \"id\": \"01KN5XJTM3AJSV6WQSPCFR8W87\",\n    \"similarity\": 0.4476855464971057,\n    \"sourceInput\": \"s5:51:My new neighborhood is Alfama.\"\n  },\n  {\n    \"content\": \"Maya relocated from Porto to Madrid.\",\n    \"id\": \"01KN5XPBBQSZB45P6T9Z5XWEF0\",\n    \"similarity\": 0.40719650080950087,\n    \"sourceInput\": \"s13:145:Maya moved from Porto to Madrid for a cardiology fellowship.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite cafe in Lisbon is Hello Kristof.\",\n    \"id\": \"01KN5XN08JDVFH9PZW8WXETSGV\",\n    \"similarity\": 0.40822566695670603,\n    \"sourceInput\": \"s10:113:My favorite Lisbon cafe is Hello Kristof.\"\n  },\n  {\n    \"content\": \"Daniyaal moved their residence from Alfama to Principe Real.\",\n    \"id\": \"01KN5XMX1DQQRCWV2DCM8GGZ32\",\n    \"similarity\": 0.45196170695007587,\n    \"sourceInput\": \"s10:109:I moved from Alfama to Principe Real.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite bakery in Lisbon is Gleba.\",\n    \"id\": \"01KN5XK25NGMVYQM5WFYTSPK2E\",\n    \"similarity\": 0.3714325857328311,\n    \"sourceInput\": \"s5:59:My favorite bakery in Lisbon is Gleba.\"\n  },\n  {\n    \"content\": \"Daniyaal works from Second Home Lisboa every Wednesday.\",\n    \"id\": \"01KN5XN4552WYGQGECK45BY15X\",\n    \"similarity\": 0.35707585228038874,\n    \"sourceInput\": \"s10:115:I no longer work from Heden Lisboa. I use Second Home Lisboa on Wednesdays now.\"\n  },\n  {\n    \"content\": \"Maya began a medical residency program in Porto.\",\n    \"id\": \"01KN5XKV3GABAQE606QVGDA4FD\",\n    \"similarity\": 0.3131594095743573,\n    \"sourceInput\": \"s7:77:Maya started a medical residency in Porto.\"\n  },\n  {\n    \"content\": \"Daniyaal works from Heden Lisboa on Wednesdays.\",\n    \"id\": \"01KN5XJYAKHE35T68QPSXE8KQN\",\n    \"similarity\": 0.3218680822574038,\n    \"sourceInput\": \"s5:55:I work from Heden Lisboa on Wednesdays.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.75,
+    "scores": [
+      {
+        "id": 1333,
+        "result_id": 1637,
+        "name": "Retrieval Answer Score",
+        "score": 0.75,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0,
+          "containsMatched": [
+            "Alfama"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

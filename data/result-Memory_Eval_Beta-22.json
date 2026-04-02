@@ -1,0 +1,198 @@
+{
+  "result": {
+    "id": 1635,
+    "eval_id": 103,
+    "duration": 1499,
+    "input": {
+      "expected_reply": "Before joining Notion, you were at Linear, and your final project there was Atlas.",
+      "id": "RQ-023",
+      "must_contain": [
+        "Linear",
+        "Atlas"
+      ],
+      "must_not_contain": [
+        "Orbit",
+        "Figma",
+        "Calendar"
+      ],
+      "question": "Before joining Notion, which company was I at and what was my final project there?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        133,
+        134,
+        169,
+        170,
+        265,
+        266
+      ]
+    },
+    "output": {
+      "answer": "Before joining Notion, you were at Linear, where your final project was Atlas Companion.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal joined the company Notion.",
+          "id": "01KN5XV80EAVV5AM2D14XC1324",
+          "similarity": 0.5104816642989228,
+          "sourceInput": "s23:265:I left Linear and joined Notion."
+        },
+        {
+          "content": "Daniyaal works from the Notion office in Barcelona on Mondays.",
+          "id": "01KN5XVH6ZYTT79PQ8H3YMW4ZK",
+          "similarity": 0.38839862729754415,
+          "sourceInput": "s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays."
+        },
+        {
+          "content": "Daniyaal left the company Linear.",
+          "id": "01KN5XV8086DMP7YAQMCAW38CK",
+          "similarity": 0.3112728664936155,
+          "sourceInput": "s23:265:I left Linear and joined Notion."
+        },
+        {
+          "content": "Daniyaal works from the Notion office in Barcelona on Wednesdays.",
+          "id": "01KN5XVJE0NW65PN6E0PRQZ2FV",
+          "similarity": 0.38184946317085733,
+          "sourceInput": "s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays."
+        },
+        {
+          "content": "Daniyaal left the company Figma.",
+          "id": "01KN5XNZ7PANBTQAD6Y334XHF2",
+          "similarity": 0.34219029795307043,
+          "sourceInput": "s12:133:I left Figma and joined Linear."
+        },
+        {
+          "content": "Daniyaal is currently employed at Figma.",
+          "id": "01KN5XK5W34E5S5GKW1Q86MVYB",
+          "similarity": 0.3660960342108308,
+          "sourceInput": "s6:61:I left Stripe and now work at Figma."
+        },
+        {
+          "content": "Daniyaal is working on a project called Orbit at Linear.",
+          "id": "01KN5XP4BGZ09H7C3GW1R5X17A",
+          "similarity": 0.32424298681727826,
+          "sourceInput": "s12:137:My project at Linear is Orbit."
+        },
+        {
+          "content": "Daniyaal switched from using Obsidian to Tana for his work notes.",
+          "id": "01KN5XTVE83M15VF0HNKYEEHT2",
+          "similarity": 0.31109827606815155,
+          "sourceInput": "s22:257:I switched from Obsidian to Tana for work notes."
+        },
+        {
+          "content": "Daniyaal is working on a project called Canvas at Figma.",
+          "id": "01KN5XKCJ2M7DS9XVTJ0A4R269",
+          "similarity": 0.31564602159304045,
+          "sourceInput": "s6:65:At Figma I'm working on the Canvas project."
+        },
+        {
+          "content": "Daniyaal joined the company Linear.",
+          "id": "01KN5XNZ7X4MBH65CWKPBGYM2Y",
+          "similarity": 0.30768792834531977,
+          "sourceInput": "s12:133:I left Figma and joined Linear."
+        },
+        {
+          "content": "Daniyaal works at the company Stripe.",
+          "id": "01KN5XH9CZQDQSN265946ZFBDC",
+          "similarity": 0.30817814099459895,
+          "sourceInput": "s1:5:I work at Stripe as a product designer."
+        },
+        {
+          "content": "Elena holds the position of manager for the design systems team.",
+          "id": "01KN5XMPP77M1EPNH1JXC7PW0H",
+          "similarity": 0.31250841488000813,
+          "sourceInput": "s9:103:Elena manages the design systems team."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Before joining Notion, you were at Linear, and your final project there was Atlas.",
+      "id": "RQ-023",
+      "must_contain": [
+        "Linear",
+        "Atlas"
+      ],
+      "must_not_contain": [
+        "Orbit",
+        "Figma",
+        "Calendar"
+      ],
+      "question": "Before joining Notion, which company was I at and what was my final project there?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        133,
+        134,
+        169,
+        170,
+        265,
+        266
+      ]
+    },
+    "col_order": 22,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-023"
+      },
+      {
+        "label": "Question",
+        "value": "Before joining Notion, which company was I at and what was my final project there?"
+      },
+      {
+        "label": "Expected",
+        "value": "Before joining Notion, you were at Linear, and your final project there was Atlas."
+      },
+      {
+        "label": "Answer",
+        "value": "Before joining Notion, you were at Linear, where your final project was Atlas Companion."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal joined the company Notion.\",\n    \"id\": \"01KN5XV80EAVV5AM2D14XC1324\",\n    \"similarity\": 0.5104816642989228,\n    \"sourceInput\": \"s23:265:I left Linear and joined Notion.\"\n  },\n  {\n    \"content\": \"Daniyaal works from the Notion office in Barcelona on Mondays.\",\n    \"id\": \"01KN5XVH6ZYTT79PQ8H3YMW4ZK\",\n    \"similarity\": 0.38839862729754415,\n    \"sourceInput\": \"s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays.\"\n  },\n  {\n    \"content\": \"Daniyaal left the company Linear.\",\n    \"id\": \"01KN5XV8086DMP7YAQMCAW38CK\",\n    \"similarity\": 0.3112728664936155,\n    \"sourceInput\": \"s23:265:I left Linear and joined Notion.\"\n  },\n  {\n    \"content\": \"Daniyaal works from the Notion office in Barcelona on Wednesdays.\",\n    \"id\": \"01KN5XVJE0NW65PN6E0PRQZ2FV\",\n    \"similarity\": 0.38184946317085733,\n    \"sourceInput\": \"s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays.\"\n  },\n  {\n    \"content\": \"Daniyaal left the company Figma.\",\n    \"id\": \"01KN5XNZ7PANBTQAD6Y334XHF2\",\n    \"similarity\": 0.34219029795307043,\n    \"sourceInput\": \"s12:133:I left Figma and joined Linear.\"\n  },\n  {\n    \"content\": \"Daniyaal is currently employed at Figma.\",\n    \"id\": \"01KN5XK5W34E5S5GKW1Q86MVYB\",\n    \"similarity\": 0.3660960342108308,\n    \"sourceInput\": \"s6:61:I left Stripe and now work at Figma.\"\n  },\n  {\n    \"content\": \"Daniyaal is working on a project called Orbit at Linear.\",\n    \"id\": \"01KN5XP4BGZ09H7C3GW1R5X17A\",\n    \"similarity\": 0.32424298681727826,\n    \"sourceInput\": \"s12:137:My project at Linear is Orbit.\"\n  },\n  {\n    \"content\": \"Daniyaal switched from using Obsidian to Tana for his work notes.\",\n    \"id\": \"01KN5XTVE83M15VF0HNKYEEHT2\",\n    \"similarity\": 0.31109827606815155,\n    \"sourceInput\": \"s22:257:I switched from Obsidian to Tana for work notes.\"\n  },\n  {\n    \"content\": \"Daniyaal is working on a project called Canvas at Figma.\",\n    \"id\": \"01KN5XKCJ2M7DS9XVTJ0A4R269\",\n    \"similarity\": 0.31564602159304045,\n    \"sourceInput\": \"s6:65:At Figma I'm working on the Canvas project.\"\n  },\n  {\n    \"content\": \"Daniyaal joined the company Linear.\",\n    \"id\": \"01KN5XNZ7X4MBH65CWKPBGYM2Y\",\n    \"similarity\": 0.30768792834531977,\n    \"sourceInput\": \"s12:133:I left Figma and joined Linear.\"\n  },\n  {\n    \"content\": \"Daniyaal works at the company Stripe.\",\n    \"id\": \"01KN5XH9CZQDQSN265946ZFBDC\",\n    \"similarity\": 0.30817814099459895,\n    \"sourceInput\": \"s1:5:I work at Stripe as a product designer.\"\n  },\n  {\n    \"content\": \"Elena holds the position of manager for the design systems team.\",\n    \"id\": \"01KN5XMPP77M1EPNH1JXC7PW0H\",\n    \"similarity\": 0.31250841488000813,\n    \"sourceInput\": \"s9:103:Elena manages the design systems team.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9464285714285714,
+    "scores": [
+      {
+        "id": 1331,
+        "result_id": 1635,
+        "name": "Retrieval Answer Score",
+        "score": 0.9464285714285714,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.7857142857142857,
+          "containsMatched": [
+            "Linear",
+            "Atlas"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

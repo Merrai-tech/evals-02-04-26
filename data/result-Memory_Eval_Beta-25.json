@@ -1,0 +1,189 @@
+{
+  "result": {
+    "id": 1638,
+    "eval_id": 103,
+    "duration": 1335,
+    "input": {
+      "expected_reply": "Just before moving to Barcelona, you lived in Principe Real.",
+      "id": "RQ-026",
+      "must_contain": [
+        "Principe Real"
+      ],
+      "must_not_contain": [
+        "Alfama",
+        "Gracia"
+      ],
+      "question": "Which Lisbon neighborhood did I live in just before moving to Barcelona?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        109,
+        110,
+        157,
+        158
+      ]
+    },
+    "output": {
+      "answer": "Principe Real",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal lived in Lisbon before moving to Barcelona.",
+          "id": "01KN5XQ2YAW4QKNXWA2Q34QT58",
+          "similarity": 0.6405491869357868,
+          "sourceInput": "s14:157:I moved from Lisbon to Barcelona."
+        },
+        {
+          "content": "Daniyaal moved from Berlin to Lisbon.",
+          "id": "01KN5XJRJA1347B4JP58NAAXKS",
+          "similarity": 0.5409172351077567,
+          "sourceInput": "s5:49:Big update: I moved from Berlin to Lisbon."
+        },
+        {
+          "content": "Daniyaal lives in the Gracia neighborhood of Barcelona.",
+          "id": "01KN5XV3EK37B6EZVPGBPXC143",
+          "similarity": 0.45840425098608606,
+          "sourceInput": "s22:261:My Barcelona neighborhood is still Gracia."
+        },
+        {
+          "content": "Daniyaal lives in a new neighborhood called Alfama.",
+          "id": "01KN5XJTM3AJSV6WQSPCFR8W87",
+          "similarity": 0.43737093963278273,
+          "sourceInput": "s5:51:My new neighborhood is Alfama."
+        },
+        {
+          "content": "Daniyaal's favorite cafe in Lisbon is Hello Kristof.",
+          "id": "01KN5XN08JDVFH9PZW8WXETSGV",
+          "similarity": 0.41978410823376233,
+          "sourceInput": "s10:113:My favorite Lisbon cafe is Hello Kristof."
+        },
+        {
+          "content": "Maya formerly lived in Madrid.",
+          "id": "01KN5XT79J45Q8M2MVM5KR75B3",
+          "similarity": 0.3905296488136045,
+          "sourceInput": "s21:243:Maya moved from Madrid to Zurich for a cardiology role."
+        },
+        {
+          "content": "Daniyaal lives in the Gracia neighborhood.",
+          "id": "01KN5XQ5JF1K37KEQ9D16MGEAQ",
+          "similarity": 0.3846438123733884,
+          "sourceInput": "s14:159:My neighborhood is Gracia."
+        },
+        {
+          "content": "Maya relocated from Porto to Madrid.",
+          "id": "01KN5XPBBQSZB45P6T9Z5XWEF0",
+          "similarity": 0.4253056044459622,
+          "sourceInput": "s13:145:Maya moved from Porto to Madrid for a cardiology fellowship."
+        },
+        {
+          "content": "Daniyaal moved their residence from Alfama to Principe Real.",
+          "id": "01KN5XMX1DQQRCWV2DCM8GGZ32",
+          "similarity": 0.42285685818492325,
+          "sourceInput": "s10:109:I moved from Alfama to Principe Real."
+        },
+        {
+          "content": "Daniyaal's preferred weekend brunch spot is Federal Cafe in Barcelona.",
+          "id": "01KN5XRRY67279C7MSG05SS8BK",
+          "similarity": 0.31366252732824385,
+          "sourceInput": "s17:201:My weekend brunch spot is Federal Cafe in Barcelona."
+        },
+        {
+          "content": "Daniyaal's favorite bakery in Lisbon is Gleba.",
+          "id": "01KN5XK25NGMVYQM5WFYTSPK2E",
+          "similarity": 0.36900195508219447,
+          "sourceInput": "s5:59:My favorite bakery in Lisbon is Gleba."
+        },
+        {
+          "content": "Daniyaal's favorite local bakery in Barcelona is Origo.",
+          "id": "01KN5XQ729J9VF42SS4M3ARHM0",
+          "similarity": 0.3134360171529724,
+          "sourceInput": "s14:161:My favorite local bakery in Barcelona is Origo."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Just before moving to Barcelona, you lived in Principe Real.",
+      "id": "RQ-026",
+      "must_contain": [
+        "Principe Real"
+      ],
+      "must_not_contain": [
+        "Alfama",
+        "Gracia"
+      ],
+      "question": "Which Lisbon neighborhood did I live in just before moving to Barcelona?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        109,
+        110,
+        157,
+        158
+      ]
+    },
+    "col_order": 25,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-026"
+      },
+      {
+        "label": "Question",
+        "value": "Which Lisbon neighborhood did I live in just before moving to Barcelona?"
+      },
+      {
+        "label": "Expected",
+        "value": "Just before moving to Barcelona, you lived in Principe Real."
+      },
+      {
+        "label": "Answer",
+        "value": "Principe Real"
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal lived in Lisbon before moving to Barcelona.\",\n    \"id\": \"01KN5XQ2YAW4QKNXWA2Q34QT58\",\n    \"similarity\": 0.6405491869357868,\n    \"sourceInput\": \"s14:157:I moved from Lisbon to Barcelona.\"\n  },\n  {\n    \"content\": \"Daniyaal moved from Berlin to Lisbon.\",\n    \"id\": \"01KN5XJRJA1347B4JP58NAAXKS\",\n    \"similarity\": 0.5409172351077567,\n    \"sourceInput\": \"s5:49:Big update: I moved from Berlin to Lisbon.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in the Gracia neighborhood of Barcelona.\",\n    \"id\": \"01KN5XV3EK37B6EZVPGBPXC143\",\n    \"similarity\": 0.45840425098608606,\n    \"sourceInput\": \"s22:261:My Barcelona neighborhood is still Gracia.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in a new neighborhood called Alfama.\",\n    \"id\": \"01KN5XJTM3AJSV6WQSPCFR8W87\",\n    \"similarity\": 0.43737093963278273,\n    \"sourceInput\": \"s5:51:My new neighborhood is Alfama.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite cafe in Lisbon is Hello Kristof.\",\n    \"id\": \"01KN5XN08JDVFH9PZW8WXETSGV\",\n    \"similarity\": 0.41978410823376233,\n    \"sourceInput\": \"s10:113:My favorite Lisbon cafe is Hello Kristof.\"\n  },\n  {\n    \"content\": \"Maya formerly lived in Madrid.\",\n    \"id\": \"01KN5XT79J45Q8M2MVM5KR75B3\",\n    \"similarity\": 0.3905296488136045,\n    \"sourceInput\": \"s21:243:Maya moved from Madrid to Zurich for a cardiology role.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in the Gracia neighborhood.\",\n    \"id\": \"01KN5XQ5JF1K37KEQ9D16MGEAQ\",\n    \"similarity\": 0.3846438123733884,\n    \"sourceInput\": \"s14:159:My neighborhood is Gracia.\"\n  },\n  {\n    \"content\": \"Maya relocated from Porto to Madrid.\",\n    \"id\": \"01KN5XPBBQSZB45P6T9Z5XWEF0\",\n    \"similarity\": 0.4253056044459622,\n    \"sourceInput\": \"s13:145:Maya moved from Porto to Madrid for a cardiology fellowship.\"\n  },\n  {\n    \"content\": \"Daniyaal moved their residence from Alfama to Principe Real.\",\n    \"id\": \"01KN5XMX1DQQRCWV2DCM8GGZ32\",\n    \"similarity\": 0.42285685818492325,\n    \"sourceInput\": \"s10:109:I moved from Alfama to Principe Real.\"\n  },\n  {\n    \"content\": \"Daniyaal's preferred weekend brunch spot is Federal Cafe in Barcelona.\",\n    \"id\": \"01KN5XRRY67279C7MSG05SS8BK\",\n    \"similarity\": 0.31366252732824385,\n    \"sourceInput\": \"s17:201:My weekend brunch spot is Federal Cafe in Barcelona.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite bakery in Lisbon is Gleba.\",\n    \"id\": \"01KN5XK25NGMVYQM5WFYTSPK2E\",\n    \"similarity\": 0.36900195508219447,\n    \"sourceInput\": \"s5:59:My favorite bakery in Lisbon is Gleba.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite local bakery in Barcelona is Origo.\",\n    \"id\": \"01KN5XQ729J9VF42SS4M3ARHM0\",\n    \"similarity\": 0.3134360171529724,\n    \"sourceInput\": \"s14:161:My favorite local bakery in Barcelona is Origo.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.7916666666666666,
+    "scores": [
+      {
+        "id": 1334,
+        "result_id": 1638,
+        "name": "Retrieval Answer Score",
+        "score": 0.7916666666666666,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.16666666666666669,
+          "containsMatched": [
+            "Principe Real"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

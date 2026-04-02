@@ -1,0 +1,180 @@
+{
+  "result": {
+    "id": 1627,
+    "eval_id": 103,
+    "duration": 1388,
+    "input": {
+      "expected_reply": "Your London work trip is on 2027-03-15 at 11:30 UTC, and you are staying at Ace Hotel London Shoreditch.",
+      "id": "RQ-015",
+      "must_contain": [
+        "2027-03-15",
+        "11:30",
+        "UTC",
+        "Ace Hotel London Shoreditch"
+      ],
+      "must_not_contain": [
+        "2027-03-14",
+        "09:00",
+        "The Hoxton Shoreditch"
+      ],
+      "question": "When is my London work trip, and where am I staying?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        217,
+        218,
+        219,
+        220,
+        283,
+        284
+      ]
+    },
+    "output": {
+      "answer": "The London trip is on 2027-03-15 at 11:30 UTC, and you are staying at the Ace Hotel London Shoreditch.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal has a work trip to London occurring on 2027-03-14 at 09:00 UTC.",
+          "id": "01KN5XS6AV7073Q07CYQJD16G7",
+          "similarity": 0.49411167340752526,
+          "sourceInput": "s18:213:I have a work trip to London on 2027-03-14 at 09:00 UTC."
+        },
+        {
+          "content": "Daniyaal stays at the Ace Hotel London Shoreditch when visiting London.",
+          "id": "01KN5XW13BCPAGHC1PMRSVRK4V",
+          "similarity": 0.5101475475753351,
+          "sourceInput": "s24:283:For London trips I still stay at Ace Hotel London Shoreditch."
+        },
+        {
+          "content": "Daniyaal has a trip to London scheduled for 2027-03-15 at 11:30 UTC.",
+          "id": "01KN5XSBM1YEZJSKGK6BTNXJE1",
+          "similarity": 0.41787724487805566,
+          "sourceInput": "s19:217:Correction: the London trip moved to 2027-03-15 at 11:30 UTC."
+        },
+        {
+          "content": "Daniyaal switched his accommodation to Ace Hotel London Shoreditch.",
+          "id": "01KN5XSDE1NES434YMRPZD8K2Z",
+          "similarity": 0.44254027041129573,
+          "sourceInput": "s19:219:The hotel changed to Ace Hotel London Shoreditch."
+        },
+        {
+          "content": "Daniyaal is staying at The Hoxton Shoreditch.",
+          "id": "01KN5XS87SCEE13ERMAVD0748H",
+          "similarity": 0.4066458902520802,
+          "sourceInput": "s18:215:I'm staying at The Hoxton Shoreditch."
+        },
+        {
+          "content": "Daniyaal is staying at the Hoshinoya Tokyo hotel.",
+          "id": "01KN5XM5WPRMCNRJ04Y4VWC96D",
+          "similarity": 0.35681217206008253,
+          "sourceInput": "s8:87:I'm staying at Hoshinoya Tokyo."
+        },
+        {
+          "content": "Daniyaal switched his hotel reservation in Tokyo to the Trunk Hotel.",
+          "id": "01KN5XMJAF8CK68QVR9XD3XVQW",
+          "similarity": 0.36156311433657384,
+          "sourceInput": "s9:99:The Tokyo hotel switched to Trunk Hotel."
+        },
+        {
+          "content": "Daniyaal works from Second Home Lisboa every Wednesday.",
+          "id": "01KN5XN4552WYGQGECK45BY15X",
+          "similarity": 0.33209927343490375,
+          "sourceInput": "s10:115:I no longer work from Heden Lisboa. I use Second Home Lisboa on Wednesdays now."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your London work trip is on 2027-03-15 at 11:30 UTC, and you are staying at Ace Hotel London Shoreditch.",
+      "id": "RQ-015",
+      "must_contain": [
+        "2027-03-15",
+        "11:30",
+        "UTC",
+        "Ace Hotel London Shoreditch"
+      ],
+      "must_not_contain": [
+        "2027-03-14",
+        "09:00",
+        "The Hoxton Shoreditch"
+      ],
+      "question": "When is my London work trip, and where am I staying?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        217,
+        218,
+        219,
+        220,
+        283,
+        284
+      ]
+    },
+    "col_order": 14,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-015"
+      },
+      {
+        "label": "Question",
+        "value": "When is my London work trip, and where am I staying?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your London work trip is on 2027-03-15 at 11:30 UTC, and you are staying at Ace Hotel London Shoreditch."
+      },
+      {
+        "label": "Answer",
+        "value": "The London trip is on 2027-03-15 at 11:30 UTC, and you are staying at the Ace Hotel London Shoreditch."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal has a work trip to London occurring on 2027-03-14 at 09:00 UTC.\",\n    \"id\": \"01KN5XS6AV7073Q07CYQJD16G7\",\n    \"similarity\": 0.49411167340752526,\n    \"sourceInput\": \"s18:213:I have a work trip to London on 2027-03-14 at 09:00 UTC.\"\n  },\n  {\n    \"content\": \"Daniyaal stays at the Ace Hotel London Shoreditch when visiting London.\",\n    \"id\": \"01KN5XW13BCPAGHC1PMRSVRK4V\",\n    \"similarity\": 0.5101475475753351,\n    \"sourceInput\": \"s24:283:For London trips I still stay at Ace Hotel London Shoreditch.\"\n  },\n  {\n    \"content\": \"Daniyaal has a trip to London scheduled for 2027-03-15 at 11:30 UTC.\",\n    \"id\": \"01KN5XSBM1YEZJSKGK6BTNXJE1\",\n    \"similarity\": 0.41787724487805566,\n    \"sourceInput\": \"s19:217:Correction: the London trip moved to 2027-03-15 at 11:30 UTC.\"\n  },\n  {\n    \"content\": \"Daniyaal switched his accommodation to Ace Hotel London Shoreditch.\",\n    \"id\": \"01KN5XSDE1NES434YMRPZD8K2Z\",\n    \"similarity\": 0.44254027041129573,\n    \"sourceInput\": \"s19:219:The hotel changed to Ace Hotel London Shoreditch.\"\n  },\n  {\n    \"content\": \"Daniyaal is staying at The Hoxton Shoreditch.\",\n    \"id\": \"01KN5XS87SCEE13ERMAVD0748H\",\n    \"similarity\": 0.4066458902520802,\n    \"sourceInput\": \"s18:215:I'm staying at The Hoxton Shoreditch.\"\n  },\n  {\n    \"content\": \"Daniyaal is staying at the Hoshinoya Tokyo hotel.\",\n    \"id\": \"01KN5XM5WPRMCNRJ04Y4VWC96D\",\n    \"similarity\": 0.35681217206008253,\n    \"sourceInput\": \"s8:87:I'm staying at Hoshinoya Tokyo.\"\n  },\n  {\n    \"content\": \"Daniyaal switched his hotel reservation in Tokyo to the Trunk Hotel.\",\n    \"id\": \"01KN5XMJAF8CK68QVR9XD3XVQW\",\n    \"similarity\": 0.36156311433657384,\n    \"sourceInput\": \"s9:99:The Tokyo hotel switched to Trunk Hotel.\"\n  },\n  {\n    \"content\": \"Daniyaal works from Second Home Lisboa every Wednesday.\",\n    \"id\": \"01KN5XN4552WYGQGECK45BY15X\",\n    \"similarity\": 0.33209927343490375,\n    \"sourceInput\": \"s10:115:I no longer work from Heden Lisboa. I use Second Home Lisboa on Wednesdays now.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9772727272727273,
+    "scores": [
+      {
+        "id": 1323,
+        "result_id": 1627,
+        "name": "Retrieval Answer Score",
+        "score": 0.9772727272727273,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.9090909090909091,
+          "containsMatched": [
+            "2027-03-15",
+            "11:30",
+            "UTC",
+            "Ace Hotel London Shoreditch"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

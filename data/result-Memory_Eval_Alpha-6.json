@@ -1,0 +1,160 @@
+{
+  "result": {
+    "id": 1609,
+    "eval_id": 102,
+    "duration": 1110,
+    "input": {
+      "expected_reply": "You prefer mint tea now, and you usually order an oat flat white.",
+      "id": "RQ-007",
+      "must_contain": [
+        "mint tea",
+        "oat flat white"
+      ],
+      "must_not_contain": [
+        "jasmine",
+        "espresso"
+      ],
+      "question": "What tea do I prefer now, and what coffee do I usually order now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        17,
+        18,
+        39,
+        40,
+        47,
+        48
+      ]
+    },
+    "output": {
+      "answer": "You prefer Mint tea and your coffee order is an oat flat white.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal usually orders an oat flat white.",
+          "id": "01KN5XJSBTPCHH8GR3BQP8PNSY",
+          "similarity": 0.4370130063122264,
+          "sourceInput": "s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white."
+        },
+        {
+          "content": "Mint tea is Daniyaal's favorite type of tea.",
+          "id": "01KN5XJFSJDETF6TFXERMQVH7V",
+          "similarity": 0.37596105847924166,
+          "sourceInput": "s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now."
+        },
+        {
+          "content": "Daniyaal no longer drinks espresso every morning.",
+          "id": "01KN5XJSBK6VQ0SFN3G6SJP52J",
+          "similarity": 0.3594141055196922,
+          "sourceInput": "s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white."
+        },
+        {
+          "content": "Daniyaal no longer enjoys jasmine tea.",
+          "id": "01KN5XJFSB9G9FW94M0VNHSDMR",
+          "similarity": 0.3234455702779093,
+          "sourceInput": "s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now."
+        },
+        {
+          "content": "Daniyaal drinks espresso every morning.",
+          "id": "01KN5XHWTV3BF7GQJ8Y7F3GJ90",
+          "similarity": 0.37354117423503386,
+          "sourceInput": "s1:23:I drink espresso every morning."
+        },
+        {
+          "content": "Daniyaal's favorite tea is jasmine tea.",
+          "id": "01KN5XHPPGAN9X8Z4JZ58AW50X",
+          "similarity": 0.35587418628547685,
+          "sourceInput": "s1:17:My favorite tea is jasmine tea."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You prefer mint tea now, and you usually order an oat flat white.",
+      "id": "RQ-007",
+      "must_contain": [
+        "mint tea",
+        "oat flat white"
+      ],
+      "must_not_contain": [
+        "jasmine",
+        "espresso"
+      ],
+      "question": "What tea do I prefer now, and what coffee do I usually order now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        17,
+        18,
+        39,
+        40,
+        47,
+        48
+      ]
+    },
+    "col_order": 6,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-007"
+      },
+      {
+        "label": "Question",
+        "value": "What tea do I prefer now, and what coffee do I usually order now?"
+      },
+      {
+        "label": "Expected",
+        "value": "You prefer mint tea now, and you usually order an oat flat white."
+      },
+      {
+        "label": "Answer",
+        "value": "You prefer Mint tea and your coffee order is an oat flat white."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal usually orders an oat flat white.\",\n    \"id\": \"01KN5XJSBTPCHH8GR3BQP8PNSY\",\n    \"similarity\": 0.4370130063122264,\n    \"sourceInput\": \"s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white.\"\n  },\n  {\n    \"content\": \"Mint tea is Daniyaal's favorite type of tea.\",\n    \"id\": \"01KN5XJFSJDETF6TFXERMQVH7V\",\n    \"similarity\": 0.37596105847924166,\n    \"sourceInput\": \"s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now.\"\n  },\n  {\n    \"content\": \"Daniyaal no longer drinks espresso every morning.\",\n    \"id\": \"01KN5XJSBK6VQ0SFN3G6SJP52J\",\n    \"similarity\": 0.3594141055196922,\n    \"sourceInput\": \"s5:47:I don't drink espresso every morning anymore. These days I usually order an oat flat white.\"\n  },\n  {\n    \"content\": \"Daniyaal no longer enjoys jasmine tea.\",\n    \"id\": \"01KN5XJFSB9G9FW94M0VNHSDMR\",\n    \"similarity\": 0.3234455702779093,\n    \"sourceInput\": \"s3:39:I don't want jasmine anymore. Mint tea is my favorite tea now.\"\n  },\n  {\n    \"content\": \"Daniyaal drinks espresso every morning.\",\n    \"id\": \"01KN5XHWTV3BF7GQJ8Y7F3GJ90\",\n    \"similarity\": 0.37354117423503386,\n    \"sourceInput\": \"s1:23:I drink espresso every morning.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite tea is jasmine tea.\",\n    \"id\": \"01KN5XHPPGAN9X8Z4JZ58AW50X\",\n    \"similarity\": 0.35587418628547685,\n    \"sourceInput\": \"s1:17:My favorite tea is jasmine tea.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9500000000000001,
+    "scores": [
+      {
+        "id": 1305,
+        "result_id": 1609,
+        "name": "Retrieval Answer Score",
+        "score": 0.9500000000000001,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.8,
+          "containsMatched": [
+            "mint tea",
+            "oat flat white"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 102,
+    "run_id": 75,
+    "name": "Memory Eval Alpha",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "result": {
+    "id": 1621,
+    "eval_id": 103,
+    "duration": 1262,
+    "input": {
+      "expected_reply": "Your cat is Miso, she is a tuxedo cat, and she likes salmon treats.",
+      "id": "RQ-009",
+      "must_contain": [
+        "Miso",
+        "tuxedo",
+        "salmon treats"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What is the name and color pattern of my cat, and what treats does she like?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        39,
+        40,
+        43,
+        44,
+        91,
+        92
+      ]
+    },
+    "output": {
+      "answer": "The cat's name is Miso, her pattern is tuxedo, and she likes salmon treats.",
+      "retrievedMemories": [
+        {
+          "content": "Pixel loves to eat carrots as treats.",
+          "id": "01KN5XQ0PY2EPZRM0PEQ7HBQKM",
+          "similarity": 0.4652790197066916,
+          "sourceInput": "s13:155:Pixel loves carrots as treats."
+        },
+        {
+          "content": "Miso is a tuxedo cat.",
+          "id": "01KN5XM9E3CVJT1YB51BVPAA6H",
+          "similarity": 0.42861064402038795,
+          "sourceInput": "s8:91:Miso is a tuxedo cat."
+        },
+        {
+          "content": "Miso likes salmon treats.",
+          "id": "01KN5XJJBVGYK7MMEPCQBZE82S",
+          "similarity": 0.380898701516992,
+          "sourceInput": "s4:43:Miso likes salmon treats."
+        },
+        {
+          "content": "Daniyaal adopted a cat named Miso.",
+          "id": "01KN5XJEY1RPWEPVP5XGCCVVTQ",
+          "similarity": 0.3632883383995833,
+          "sourceInput": "s4:39:I also adopted a cat named Miso."
+        },
+        {
+          "content": "Pixel's favorite toy is an orange ball.",
+          "id": "01KN5XJMASBV6D28KEB1ADJX1P",
+          "similarity": 0.35969917428031595,
+          "sourceInput": "s4:45:Pixel's favorite toy is an orange ball."
+        },
+        {
+          "content": "Daniyaal's dog, Pixel, is black.",
+          "id": "01KN5XHK6YV7D6N3NVTKA13HBK",
+          "similarity": 0.3188902525578001,
+          "sourceInput": "s2:13:I have a black corgi named Pixel."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your cat is Miso, she is a tuxedo cat, and she likes salmon treats.",
+      "id": "RQ-009",
+      "must_contain": [
+        "Miso",
+        "tuxedo",
+        "salmon treats"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What is the name and color pattern of my cat, and what treats does she like?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        39,
+        40,
+        43,
+        44,
+        91,
+        92
+      ]
+    },
+    "col_order": 8,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-009"
+      },
+      {
+        "label": "Question",
+        "value": "What is the name and color pattern of my cat, and what treats does she like?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your cat is Miso, she is a tuxedo cat, and she likes salmon treats."
+      },
+      {
+        "label": "Answer",
+        "value": "The cat's name is Miso, her pattern is tuxedo, and she likes salmon treats."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Pixel loves to eat carrots as treats.\",\n    \"id\": \"01KN5XQ0PY2EPZRM0PEQ7HBQKM\",\n    \"similarity\": 0.4652790197066916,\n    \"sourceInput\": \"s13:155:Pixel loves carrots as treats.\"\n  },\n  {\n    \"content\": \"Miso is a tuxedo cat.\",\n    \"id\": \"01KN5XM9E3CVJT1YB51BVPAA6H\",\n    \"similarity\": 0.42861064402038795,\n    \"sourceInput\": \"s8:91:Miso is a tuxedo cat.\"\n  },\n  {\n    \"content\": \"Miso likes salmon treats.\",\n    \"id\": \"01KN5XJJBVGYK7MMEPCQBZE82S\",\n    \"similarity\": 0.380898701516992,\n    \"sourceInput\": \"s4:43:Miso likes salmon treats.\"\n  },\n  {\n    \"content\": \"Daniyaal adopted a cat named Miso.\",\n    \"id\": \"01KN5XJEY1RPWEPVP5XGCCVVTQ\",\n    \"similarity\": 0.3632883383995833,\n    \"sourceInput\": \"s4:39:I also adopted a cat named Miso.\"\n  },\n  {\n    \"content\": \"Pixel's favorite toy is an orange ball.\",\n    \"id\": \"01KN5XJMASBV6D28KEB1ADJX1P\",\n    \"similarity\": 0.35969917428031595,\n    \"sourceInput\": \"s4:45:Pixel's favorite toy is an orange ball.\"\n  },\n  {\n    \"content\": \"Daniyaal's dog, Pixel, is black.\",\n    \"id\": \"01KN5XHK6YV7D6N3NVTKA13HBK\",\n    \"similarity\": 0.3188902525578001,\n    \"sourceInput\": \"s2:13:I have a black corgi named Pixel.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.93,
+    "scores": [
+      {
+        "id": 1317,
+        "result_id": 1621,
+        "name": "Retrieval Answer Score",
+        "score": 0.93,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.7200000000000001,
+          "containsMatched": [
+            "Miso",
+            "tuxedo",
+            "salmon treats"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

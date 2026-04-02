@@ -1,0 +1,188 @@
+{
+  "result": {
+    "id": 1633,
+    "eval_id": 103,
+    "duration": 1037,
+    "input": {
+      "expected_reply": "You work from the Notion Barcelona office on Mondays and Wednesdays.",
+      "id": "RQ-021",
+      "must_contain": [
+        "Mondays",
+        "Wednesdays"
+      ],
+      "must_not_contain": [
+        "Tuesdays",
+        "Thursdays"
+      ],
+      "question": "Which days do I work from the Notion Barcelona office?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        273,
+        274
+      ]
+    },
+    "output": {
+      "answer": "Mondays and Wednesdays",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal works from the Notion office in Barcelona on Mondays.",
+          "id": "01KN5XVH6ZYTT79PQ8H3YMW4ZK",
+          "similarity": 0.7453325305616466,
+          "sourceInput": "s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays."
+        },
+        {
+          "content": "Daniyaal works from the Notion office in Barcelona on Wednesdays.",
+          "id": "01KN5XVJE0NW65PN6E0PRQZ2FV",
+          "similarity": 0.7417081082615864,
+          "sourceInput": "s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays."
+        },
+        {
+          "content": "Daniyaal joined the company Notion.",
+          "id": "01KN5XV80EAVV5AM2D14XC1324",
+          "similarity": 0.4380234782237171,
+          "sourceInput": "s23:265:I left Linear and joined Notion."
+        },
+        {
+          "content": "Daniyaal coworks from Aticco Verdaguer every Tuesday.",
+          "id": "01KN5XQ8PZTNF7BMPCBP051E51",
+          "similarity": 0.46866503933834736,
+          "sourceInput": "s14:163:I cowork from Aticco Verdaguer on Tuesdays."
+        },
+        {
+          "content": "Daniyaal works from Second Home Lisboa every Wednesday.",
+          "id": "01KN5XN4552WYGQGECK45BY15X",
+          "similarity": 0.46103459754284015,
+          "sourceInput": "s10:115:I no longer work from Heden Lisboa. I use Second Home Lisboa on Wednesdays now."
+        },
+        {
+          "content": "Daniyaal works from Heden Lisboa on Wednesdays.",
+          "id": "01KN5XJYAKHE35T68QPSXE8KQN",
+          "similarity": 0.4912258308565717,
+          "sourceInput": "s5:55:I work from Heden Lisboa on Wednesdays."
+        },
+        {
+          "content": "Daniyaal lives in the Gracia neighborhood of Barcelona.",
+          "id": "01KN5XV3EK37B6EZVPGBPXC143",
+          "similarity": 0.36597676222953746,
+          "sourceInput": "s22:261:My Barcelona neighborhood is still Gracia."
+        },
+        {
+          "content": "Daniyaal's preferred weekend brunch spot is Federal Cafe in Barcelona.",
+          "id": "01KN5XRRY67279C7MSG05SS8BK",
+          "similarity": 0.36242767793493424,
+          "sourceInput": "s17:201:My weekend brunch spot is Federal Cafe in Barcelona."
+        },
+        {
+          "content": "Daniyaal's favorite local bakery in Barcelona is Origo.",
+          "id": "01KN5XQ729J9VF42SS4M3ARHM0",
+          "similarity": 0.35553578509953687,
+          "sourceInput": "s14:161:My favorite local bakery in Barcelona is Origo."
+        },
+        {
+          "content": "Daniyaal lived in Lisbon before moving to Barcelona.",
+          "id": "01KN5XQ2YAW4QKNXWA2Q34QT58",
+          "similarity": 0.3513178728486206,
+          "sourceInput": "s14:157:I moved from Lisbon to Barcelona."
+        },
+        {
+          "content": "Daniyaal has a work trip to London occurring on 2027-03-14 at 09:00 UTC.",
+          "id": "01KN5XS6AV7073Q07CYQJD16G7",
+          "similarity": 0.31725901686652236,
+          "sourceInput": "s18:213:I have a work trip to London on 2027-03-14 at 09:00 UTC."
+        },
+        {
+          "content": "Daniyaal's favorite ramen restaurant in Barcelona is Grasshopper.",
+          "id": "01KN5XSK58GMH670MBPPH70S5D",
+          "similarity": 0.3083135989376633,
+          "sourceInput": "s19:225:My favorite ramen in Barcelona is Grasshopper."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "You work from the Notion Barcelona office on Mondays and Wednesdays.",
+      "id": "RQ-021",
+      "must_contain": [
+        "Mondays",
+        "Wednesdays"
+      ],
+      "must_not_contain": [
+        "Tuesdays",
+        "Thursdays"
+      ],
+      "question": "Which days do I work from the Notion Barcelona office?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        273,
+        274
+      ]
+    },
+    "col_order": 20,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-021"
+      },
+      {
+        "label": "Question",
+        "value": "Which days do I work from the Notion Barcelona office?"
+      },
+      {
+        "label": "Expected",
+        "value": "You work from the Notion Barcelona office on Mondays and Wednesdays."
+      },
+      {
+        "label": "Answer",
+        "value": "Mondays and Wednesdays"
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal works from the Notion office in Barcelona on Mondays.\",\n    \"id\": \"01KN5XVH6ZYTT79PQ8H3YMW4ZK\",\n    \"similarity\": 0.7453325305616466,\n    \"sourceInput\": \"s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays.\"\n  },\n  {\n    \"content\": \"Daniyaal works from the Notion office in Barcelona on Wednesdays.\",\n    \"id\": \"01KN5XVJE0NW65PN6E0PRQZ2FV\",\n    \"similarity\": 0.7417081082615864,\n    \"sourceInput\": \"s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays.\"\n  },\n  {\n    \"content\": \"Daniyaal joined the company Notion.\",\n    \"id\": \"01KN5XV80EAVV5AM2D14XC1324\",\n    \"similarity\": 0.4380234782237171,\n    \"sourceInput\": \"s23:265:I left Linear and joined Notion.\"\n  },\n  {\n    \"content\": \"Daniyaal coworks from Aticco Verdaguer every Tuesday.\",\n    \"id\": \"01KN5XQ8PZTNF7BMPCBP051E51\",\n    \"similarity\": 0.46866503933834736,\n    \"sourceInput\": \"s14:163:I cowork from Aticco Verdaguer on Tuesdays.\"\n  },\n  {\n    \"content\": \"Daniyaal works from Second Home Lisboa every Wednesday.\",\n    \"id\": \"01KN5XN4552WYGQGECK45BY15X\",\n    \"similarity\": 0.46103459754284015,\n    \"sourceInput\": \"s10:115:I no longer work from Heden Lisboa. I use Second Home Lisboa on Wednesdays now.\"\n  },\n  {\n    \"content\": \"Daniyaal works from Heden Lisboa on Wednesdays.\",\n    \"id\": \"01KN5XJYAKHE35T68QPSXE8KQN\",\n    \"similarity\": 0.4912258308565717,\n    \"sourceInput\": \"s5:55:I work from Heden Lisboa on Wednesdays.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in the Gracia neighborhood of Barcelona.\",\n    \"id\": \"01KN5XV3EK37B6EZVPGBPXC143\",\n    \"similarity\": 0.36597676222953746,\n    \"sourceInput\": \"s22:261:My Barcelona neighborhood is still Gracia.\"\n  },\n  {\n    \"content\": \"Daniyaal's preferred weekend brunch spot is Federal Cafe in Barcelona.\",\n    \"id\": \"01KN5XRRY67279C7MSG05SS8BK\",\n    \"similarity\": 0.36242767793493424,\n    \"sourceInput\": \"s17:201:My weekend brunch spot is Federal Cafe in Barcelona.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite local bakery in Barcelona is Origo.\",\n    \"id\": \"01KN5XQ729J9VF42SS4M3ARHM0\",\n    \"similarity\": 0.35553578509953687,\n    \"sourceInput\": \"s14:161:My favorite local bakery in Barcelona is Origo.\"\n  },\n  {\n    \"content\": \"Daniyaal lived in Lisbon before moving to Barcelona.\",\n    \"id\": \"01KN5XQ2YAW4QKNXWA2Q34QT58\",\n    \"similarity\": 0.3513178728486206,\n    \"sourceInput\": \"s14:157:I moved from Lisbon to Barcelona.\"\n  },\n  {\n    \"content\": \"Daniyaal has a work trip to London occurring on 2027-03-14 at 09:00 UTC.\",\n    \"id\": \"01KN5XS6AV7073Q07CYQJD16G7\",\n    \"similarity\": 0.31725901686652236,\n    \"sourceInput\": \"s18:213:I have a work trip to London on 2027-03-14 at 09:00 UTC.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite ramen restaurant in Barcelona is Grasshopper.\",\n    \"id\": \"01KN5XSK58GMH670MBPPH70S5D\",\n    \"similarity\": 0.3083135989376633,\n    \"sourceInput\": \"s19:225:My favorite ramen in Barcelona is Grasshopper.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.8214285714285714,
+    "scores": [
+      {
+        "id": 1329,
+        "result_id": 1633,
+        "name": "Retrieval Answer Score",
+        "score": 0.8214285714285714,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.28571428571428575,
+          "containsMatched": [
+            "Mondays",
+            "Wednesdays"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

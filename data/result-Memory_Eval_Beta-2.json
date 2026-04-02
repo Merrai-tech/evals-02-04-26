@@ -1,0 +1,152 @@
+{
+  "result": {
+    "id": 1615,
+    "eval_id": 103,
+    "duration": 1216,
+    "input": {
+      "expected_reply": "Your current manager is Camille, and your title is principal product designer.",
+      "id": "RQ-003",
+      "must_contain": [
+        "Camille",
+        "principal product designer"
+      ],
+      "must_not_contain": [
+        "Sofia",
+        "Jonas",
+        "Elena",
+        "Priya",
+        "staff product designer",
+        "senior product designer",
+        "product designer"
+      ],
+      "question": "Who is my current manager, and what is my current title?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        267,
+        268,
+        269,
+        270,
+        297,
+        298
+      ]
+    },
+    "output": {
+      "answer": "Your current manager is Camille and your current title is principal product designer.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal holds the job title of staff product designer.",
+          "id": "01KN5XS443TDX4XF69NB302DS7",
+          "similarity": 0.31406182090222967,
+          "sourceInput": "s18:211:My title is still staff product designer."
+        },
+        {
+          "content": "Daniyaal's professional title is Staff Product Designer.",
+          "id": "01KN5XP2BGE1V3876Z6FZJBNT2",
+          "similarity": 0.31485170291066056,
+          "sourceInput": "s12:135:My title is staff product designer."
+        },
+        {
+          "content": "Elena holds the position of manager for the design systems team.",
+          "id": "01KN5XMPP77M1EPNH1JXC7PW0H",
+          "similarity": 0.367272328830067,
+          "sourceInput": "s9:103:Elena manages the design systems team."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your current manager is Camille, and your title is principal product designer.",
+      "id": "RQ-003",
+      "must_contain": [
+        "Camille",
+        "principal product designer"
+      ],
+      "must_not_contain": [
+        "Sofia",
+        "Jonas",
+        "Elena",
+        "Priya",
+        "staff product designer",
+        "senior product designer",
+        "product designer"
+      ],
+      "question": "Who is my current manager, and what is my current title?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        267,
+        268,
+        269,
+        270,
+        297,
+        298
+      ]
+    },
+    "col_order": 2,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-003"
+      },
+      {
+        "label": "Question",
+        "value": "Who is my current manager, and what is my current title?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your current manager is Camille, and your title is principal product designer."
+      },
+      {
+        "label": "Answer",
+        "value": "Your current manager is Camille and your current title is principal product designer."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal holds the job title of staff product designer.\",\n    \"id\": \"01KN5XS443TDX4XF69NB302DS7\",\n    \"similarity\": 0.31406182090222967,\n    \"sourceInput\": \"s18:211:My title is still staff product designer.\"\n  },\n  {\n    \"content\": \"Daniyaal's professional title is Staff Product Designer.\",\n    \"id\": \"01KN5XP2BGE1V3876Z6FZJBNT2\",\n    \"similarity\": 0.31485170291066056,\n    \"sourceInput\": \"s12:135:My title is staff product designer.\"\n  },\n  {\n    \"content\": \"Elena holds the position of manager for the design systems team.\",\n    \"id\": \"01KN5XMPP77M1EPNH1JXC7PW0H\",\n    \"similarity\": 0.367272328830067,\n    \"sourceInput\": \"s9:103:Elena manages the design systems team.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9571428571428572,
+    "scores": [
+      {
+        "id": 1311,
+        "result_id": 1615,
+        "name": "Retrieval Answer Score",
+        "score": 0.9571428571428572,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 0.9285714285714286,
+          "answerSimilarity": 1,
+          "containsMatched": [
+            "Camille",
+            "principal product designer"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+            "product designer"
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

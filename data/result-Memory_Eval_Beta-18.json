@@ -1,0 +1,190 @@
+{
+  "result": {
+    "id": 1631,
+    "eval_id": 103,
+    "duration": 1316,
+    "input": {
+      "expected_reply": "Your current favorite bakery in Barcelona is Origo, and your weekend brunch spot is Federal Cafe.",
+      "id": "RQ-019",
+      "must_contain": [
+        "Origo",
+        "Federal Cafe"
+      ],
+      "must_not_contain": [
+        "Gleba"
+      ],
+      "question": "What are my current favorite bakery and brunch spot in Barcelona?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        161,
+        162,
+        201,
+        202
+      ]
+    },
+    "output": {
+      "answer": "Your current favorite bakery in Barcelona is Origo and your current favorite brunch spot there is Federal Cafe.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal's preferred weekend brunch spot is Federal Cafe in Barcelona.",
+          "id": "01KN5XRRY67279C7MSG05SS8BK",
+          "similarity": 0.6311873494979943,
+          "sourceInput": "s17:201:My weekend brunch spot is Federal Cafe in Barcelona."
+        },
+        {
+          "content": "Daniyaal's favorite local bakery in Barcelona is Origo.",
+          "id": "01KN5XQ729J9VF42SS4M3ARHM0",
+          "similarity": 0.6484828580805381,
+          "sourceInput": "s14:161:My favorite local bakery in Barcelona is Origo."
+        },
+        {
+          "content": "Daniyaal's favorite ramen restaurant in Barcelona is Grasshopper.",
+          "id": "01KN5XSK58GMH670MBPPH70S5D",
+          "similarity": 0.49621295893894324,
+          "sourceInput": "s19:225:My favorite ramen in Barcelona is Grasshopper."
+        },
+        {
+          "content": "Daniyaal lives in the Gracia neighborhood of Barcelona.",
+          "id": "01KN5XV3EK37B6EZVPGBPXC143",
+          "similarity": 0.4185116870075053,
+          "sourceInput": "s22:261:My Barcelona neighborhood is still Gracia."
+        },
+        {
+          "content": "Daniyaal works from the Notion office in Barcelona on Mondays.",
+          "id": "01KN5XVH6ZYTT79PQ8H3YMW4ZK",
+          "similarity": 0.37131264646467566,
+          "sourceInput": "s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays."
+        },
+        {
+          "content": "Daniyaal works from the Notion office in Barcelona on Wednesdays.",
+          "id": "01KN5XVJE0NW65PN6E0PRQZ2FV",
+          "similarity": 0.3601285712742559,
+          "sourceInput": "s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays."
+        },
+        {
+          "content": "Daniyaal's weekend bicycle route includes Montjuic.",
+          "id": "01KN5XW2W297TCV79X8EP4A77Y",
+          "similarity": 0.3668025581741641,
+          "sourceInput": "s24:285:My weekend bike route goes to Montjuic."
+        },
+        {
+          "content": "Daniyaal's current running route includes Ciutadella Park.",
+          "id": "01KN5XR6VFTS1RQXDS73084PFE",
+          "similarity": 0.3148367282627984,
+          "sourceInput": "s16:189:My current running route goes through Ciutadella Park."
+        },
+        {
+          "content": "Daniyaal's favorite bakery in Lisbon is Gleba.",
+          "id": "01KN5XK25NGMVYQM5WFYTSPK2E",
+          "similarity": 0.5173012237980482,
+          "sourceInput": "s5:59:My favorite bakery in Lisbon is Gleba."
+        },
+        {
+          "content": "Daniyaal's favorite cafe in Lisbon is Hello Kristof.",
+          "id": "01KN5XN08JDVFH9PZW8WXETSGV",
+          "similarity": 0.4688260645054996,
+          "sourceInput": "s10:113:My favorite Lisbon cafe is Hello Kristof."
+        },
+        {
+          "content": "Daniyaal lived in Lisbon before moving to Barcelona.",
+          "id": "01KN5XQ2YAW4QKNXWA2Q34QT58",
+          "similarity": 0.3743931765921956,
+          "sourceInput": "s14:157:I moved from Lisbon to Barcelona."
+        },
+        {
+          "content": "Daniyaal coworks from Aticco Verdaguer every Tuesday.",
+          "id": "01KN5XQ8PZTNF7BMPCBP051E51",
+          "similarity": 0.3183595625451874,
+          "sourceInput": "s14:163:I cowork from Aticco Verdaguer on Tuesdays."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your current favorite bakery in Barcelona is Origo, and your weekend brunch spot is Federal Cafe.",
+      "id": "RQ-019",
+      "must_contain": [
+        "Origo",
+        "Federal Cafe"
+      ],
+      "must_not_contain": [
+        "Gleba"
+      ],
+      "question": "What are my current favorite bakery and brunch spot in Barcelona?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        161,
+        162,
+        201,
+        202
+      ]
+    },
+    "col_order": 18,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-019"
+      },
+      {
+        "label": "Question",
+        "value": "What are my current favorite bakery and brunch spot in Barcelona?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your current favorite bakery in Barcelona is Origo, and your weekend brunch spot is Federal Cafe."
+      },
+      {
+        "label": "Answer",
+        "value": "Your current favorite bakery in Barcelona is Origo and your current favorite brunch spot there is Federal Cafe."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal's preferred weekend brunch spot is Federal Cafe in Barcelona.\",\n    \"id\": \"01KN5XRRY67279C7MSG05SS8BK\",\n    \"similarity\": 0.6311873494979943,\n    \"sourceInput\": \"s17:201:My weekend brunch spot is Federal Cafe in Barcelona.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite local bakery in Barcelona is Origo.\",\n    \"id\": \"01KN5XQ729J9VF42SS4M3ARHM0\",\n    \"similarity\": 0.6484828580805381,\n    \"sourceInput\": \"s14:161:My favorite local bakery in Barcelona is Origo.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite ramen restaurant in Barcelona is Grasshopper.\",\n    \"id\": \"01KN5XSK58GMH670MBPPH70S5D\",\n    \"similarity\": 0.49621295893894324,\n    \"sourceInput\": \"s19:225:My favorite ramen in Barcelona is Grasshopper.\"\n  },\n  {\n    \"content\": \"Daniyaal lives in the Gracia neighborhood of Barcelona.\",\n    \"id\": \"01KN5XV3EK37B6EZVPGBPXC143\",\n    \"similarity\": 0.4185116870075053,\n    \"sourceInput\": \"s22:261:My Barcelona neighborhood is still Gracia.\"\n  },\n  {\n    \"content\": \"Daniyaal works from the Notion office in Barcelona on Mondays.\",\n    \"id\": \"01KN5XVH6ZYTT79PQ8H3YMW4ZK\",\n    \"similarity\": 0.37131264646467566,\n    \"sourceInput\": \"s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays.\"\n  },\n  {\n    \"content\": \"Daniyaal works from the Notion office in Barcelona on Wednesdays.\",\n    \"id\": \"01KN5XVJE0NW65PN6E0PRQZ2FV\",\n    \"similarity\": 0.3601285712742559,\n    \"sourceInput\": \"s23:273:I work from Notion's Barcelona office on Mondays and Wednesdays.\"\n  },\n  {\n    \"content\": \"Daniyaal's weekend bicycle route includes Montjuic.\",\n    \"id\": \"01KN5XW2W297TCV79X8EP4A77Y\",\n    \"similarity\": 0.3668025581741641,\n    \"sourceInput\": \"s24:285:My weekend bike route goes to Montjuic.\"\n  },\n  {\n    \"content\": \"Daniyaal's current running route includes Ciutadella Park.\",\n    \"id\": \"01KN5XR6VFTS1RQXDS73084PFE\",\n    \"similarity\": 0.3148367282627984,\n    \"sourceInput\": \"s16:189:My current running route goes through Ciutadella Park.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite bakery in Lisbon is Gleba.\",\n    \"id\": \"01KN5XK25NGMVYQM5WFYTSPK2E\",\n    \"similarity\": 0.5173012237980482,\n    \"sourceInput\": \"s5:59:My favorite bakery in Lisbon is Gleba.\"\n  },\n  {\n    \"content\": \"Daniyaal's favorite cafe in Lisbon is Hello Kristof.\",\n    \"id\": \"01KN5XN08JDVFH9PZW8WXETSGV\",\n    \"similarity\": 0.4688260645054996,\n    \"sourceInput\": \"s10:113:My favorite Lisbon cafe is Hello Kristof.\"\n  },\n  {\n    \"content\": \"Daniyaal lived in Lisbon before moving to Barcelona.\",\n    \"id\": \"01KN5XQ2YAW4QKNXWA2Q34QT58\",\n    \"similarity\": 0.3743931765921956,\n    \"sourceInput\": \"s14:157:I moved from Lisbon to Barcelona.\"\n  },\n  {\n    \"content\": \"Daniyaal coworks from Aticco Verdaguer every Tuesday.\",\n    \"id\": \"01KN5XQ8PZTNF7BMPCBP051E51\",\n    \"similarity\": 0.3183595625451874,\n    \"sourceInput\": \"s14:163:I cowork from Aticco Verdaguer on Tuesdays.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9821428571428571,
+    "scores": [
+      {
+        "id": 1327,
+        "result_id": 1631,
+        "name": "Retrieval Answer Score",
+        "score": 0.9821428571428571,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.9285714285714286,
+          "containsMatched": [
+            "Origo",
+            "Federal Cafe"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

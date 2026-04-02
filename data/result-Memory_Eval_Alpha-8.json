@@ -1,0 +1,124 @@
+{
+  "result": {
+    "id": 1611,
+    "eval_id": 102,
+    "duration": 1018,
+    "input": {
+      "expected_reply": "Your emergency contact is Omar, and he lives in Dubai now.",
+      "id": "RQ-009",
+      "must_contain": [
+        "Omar",
+        "Dubai"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "Who is my emergency contact, and where does he live now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        19,
+        20,
+        51,
+        52
+      ]
+    },
+    "output": {
+      "answer": "The emergency contact is Omar, and he lives in Dubai.",
+      "retrievedMemories": [
+        {
+          "content": "Omar is the emergency contact for Daniyaal.",
+          "id": "01KN5XHRMWTN2TQE4CZMCYNCRY",
+          "similarity": 0.41683450204498196,
+          "sourceInput": "s1:19:My emergency contact is Omar."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your emergency contact is Omar, and he lives in Dubai now.",
+      "id": "RQ-009",
+      "must_contain": [
+        "Omar",
+        "Dubai"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "Who is my emergency contact, and where does he live now?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        19,
+        20,
+        51,
+        52
+      ]
+    },
+    "col_order": 8,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-009"
+      },
+      {
+        "label": "Question",
+        "value": "Who is my emergency contact, and where does he live now?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your emergency contact is Omar, and he lives in Dubai now."
+      },
+      {
+        "label": "Answer",
+        "value": "The emergency contact is Omar, and he lives in Dubai."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Omar is the emergency contact for Daniyaal.\",\n    \"id\": \"01KN5XHRMWTN2TQE4CZMCYNCRY\",\n    \"similarity\": 0.41683450204498196,\n    \"sourceInput\": \"s1:19:My emergency contact is Omar.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9404761904761905,
+    "scores": [
+      {
+        "id": 1307,
+        "result_id": 1611,
+        "name": "Retrieval Answer Score",
+        "score": 0.9404761904761905,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.761904761904762,
+          "containsMatched": [
+            "Omar",
+            "Dubai"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 102,
+    "run_id": 75,
+    "name": "Memory Eval Alpha",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

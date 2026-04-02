@@ -1,0 +1,151 @@
+{
+  "result": {
+    "id": 1620,
+    "eval_id": 103,
+    "duration": 1524,
+    "input": {
+      "expected_reply": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi.",
+      "id": "RQ-008",
+      "must_contain": [
+        "Pixel",
+        "black",
+        "Pembroke",
+        "Welsh",
+        "Corgi"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What is the name, breed, and color of my dog?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        13,
+        14,
+        37,
+        38
+      ]
+    },
+    "output": {
+      "answer": "Name: Pixel\nBreed: Pembroke Welsh Corgi\nColor: black",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal's dog, Pixel, is black.",
+          "id": "01KN5XHK6YV7D6N3NVTKA13HBK",
+          "similarity": 0.437348845766253,
+          "sourceInput": "s2:13:I have a black corgi named Pixel."
+        },
+        {
+          "content": "Daniyaal's dog, Pixel, is a Corgi.",
+          "id": "01KN5XHJ48YEHY09WDEEFN0MVR",
+          "similarity": 0.360860932214656,
+          "sourceInput": "s2:13:I have a black corgi named Pixel."
+        },
+        {
+          "content": "Daniyaal has a dog named Pixel.",
+          "id": "01KN5XHJ44Q3DX08KF6GKAQNCM",
+          "similarity": 0.3512080716917054,
+          "sourceInput": "s2:13:I have a black corgi named Pixel."
+        },
+        {
+          "content": "Pixel is a Pembroke Welsh Corgi.",
+          "id": "01KN5XJD79W3PEA0W3F6B6S7V8",
+          "similarity": 0.3281410818335804,
+          "sourceInput": "s4:37:Small update: Pixel is a Pembroke Welsh Corgi."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi.",
+      "id": "RQ-008",
+      "must_contain": [
+        "Pixel",
+        "black",
+        "Pembroke",
+        "Welsh",
+        "Corgi"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What is the name, breed, and color of my dog?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        13,
+        14,
+        37,
+        38
+      ]
+    },
+    "col_order": 7,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-008"
+      },
+      {
+        "label": "Question",
+        "value": "What is the name, breed, and color of my dog?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi."
+      },
+      {
+        "label": "Answer",
+        "value": "Name: Pixel\nBreed: Pembroke Welsh Corgi\nColor: black"
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal's dog, Pixel, is black.\",\n    \"id\": \"01KN5XHK6YV7D6N3NVTKA13HBK\",\n    \"similarity\": 0.437348845766253,\n    \"sourceInput\": \"s2:13:I have a black corgi named Pixel.\"\n  },\n  {\n    \"content\": \"Daniyaal's dog, Pixel, is a Corgi.\",\n    \"id\": \"01KN5XHJ48YEHY09WDEEFN0MVR\",\n    \"similarity\": 0.360860932214656,\n    \"sourceInput\": \"s2:13:I have a black corgi named Pixel.\"\n  },\n  {\n    \"content\": \"Daniyaal has a dog named Pixel.\",\n    \"id\": \"01KN5XHJ44Q3DX08KF6GKAQNCM\",\n    \"similarity\": 0.3512080716917054,\n    \"sourceInput\": \"s2:13:I have a black corgi named Pixel.\"\n  },\n  {\n    \"content\": \"Pixel is a Pembroke Welsh Corgi.\",\n    \"id\": \"01KN5XJD79W3PEA0W3F6B6S7V8\",\n    \"similarity\": 0.3281410818335804,\n    \"sourceInput\": \"s4:37:Small update: Pixel is a Pembroke Welsh Corgi.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.8552631578947368,
+    "scores": [
+      {
+        "id": 1316,
+        "result_id": 1620,
+        "name": "Retrieval Answer Score",
+        "score": 0.8552631578947368,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.4210526315789474,
+          "containsMatched": [
+            "Pixel",
+            "black",
+            "Pembroke",
+            "Welsh",
+            "Corgi"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

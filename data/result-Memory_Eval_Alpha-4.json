@@ -1,0 +1,139 @@
+{
+  "result": {
+    "id": 1607,
+    "eval_id": 102,
+    "duration": 963,
+    "input": {
+      "expected_reply": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi.",
+      "id": "RQ-005",
+      "must_contain": [
+        "Pixel",
+        "black",
+        "Pembroke",
+        "Welsh",
+        "Corgi"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What is the name, breed, and color of my dog?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        13,
+        14,
+        25,
+        26
+      ]
+    },
+    "output": {
+      "answer": "Pixel is a black Pembroke Welsh Corgi.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal has a black Corgi named Pixel.",
+          "id": "01KN5XHHT1N636VFFJCFBRMFGZ",
+          "similarity": 0.37608813661420004,
+          "sourceInput": "s1:13:I have a black corgi named Pixel."
+        },
+        {
+          "content": "Pixel is a Pembroke Welsh Corgi.",
+          "id": "01KN5XHYKT8894F6GZ1Q4WJRR5",
+          "similarity": 0.3281797107886657,
+          "sourceInput": "s2:25:Small update: Pixel is a Pembroke Welsh Corgi."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi.",
+      "id": "RQ-005",
+      "must_contain": [
+        "Pixel",
+        "black",
+        "Pembroke",
+        "Welsh",
+        "Corgi"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "What is the name, breed, and color of my dog?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        13,
+        14,
+        25,
+        26
+      ]
+    },
+    "col_order": 4,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-005"
+      },
+      {
+        "label": "Question",
+        "value": "What is the name, breed, and color of my dog?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your dog is Pixel, and he is a black Pembroke Welsh Corgi."
+      },
+      {
+        "label": "Answer",
+        "value": "Pixel is a black Pembroke Welsh Corgi."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal has a black Corgi named Pixel.\",\n    \"id\": \"01KN5XHHT1N636VFFJCFBRMFGZ\",\n    \"similarity\": 0.37608813661420004,\n    \"sourceInput\": \"s1:13:I have a black corgi named Pixel.\"\n  },\n  {\n    \"content\": \"Pixel is a Pembroke Welsh Corgi.\",\n    \"id\": \"01KN5XHYKT8894F6GZ1Q4WJRR5\",\n    \"similarity\": 0.3281797107886657,\n    \"sourceInput\": \"s2:25:Small update: Pixel is a Pembroke Welsh Corgi.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 0.9444444444444444,
+    "scores": [
+      {
+        "id": 1303,
+        "result_id": 1607,
+        "name": "Retrieval Answer Score",
+        "score": 0.9444444444444444,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 0.7777777777777778,
+          "containsMatched": [
+            "Pixel",
+            "black",
+            "Pembroke",
+            "Welsh",
+            "Corgi"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 102,
+    "run_id": 75,
+    "name": "Memory Eval Alpha",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}

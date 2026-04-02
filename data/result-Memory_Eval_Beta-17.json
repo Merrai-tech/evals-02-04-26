@@ -1,0 +1,129 @@
+{
+  "result": {
+    "id": 1630,
+    "eval_id": 103,
+    "duration": 1352,
+    "input": {
+      "expected_reply": "Your passport renewal appointment is on 2027-04-02 at 10:00 UTC.",
+      "id": "RQ-018",
+      "must_contain": [
+        "2027-04-02",
+        "10:00",
+        "UTC"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "When is my passport renewal appointment?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        223,
+        224
+      ]
+    },
+    "output": {
+      "answer": "Your passport renewal appointment is on 2027-04-02 at 10:00 UTC.",
+      "retrievedMemories": [
+        {
+          "content": "Daniyaal has a passport renewal appointment scheduled for April 2nd, 2027.",
+          "id": "01KN5XSH62ZW5X4X2C3G98CGKS",
+          "similarity": 0.6112369086466523,
+          "sourceInput": "s19:223:My passport renewal appointment is on 2027-04-02 at 10:00 UTC."
+        },
+        {
+          "content": "The passport belonging to Daniyaal expires on August 14, 2032.",
+          "id": "01KN5XM7PRWRK9XGP0AP6EQ00P",
+          "similarity": 0.48173694618960183,
+          "sourceInput": "s8:89:My passport expires on 2032-08-14."
+        }
+      ]
+    },
+    "expected": {
+      "expected_reply": "Your passport renewal appointment is on 2027-04-02 at 10:00 UTC.",
+      "id": "RQ-018",
+      "must_contain": [
+        "2027-04-02",
+        "10:00",
+        "UTC"
+      ],
+      "must_not_contain": [
+
+      ],
+      "question": "When is my passport renewal appointment?",
+      "scoring": {
+        "methodology": "retrieval_answer"
+      },
+      "supporting_turn_ids": [
+        223,
+        224
+      ]
+    },
+    "col_order": 17,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "rendered_columns": [
+      {
+        "label": "Case",
+        "value": "RQ-018"
+      },
+      {
+        "label": "Question",
+        "value": "When is my passport renewal appointment?"
+      },
+      {
+        "label": "Expected",
+        "value": "Your passport renewal appointment is on 2027-04-02 at 10:00 UTC."
+      },
+      {
+        "label": "Answer",
+        "value": "Your passport renewal appointment is on 2027-04-02 at 10:00 UTC."
+      },
+      {
+        "label": "Retrieved",
+        "value": "[\n  {\n    \"content\": \"Daniyaal has a passport renewal appointment scheduled for April 2nd, 2027.\",\n    \"id\": \"01KN5XSH62ZW5X4X2C3G98CGKS\",\n    \"similarity\": 0.6112369086466523,\n    \"sourceInput\": \"s19:223:My passport renewal appointment is on 2027-04-02 at 10:00 UTC.\"\n  },\n  {\n    \"content\": \"The passport belonging to Daniyaal expires on August 14, 2032.\",\n    \"id\": \"01KN5XM7PRWRK9XGP0AP6EQ00P\",\n    \"similarity\": 0.48173694618960183,\n    \"sourceInput\": \"s8:89:My passport expires on 2032-08-14.\"\n  }\n]"
+      }
+    ],
+    "trial_index": null,
+    "score": 1,
+    "scores": [
+      {
+        "id": 1326,
+        "result_id": 1630,
+        "name": "Retrieval Answer Score",
+        "score": 1,
+        "description": "Scores answer correctness, answer similarity, and required/stale term coverage for retrieval questions.",
+        "metadata": {
+          "answerCorrectness": 1,
+          "answerSimilarity": 1,
+          "containsMatched": [
+            "2027-04-02",
+            "10:00",
+            "UTC"
+          ],
+          "containsMissed": [
+
+          ],
+          "staleHits": [
+
+          ]
+        },
+        "created_at": "2026-04-02 03:35:30"
+      }
+    ],
+    "traces": [
+
+    ]
+  },
+  "evaluation": {
+    "id": 103,
+    "run_id": 75,
+    "name": "Memory Eval Beta",
+    "duration": 0,
+    "created_at": "2026-04-02 03:35:30",
+    "status": "success",
+    "variant_name": null,
+    "variant_group": null
+  }
+}
